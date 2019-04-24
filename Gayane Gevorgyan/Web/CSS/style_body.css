@@ -1,0 +1,42 @@
+body{
+	background:: #e8e8e8;
+}
+
+#img1{
+ 	margin-top: 50px;
+}
+.img{
+	background: #b3bed1;
+}
+
+.item_news{
+	width: 24%;
+	margin: 20px 5px 5px 5px;
+	border: 1px solid #a7a7b7;
+	padding: 2px 2px 2px 2px;
+	display: inline-block;
+}
+
+.item_today{
+	width:47%;	
+	margin: 20px 5px 5px 5px;
+	border: 1px solid #a7a7b7;
+	padding: 10px 2px 10px 2px;
+	 display: inline-block;
+}
+.item_rec{
+	margin: 20px 5px 5px 5px;
+	width: 24%;
+	border: 1px solid #a7a7b7;
+	padding: 2px 2px 2px 2px;
+	display: inline-block;	
+}
+.item_text{
+	width:47%;	
+	margin: 2px 5px 5px 5px;
+	border: 1px solid #a7a7b7;
+	padding: 10px 10px 10px 10px;
+	color:#09295e;
+	margin: auto;
+}
+

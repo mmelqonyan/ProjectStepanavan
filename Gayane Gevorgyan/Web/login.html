@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+ 		<title>Registration</title>
+    		<meta charset="utf-8">
+		<link rel="stylesheet" href="CSS/style.css">
+		<link rel="stylesheet" href="CSS/style_body.css">	
+    		<link rel="stylesheet" href="CSS/log.css">
+   		<script src="log.js"></script>
+	</head>
+
+	<body>
+		<div class="grid-container">
+			<a href="index.html" id="fox"><img src="Images/foxnew.jpg" alt="foxnews" id="fox"></a>
+			<div class="item"><a href="Other_page.html">U.S.</a></div>
+  			<div class="item"><a href="Other_page.html">World</a></div>
+			<div class="item"><a href="Other_page.html">Opinion</a></div>
+			<div class="item"><a href="Other_page.html">Politics</a></div>
+			<div class="item"><a href="Other_page.html">Entertainment</a></div>
+			<div class="item"><a href="Other_page.html">Business</a></div>
+			<div class="item"><a href="Other_page.html">Lifestyle</a></div>
+			<div class="item"><a href="Other_page.html">TV</a></div>
+			<div class="item"><a href="more.html">More:</a></div>
+			<div class="item"><input placeholder="Search..."></div>	
+			<div class="item"><a href="https://www.google.com" id="search">&#x1f50d;</a></div>
+			<div ><a href="http://www.1tv.am/hy" id="w_tv">Watch TV</a></div>			
+		</div>
+
+ <div class="reg">
+    <div id="msgContainer"></div>
+        <fieldset>
+            <legend>Registration:</legend>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="login">Login:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="login">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Password">Password:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="password">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Name">Name:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="surename"> Surename:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="surename">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <button onclick="regForm()" class="submit">Submit</button>
+        </fieldset>
+
+    <div id="personContainer">
+    </div>
+</div>
+</body>
+</html>
