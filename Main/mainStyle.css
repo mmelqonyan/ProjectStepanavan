@@ -1,0 +1,55 @@
+body{
+background:#313131;
+}
+
+.image{
+width: 300px;
+height: auto;
+background-color:white;
+margin: 20px 20px 5px 20px
+}
+
+a:link {
+  text-decoration: none;
+color: #5BBC2E;
+text-align:center;
+}
+	
+a:visited {
+  text-decoration: none;
+	color: #5BBC2E;
+	
+}
+
+a:hover {
+  text-decoration: none;
+color: black;
+padding-bottom: 10px;
+}
+
+a:active {
+  text-decoration: none;
+	color: black;
+padding-bottom: 10px;
+}
+
+h1{
+text-align:center;
+color: white;
+}
+.p{
+text-align:center;
+color: white;
+}
+.category{
+
+width:300px;
+height:400px;
+position: center;
+}
+
+table{
+position: center;
+}
+
+
