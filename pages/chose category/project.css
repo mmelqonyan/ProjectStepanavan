@@ -40,3 +40,20 @@
 	padding-left: 30px;
 
 }
+
+@media only screen and (max-width: 800px) {
+  .bookimgcontainer {
+      grid-template-columns: auto auto;
+    }
+    .firstreiting {
+
+    grid-row: 1 / 4;
+    grid-column:1 / 4;
+  }
+.secondreiting{
+   grid-row: 4 / 6;
+   grid-column:1 / 4;
+ }
+
+
+}
