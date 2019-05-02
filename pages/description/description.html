@@ -11,7 +11,7 @@
     <script src="description.js" defer></script>
 </head>
 
-<body>
+<body onload="setDataForSingleBook()">
 
     <div class="head">
         <a href="" class="back">back to selection page</a>
@@ -20,14 +20,14 @@
 
     <div class="grid-container">
         <div class="book-review">
-            <img src="" alt="Single book image review">
+            <img src="" alt="Single book image review" id="book_image">
 
         </div>
         <div class="information">
             
             <div>
                 <span>
-                    <h3>Book's name</h3>
+                    <h3 id="book_name">Book's name</h3>
                 </span>
             </div>
            
@@ -35,14 +35,14 @@
            
             <div>
                 <span>Author:
-                    <span>Someone</span>
+                    <span id="book_author">Someone</span>
                 </span>
             </div>
             <br>
 
             <div>
                     <span>Genre:
-                        <span>Something</span>
+                        <span id="book_genre">Something</span>
                     </span>
                 </div>
            
