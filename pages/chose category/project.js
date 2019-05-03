@@ -1,5 +1,5 @@
 
-document.getElementById('authorname').innerHTML = '<i>'+ book_and_author[0].authorname+'</i>';
+document.getElementById('authorname').innerHTML += '<i>'+ book_and_author[0].authorname+'</i>';
 
 var images_array = document.querySelectorAll(".images");
 
@@ -15,7 +15,14 @@ function change_location(arg) {
 	var data_arr = [];
 	var obj = {};
 	obj.authorname = book_and_author[0].authorname;
-	obj.name = book_and_author[0].authorname;
+
+	for (var i = 0; i < book_and_author.length; i++) {
+		if(book_and_author[i].img == arg.getAttribute('src')){
+			obj.bookname = book_and_author[i].bookname;
+		}
+		
+	}
+	
 	obj.src = arg.getAttribute('src');
 	data_arr.push(obj);
 

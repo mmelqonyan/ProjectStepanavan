@@ -9,13 +9,13 @@
 }
 
 .bookimgcontainer {
-   
+    
     margin:  auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 10px;
-    background-color: #77f4b7;
     padding: 10px;
+    background-color: #B5D1D3;
 
 }
 .bookimgcontainer > div {
@@ -99,14 +99,12 @@
 }
 #authorname{
 	color: coral;
-	padding-left: 30px;
+	padding-left: 10px;
     font-size: 20px;
 
-}
-html {
-    height: 100%;
 
- }
+}
+
 .images > img{
 
     background-size: cover;
@@ -114,4 +112,8 @@ html {
     margin: 0; 
     height: 100%;    
     width:100%;
+}
+.bookimgcontainer > p{
+    margin-top: 0;
+    background-color: cyan;
 }
