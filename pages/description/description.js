@@ -1,3 +1,5 @@
+
+
 function setDataForSingleBook(){
     let dataForSingleBook = sessionStorage.getItem('tumanyan')
     let name = dataForSingleBook["name"]
