@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+    <script src="./scripts/constants.js"></script>
+    <script src="./scripts/helpers.js"></script>
+    <script src="./scripts/sign_up_in.js" defer></script>
+    <script src="./scripts/forms.js" defer></script>
+
+
+</head>
+
+<body>
+    <div>
+        <img src="banner.png" id="banner">
+    </div>
+
+    <div class="container">
+        <form action="javascript:void(0);" method="get">
+            <fieldset class="clearfix">
+                <p><span class="fontawesome-user"></span><input id="sign_in_login_input" type="text"
+                        placeholder="Մուտքանուն"></p>
+                <p><span class="fontawesome-lock"></span><input id="sign_in_password_input" type="password"
+                        placeholder="Գաղտնաբառ"></p>
+                <p><input id="sign_in_btn" type="submit" value="ՄՈՒՏՔ"></p>
+            </fieldset>
+        </form>
+        <p class="button" id="register_btn">Չունեք Հաշիվ? &nbsp;&nbsp;Գրանցվել<span
+                class="fontawesome-arrow-right"></span></p>
+    </div>
+
+    <div class="container">
+        <form action="javascript:void(0);" method="get">
+            <fieldset class="clearfix">
+                <p><span class="fontawesome-user"></span><input id="sign_up_login_input" type="text"
+                        placeholder="Մուտքանուն"></p>
+                <p><span class="fontawesome-lock"></span><input id="sign_up_name_input" type="text" placeholder="Անուն">
+                </p>
+                <p><span class="fontawesome-lock"></span><input id="sign_up_password_input" type="password"
+                        placeholder="Գաղտնաբառ"></p>
+                <p><input id="sign_up_btn" type="submit" value="Գրանցում"></p>
+            </fieldset>
+        </form>
+        <p class="button" id="login_btn">Հաշիվ ունեք? &nbsp;&nbsp;ՄՈՒՏՔ<span class="fontawesome-arrow-right"></span></p>
+    </div>
+
+
+</body>
+
+</html>

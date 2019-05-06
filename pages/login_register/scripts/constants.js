@@ -1,0 +1,8 @@
+const USERS_KEY = "USERS";
+const USER_KEY = "ACTIVE_USER";
+const RESPONSE_CODES = {
+    OK: 0,
+    INCORRECT_PASSWORD: 1,
+    INCORRECT_LOGIN: 2,
+    USER_EXIST: 3,
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=5.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./scripts/constants.js"></script>
+    <script src="./scripts/helpers.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="user_container">
+        <p id="user_name"> </p>
+        <input type="button" value="Sing out" id="sign_out_btn">
+    </div>
+
+    <script>
+        let user = getActiveUser();
+        if(user) {
+            document.getElementById("user_name").innerHTML = "Welcome " + user["name"];
+        } else {
+            document.write("ERROR 404");
+        }
+        document.getElementById("sign_out_btn").onclick = function(){
+            signOut();
+        }
+    </script>
+</body>
+</html>
