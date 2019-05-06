@@ -18,102 +18,59 @@
     background-color: #B5D1D3;
 
 }
-.bookimgcontainer > div {
-	border: 1px solid black;
-}
-.firstreiting {
 
-    grid-row: 1 / 2;
-    grid-column:1 / 2;
-    height: 300px;
-}
-.about1{
-    height: 30px;
-    grid-row: 2 / 3;
-    grid-column:1 / 2;
-}
-.secondreiting{
-	height: 300px;
-    grid-column:2 / 4;
-}
 
-.about2{
-    height: 30px;
-    grid-row: 2 / 3;
-    grid-column:2 / 4;
-}
-.a3{
-    height: 300px;
-    grid-column:4 / 5;
-    grid-row: 1 / 2;
-}
-.about3{
-    height: 30px;
-    grid-column:4 / 5;
-    grid-row: 2 / 3;
-}
-.a4{
-    height: 150px;
-    grid-column:1 / 2;
-    grid-row: 3 / 4;
-}
-.about4{
-    height: 30px;
-    grid-column:1 / 2;
-    grid-row: 4 / 5;
-}
-.a5{
-    height: 150px;
-    grid-column:2 / 3;
-    grid-row: 3 / 4;
-}
-.about5{
-    height: 30px;
-    grid-column:2 / 3;
-    grid-row: 4 / 5;
-}
-.a6{
-    height: 150px;
-    grid-column:3 / 4;
-    grid-row: 3 / 4;
-}
-.about6{
-    height: 30px;
-    grid-column:3 / 4;
-    grid-row: 4 / 5;
-}
-.a7{
-    height: 150px;
-    grid-column:4 / 5;
-    grid-row: 3 / 4;
-}
-.about7{
-    height: 30px;
-    grid-column:4 / 5;
-    grid-row: 4 / 5;
-}
-.about8{
-    height: 30px;
-    grid-column:1 / 2;
-    grid-row: 6 / 7;
-}
 #authorname{
+    grid-row: 1 / 2 ;
+    grid-column: 1 / 5;
+    text-align: center;
+    height: 90px;
 	color: coral;
 	padding-left: 10px;
-    font-size: 20px;
-
+    font-size: 30px;
 
 }
-
+.images {
+    height: 200px;
+}
 .images > img{
 
-    background-size: cover;
     background-repeat: no-repeat;
     margin: 0; 
-    height: 100%;    
+    height: 79%;    
     width:100%;
+}
+.images > p{
+    font-size: 35px;
+    margin:0;
+    height: 20%;    
+    text-align: center;
+    background-color: #ffe6e6;
+    color: #4d4d00;
+    border:1px solid #ffffb3;
+   
 }
 .bookimgcontainer > p{
     margin-top: 0;
     background-color: cyan;
+}
+@media only screen and (max-width: 600px) {
+
+   .bookimgcontainer {
+       
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-gap: 10px;
+        margin: auto;
+       
+    }
+    #authorname  {
+       grid-column: 1 / 2;
+       height: auto;
+    }
+    .images{
+        height: 400px;
+    }
+
+    
 }
