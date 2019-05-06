@@ -1,17 +1,20 @@
 
+function processForm() 
+{
 
-function setDataForSingleBook(){
-    let dataForSingleBook = sessionStorage.getItem('tumanyan')
-    let name = dataForSingleBook["name"]
-    let author = dataForSingleBook["author"]
-    let image = dataForSingleBook["image"]
-    let rating = dataForSingleBook["rating"]
-    let genre = dataForSingleBook["genre"]
-    let status = dataForSingleBook["status"]
-    document.getElementById("book_name").innerHTML = name
-    document.getElementById("book_author").innerHTML = author
-    document.getElementById("book_rating").innerHTML = rating
-    document.getElementById("book_genre").innerHTML = genre
-    document.getElementById("book_status").innerHTML = status
-    document.getElementById("image").setAttribute("src", `${image}`)
+
+var my = location.search.substring(1).split("&");
+var temp = my[0].split("=");
+l =  decodeURIComponent(temp[1]);
+l = l.replace(/\+/g, " ");
+//l = l.split("+").join(" ")
+
+var js = JSON.parse(l);
+
+console.log(js)
+document.getElementById('book_image').src = js["src"]
+document.getElementById('book_name').innerHTML = js["bookname"]
+document.getElementById('book_author').innerHTML = js["authorname"]
+>>>>>>> cf4c88e6078cfaf63fc10f044624cddf3ea32737
 }
+
