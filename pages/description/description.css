@@ -7,8 +7,9 @@
     position: relative;
 }
 
-.back {
-    position: absolute;
+body{
+    background-image: url("../../media/bgimgfordescription.jpg")
+
 }
 
 .banner{
@@ -50,4 +51,46 @@ padding-top: 70px;
     border-radius: 10px;
     width: 70px;
     background-color: rgb(135, 233, 135);
+}
+
+.description{
+    height: auto;
+    margin-left: 23%;
+    margin-right: 23%;
+    text-align: center;
+    margin-top: 20px;
+}
+.description h4{
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .book-review{
+
+        height: 100px;
+        width: 100px;
+        margin-left: 10px; 
+        margin-top: 50px;
+    }
+
+    .information{
+
+        padding-top: 10px;
+        height: 150px;
+        width: 150px;
+        margin-left: 1px;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .description{
+        height: auto;
+        width: 200px;
+        margin-left: 23%;
+        margin-right: 23%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
 }
