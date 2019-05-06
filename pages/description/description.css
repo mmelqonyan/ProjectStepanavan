@@ -18,7 +18,7 @@
 }
 
 .book-review{
-    border: solid;
+
     height: 350px;
     width: 350px;
     margin-left: 150%; 
@@ -31,7 +31,9 @@
 }
 
 .information{
-    border: solid;
+
+padding-top: 70px;
+
     height: 250px;
     width: 400px;
     margin-left: 250%;
