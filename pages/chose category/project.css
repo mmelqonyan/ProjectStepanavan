@@ -1,8 +1,13 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 .head {
     position: relative;
 }
 body{
-	background:#B5D1D3;
+	background:#D0D1D1;
 }
 .banner{
     display: grid;
@@ -61,6 +66,7 @@ body{
         margin: auto;      
     }
     #authorname  {
+	float: right;
        grid-column: 1 / 2;
        height: auto;
     }
