@@ -1,7 +1,9 @@
 .head {
     position: relative;
 }
-
+body{
+	background:#B5D1D3;
+}
 .banner{
     display: grid;
     min-width: 100%;
@@ -12,26 +14,23 @@
     
     margin:  auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 10px;
     padding: 10px;
-    background-color: #B5D1D3;
-
+    background-color: #313131;
 }
-
 
 #authorname{
     grid-row: 1 / 2 ;
-    grid-column: 1 / 5;
+    grid-column: 1 / 8;
     text-align: center;
     height: 90px;
 	color: coral;
 	padding-left: 10px;
     font-size: 30px;
-
 }
 .images {
-    height: 200px;
+    height: 180px;
 }
 .images > img{
 
@@ -41,28 +40,25 @@
     width:100%;
 }
 .images > p{
-    font-size: 35px;
+    font-size: 20px;
     margin:0;
     height: 20%;    
     text-align: center;
     background-color: #ffe6e6;
-    color: #4d4d00;
-    border:1px solid #ffffb3;
-   
+    color: black;
+    border:1px solid #ffffb3;   
 }
 .bookimgcontainer > p{
     margin-top: 0;
-    background-color: cyan;
+    
 }
 @media only screen and (max-width: 600px) {
 
-   .bookimgcontainer {
-       
+   .bookimgcontainer {       
         display: grid;
         grid-template-columns: 1fr ;
         grid-gap: 10px;
-        margin: auto;
-       
+        margin: auto;      
     }
     #authorname  {
        grid-column: 1 / 2;
@@ -70,7 +66,10 @@
     }
     .images{
         height: 400px;
-    }
-
-    
+    }   
+}
+.autors{
+	float: left;
+	width: 200px;
+	height:auto;
 }
