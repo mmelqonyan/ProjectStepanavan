@@ -39,5 +39,5 @@ function validateSignUpString(string, from, to) {
 
 function signOut(){
     localStorage.removeItem(USER_KEY);
-    location.replace("index.html");
+    location.replace("../login_register/index.html");
 }
