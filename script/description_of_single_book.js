@@ -9,13 +9,14 @@ function processForm() {
     l = l.replace(/\+/g, " ");
     //l = l.split("+").join(" ")
 
-    var js = JSON.parse(l);
+    var book = JSON.parse(l);
 
 
-    console.log(js)
-    document.getElementById('book_image').src = js["src"]
-    document.getElementById('book_name').innerHTML = js["bookname"]
-    document.getElementById('book_author').innerHTML = js["authorname"]
+    console.log(book)
+    document.getElementById('book_image').src = book["img"]
+    document.getElementById('book_name').innerHTML = book["bookname"]
+    document.getElementById('book_author').innerHTML = book["authorname"]
+    document.getElementById('book_genre').innerHTML = book["genre"]
 
 
 }

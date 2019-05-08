@@ -6,12 +6,13 @@
 	"armliter": {
 
 		"tumanyan": {
-			"img": "media/exemp_books/a1.png",
-			"bookname": "Giqor",
-			"authorname": "Hovhannes Tumanyan"
+			"img": "../media/prof.jpg",
+			"bookname": "Գիքորը",
+			"authorname": "Հովհաննես Թումանյան",
+			"genre": "Հեքիաթ"
 		},
 		"axayan": {
-			"img": "../../media/exemp_books/a1.png",
+			"img": "../media/books.jpg",
 			"bookname": "Giqor",
 			"authorname": "Xazaros Axayan"
 		}
