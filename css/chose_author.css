@@ -30,8 +30,8 @@ body{
     grid-column: 1 / 8;
     text-align: center;
     height: 90px;
-	color: coral;
-	padding-left: 10px;
+    color: white;
+    padding-left: 10px;
     font-size: 30px;
 }
 .images {
@@ -65,17 +65,34 @@ body{
         grid-gap: 10px;
         margin: auto;      
     }
+
     #authorname  {
 	float: right;
-       grid-column: 1 / 2;
+       grid-column: 1 / 7;
        height: auto;
     }
     .images{
         height: 400px;
     }   
 }
+
 .autors{
 	float: left;
 	width: 200px;
 	height:auto;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.autorsList{
+	font-size:14px;
+	color: #1264A3;
+	cursor: pointer;
+	padding: 2px 2px 2px 2px;
+}
+
+.autorsList:hover{
+	background-color:#313131;
+	border-radius: 5px; 
+	color: white;
+	cursor: pointer;
 }
