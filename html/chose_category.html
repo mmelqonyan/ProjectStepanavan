@@ -1,13 +1,13 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
 <title>Գրադարան</title>
-<link rel="stylesheet" href="mainStyle.css" class="category">
-<script src="category.js" defer></script>
-<script src="../../database.js" defer></script>
+<link rel="stylesheet" href="../css/chose_category.css" class="category">
+<script src="../script/chose_category.js" defer></script>
+<script src="../database.js" defer></script>
 </head>
 <body>
-<img src="images/banner.png" class="banner">
+<img src="../media/banner.png" class="banner">
 <button type="button" onclick="logOut">Log Out</button>
 <h1>Բարի գալուստ գրադարան</h1>
 <p class="p"> Գտեք Ձեր գիրքը համապատասխան բաժնում</p>
@@ -16,14 +16,14 @@
     
       
     
-    <form action="../chose category/project.html">
+    <form action="chose_author.html">
 	<input id="category" type="hidden" name="category" value="">
 	<div class="container">
 
 
 
 	<div class="image">	
-	      <img src="images/arm.jpg" alt="Armenian" class="category">
+	      <img src="../media/arm.jpg" alt="Armenian" class="category">
 	      
 	      <div class="dropdown" onclick="category(this)" id="armliter">
 		<span>
@@ -36,7 +36,7 @@
 
 
     <div class="image">	
-      <img src="images/books.jpg" alt="Russian" class="category">
+      <img src="../media/books.jpg" alt="Russian" class="category">
       <div class="dropdown">
 	<span>
         	<h4>Ռուս գրականություն</h4>
@@ -49,7 +49,7 @@
     </div>
 
     <div class="image">	
-      <img src="images/girl.jpg" alt="Global" class="category">
+      <img src="../media/girl.jpg" alt="Global" class="category">
       <div class="dropdown">
 	<span>	
         	<h4>Համաշխարհային գրականություն</h4>
@@ -65,7 +65,7 @@
 	
 
 	<div class="image" class="container">	
-      <img src="images/colors.jpg" alt="babies" class="category">
+      <img src="../media/colors.jpg" alt="babies" class="category">
       <div class="dropdown">
 	<span>
         	<h4>Մանկական գրականություն</h4>
@@ -80,7 +80,7 @@
     </div>
 
 	<div class="image">
-     	 <img src="images/prof.jpg" alt="Professional" class="category">
+     	 <img src="../media/prof.jpg" alt="Professional" class="category">
       <div class="dropdown">
 	<span>	
         	<h4>Մասնագիտական գրականություն</h4>
@@ -102,7 +102,7 @@
     </div>
 
 	<div class="image">	
-      <img src="images/enciclop.jpg" alt="Encicloped" class="category">	
+      <img src="../media/enciclop.jpg" alt="Encicloped" class="category">	
       <div class="dropdown">
 	<span>
        		 <h4>Տեղեկատու գրականություն</h4>
