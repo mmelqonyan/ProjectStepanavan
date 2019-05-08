@@ -32,29 +32,19 @@ button:hover {
 	padding-bottom: 20px;
 }
 
-a:link {
-  	text-decoration: none;
+p {
 	color: #1264A3;
 	text-align:center;
+	cursor: pointer;
 }
 	
-a:visited {
-  	text-decoration: none;
-	color: #1264A3;
-	
+
+p:hover {
+
+	color: black;
+	cursor: pointer;
 }
 
-a:hover {
-  	text-decoration: none;
-	color: black;
-	padding-bottom: 10px;
-}
-
-a:active {
-  	text-decoration: none;
-	color: black;
-	padding-bottom: 10px;
-}
 
 h1{
 	padding: 20px 0px 0px 20px;	
@@ -62,9 +52,16 @@ h1{
 	color: white;
 }
 h4{
-		text-align:center;
+	text-align:center;
+	color: #1264A3;
+	cursor: pointer;
 }
-.p{
+
+h4:hover{
+	color: black;
+	cursor: pointer;
+}
+h3{
 	text-align:center;
 	color: white;
 	margin: 20px;
