@@ -1,22 +1,23 @@
-var book_and_author = 
+﻿var book_and_author = 
 
 {
 
-	
-"armliter":{
-        
-	"tumanyan":{
-	"img": "../../media/exemp_books/a1.png",
-	"bookname":"Giqor" , 
-	"authorname":"Hovhannes Tumanyan"}
-	,
-	
-	
-	"axayan":{
-	"img": "../../media/exemp_books/a1.png",
-	"bookname":"Giqor" , 
-	"authorname":"Hovhannes Tumanyan"}
-	
+
+
+	"armliter": {
+
+		"tumanyan": {
+			"img": "../media/prof.jpg",
+			"bookname": "Գիքորը",
+			"authorname": "Հովհաննես Թումանյան",
+			"genre": "Հեքիաթ"
+		},
+		"axayan": {
+			"img": "../media/books.jpg",
+			"bookname": "Giqor",
+			"authorname": "Xazaros Axayan"
+		}
+
 	},
 	
 	
