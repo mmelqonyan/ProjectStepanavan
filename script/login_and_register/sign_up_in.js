@@ -8,7 +8,7 @@ signInBtn.onclick = () => {
     deleteBorder(loginInput, passwordInput);
     if (response.code === RESPONSE_CODES.OK) {
         deleteBorder(loginInput, passwordInput);
-        location.replace("../Main/main.html");
+        location.replace("chose_category.html");
         setActiveUser(response.user);
     } else if (response.code === RESPONSE_CODES.INCORRECT_LOGIN) {
         setErrorMessage(loginInput)
