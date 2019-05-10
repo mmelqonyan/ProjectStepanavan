@@ -4,7 +4,8 @@
 <head>
 	<title>Գրադարան</title>
 	<link rel="stylesheet" href="../css/chose_category.css" class="category">
-
+        <link rel="stylesheet" href="../css/banner_footer.css" class="category">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<script src="../script/login_and_register/constants.js" defer></script>
 	<script src="../script/login_and_register/helpers.js" defer></script>
@@ -16,12 +17,25 @@
 </head>
 
 <body>
-	<img src="../media/banner.png" class="banner">
-	<button type="button" value="Sing out" id="sign_out_btn">Sign Out</button>
+
+	   <ul class="ul">
+		<img src="../media/lib.jpg" class="lib">
+  		<li class="li"><a href="#news">Նորություններ</a></li>
+  		<li class="li"><a href="#contact">Միջոցառումներ</a></li>
+  		<li class="li"><a href="#about">Մեր մասին</a></li>
+		<button type="button" value="Sing out" id="sign_out_btn" class="button">Sign Out</button>
 	<div id="user_container">
-		<p id="user_name"> </p>
-	</div>
-	<h1>Բարի գալուստ գրադարան</h1>
+		<p id="user_name"> </p> </div>
+	  </ul>
+
+<ul class="breadcrumb">
+  <li><a href="chose_category.html">Բաժիններ</a></li>
+  <li><a href="chose_author.html">Հեղինակներ</a></li>
+  <li><a href="description_of_single_book.html">Ընտրված գիրքը</a></li>
+  <li style="color: white; font-size: 12px">Վերնագիր</li>
+</ul>
+
+	<h2>Բարի գալուստ գրադարան</h2>
 	<h3> Գտեք Ձեր գիրքը համապատասխան բաժնում</h3>
 
 
@@ -76,13 +90,13 @@
 			</div>
 
 
-			<div class="image" class="container">
+			<div class="image" class="dropup">
 				<img src="../media/colors.jpg" alt="babies" class="category">
-				<div class="dropdown">
+				<div class="dropup">
 					<span>
 						<h4>Մանկական գրականություն</h4>
 					</span>
-					<div class="dropdown-content">
+					<div class="dropup-content">
 						<p onclick="category(this)" id="childbLitAr">Առակներ</p></a>
 						<p onclick="category(this)" id="childbLitBan">Բանաստեղծություններ</p></a>
 						<p onclick="category(this)" id="childbLitHeq">Հեքիաթներ</p></a>
@@ -93,11 +107,11 @@
 
 			<div class="image">
 				<img src="../media/prof.jpg" alt="Professional" class="category">
-				<div class="dropdown">
+				<div class="dropup">
 					<span>
 						<h4>Մասնագիտական գրականություն</h4>
 					</span>
-					<div class="dropdown-content">
+					<div class="dropup-content">
 						<p onclick="category(this)" id="profLitGeo">Աշխարհագրություն</p></a>
 						<p onclick="category(this)" id="profLitArt">Արվեստ</p></a>
 						<p onclick="category(this)" id="profLitCant">Գյուղատնտեսություն</p></a>
@@ -115,11 +129,11 @@
 
 			<div class="image">
 				<img src="../media/enciclop.jpg" alt="Encicloped" class="category">
-				<div class="dropdown">
+				<div class="dropup">
 					<span>
 						<h4>Տեղեկատու գրականություն</h4>
 					</span>
-					<div class="dropdown-content">
+					<div class="dropup-content">
 						<p onclick="category(this)" id="LitTranc">Բառարաններ</p></a>
 						<p onclick="category(this)" id="LitEnci">Հանրագիտարաններ</p></a>
 					</div>
@@ -128,6 +142,11 @@
 		</div>
 	</form>
 
+<div class="footer">
+ <h5>&#169; Մենք, մեր թիմը </h5>
+ <h5>ՀՀ Լոռու մարզ, ք․ Ստեփանավան, փ․ Ս․ Սարգսյան</h5>
+  
+</div>
 
 </body>
 
