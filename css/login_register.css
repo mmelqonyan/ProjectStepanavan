@@ -129,8 +129,10 @@ p {
     height: 200px;
 }
 #top{
+	font-family: cursive;
 	color:white;
 	text-align: center;
-	font-size: 30px;
+	font-size: 40px;
 	margin-top: 20px;
+	padding: 0px;
 }
