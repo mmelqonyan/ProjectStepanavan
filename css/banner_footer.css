@@ -3,12 +3,35 @@
 	height: 50px;
 }
 
+
+
+.search{
+       	margin: 7px;
+	width: 200px;
+	height: 35px;
+	background-color:#eaf9ee;
+	color: #13481E;
+	border: 1px solid #13481E;
+	border-radius:20px;
+}
+
+fa fa-search{
+	width: 35px;
+	height: 35px;
+	background-color:#eaf9ee;
+	color: #13481E;
+	border: 1px solid #13481E;
+	border-radius:20px;
+}
+
+
 .ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color:#A9A9A9;
+  background-color:#eaf9ee;
+  box-shadow: 0px 8px 16px 0px rgba(0,10,0,0.1);
 }
 
 .li {
@@ -17,21 +40,21 @@
 
 .li a {
   display: block;
-  color: white;
+  color:#13481E;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 .li a:hover {
-  background-color:#313131;
+
   border-radius: 5px;
 }
 
 ul.breadcrumb {
   padding: 10px 15px;
   list-style: none;
-  background-color: #313131;
+
 }
 ul.breadcrumb li {
   display: inline;
@@ -39,12 +62,12 @@ ul.breadcrumb li {
 }
 ul.breadcrumb li+li:before {
   padding: 5px;
-  color: white;
+  color: #13481E;
   content: "/\00a0";
 }
 ul.breadcrumb li a {
   font-size: 12px;
-  color: white;
+  color: #13481E
   text-decoration: none;
 }
 ul.breadcrumb li a:hover {
@@ -53,11 +76,13 @@ ul.breadcrumb li a:hover {
 
 .button{
 	float: right;
+	margin-top: 7px;
 	width: 80px;
-	height: 47px;
-	background-color:#A9A9A9;
-	color: white;
-	border-radius:5px;
+	height: 35px;
+	background-color:#eaf9ee;
+	color: #13481E;
+	border: 1px solid #13481E;
+	border-radius:20px;
 }
 #user_container {
 	float:right;
@@ -71,16 +96,18 @@ ul.breadcrumb li a:hover {
 
 
 .button:hover {
-  background-color:#313131;
+  background-color:#13481E;
+  color:#eaf9ee;
 }
 
 
+
 .footer {
-   
+   padding: 5px 0px 5px 0px;
   bottom: 0;
    width: 100%;
-   background-color:#A9A9A9;
-   color: white;
+   background-color:#eaf9ee;
+   color: #13481E;
    text-align: center;
 }
 
