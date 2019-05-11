@@ -3,40 +3,39 @@
 
 <head>
 	<title>Գրադարան</title>
-	<link rel="stylesheet" href="../css/chose_category.css" class="category">
-        <link rel="stylesheet" href="../css/banner_footer.css" class="category">
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+	<link rel="stylesheet" href="../css/chose_category.css" class="category">
+  	<link rel="stylesheet" href="../css/banner_footer.css" class="category">
+	
 	<script src="../script/login_and_register/constants.js" defer></script>
 	<script src="../script/login_and_register/helpers.js" defer></script>
 	<script src="../script/404 eror.js" defer></script>
-
-
 	<script src="../script/chose_category.js" defer></script>
 	<script src="../database.js" defer></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
 </head>
 
 <body>
-
+ <div>
 	   <ul class="ul">
-		<img src="../media/lib.jpg" class="lib">
-  		<li class="li"><a href="chose_category.html">ՍՏԵՓԱՆԱՎԱՆԻ ԿԵՆՏՐՈՆԱԿԱՆ ԳՐԱԴԱՐԱՆ</a></li>
-	<div class="search">	
-    <input type="text" placeholder="Search.." name="search" class="srch" >
-      <button type="submit"><i class="fa fa-search"></i></button></div>
+		    <img src="../media/lib.jpg" class="lib">
+  		  <li class="li"><a href="chose_category.html">ՍՏԵՓԱՆԱՎԱՆԻ ԿԵՆՏՐՈՆԱԿԱՆ ԳՐԱԴԱՐԱՆ</a></li>
+	      <div class="search">	
+        <input type="text" placeholder="Որոնել.." name="search" class="srch" >
+        <button type="submit" class="lupe"> &#128269</button> </div>
 
- 
-		<button type="button" value="Sing out" id="sign_out_btn" class="button">Sign Out</button>
-	<div id="user_container">
-		<p id="user_name"> </p> </div>
+		    <button type="button" value="Sing out" id="sign_out_btn" class="button">Ելք</button>
+	      <div id="user_container">
+		    <p id="user_name"> </p> </div>
 	  </ul>
+</div>
 
 <ul class="breadcrumb">
   <li><a href="chose_category.html">Բաժիններ</a></li>
   <li><a href="chose_author.html">Հեղինակներ</a></li>
   <li><a href="description_of_single_book.html">Ընտրված գիրքը</a></li>
-  <li style="color: white; font-size: 12px">Վերնագիր</li>
+
 </ul>
 
 	<h2>Բարի գալուստ գրադարան</h2>
@@ -44,13 +43,9 @@
 
 
 
-
-
 	<form action="chose_author.html">
 		<input id="category" type="hidden" name="category" value="">
 		<div class="container">
-
-
 
 			<div class="image">
 				<img src="../media/arm.jpg" alt="Armenian" class="category">
@@ -61,8 +56,6 @@
 					</span>
 				</div>
 			</div>
-
-
 
 
 			<div class="image">

@@ -1,25 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<title>Գրադարան</title>
 	<meta charset="UTF-8">
-	<title>Library</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="../css/banner_footer.css" class="category">
 	<link rel="stylesheet" type="text/css" href="../css/chose_author.css">
+
 	<script defer src="../script/chose_author.js"></script>
 	<script src="../database.js" defer></script>
 </head>
+
 <body onload="drawPage()">
+	<div>
+	   <ul class="ul">
+		<img src="../media/lib.jpg" class="lib">
+  		<li class="li"><a href="chose_category.html">ՍՏԵՓԱՆԱՎԱՆԻ ԿԵՆՏՐՈՆԱԿԱՆ ԳՐԱԴԱՐԱՆ</a></li>
 
-	<div class="head">
+	<div class="search">	
+    		<input type="text" placeholder="Որոնել.." name="search" class="srch" >
+      		<button type="submit" class="lupe"> &#128269</button> </div>
+
+		<button type="button" value="Sing out" id="sign_out_btn" class="button">Ելք</button>
+
+		<div id="user_container">
+		<p id="user_name"> </p> </div>
+	  </ul>
+	</div>
+
+
+<ul class="breadcrumb">
+  <li><a href="chose_category.html">Բաժիններ</a></li>
+  <li><a href="chose_author.html">Հեղինակներ</a></li>
+
+</ul>    
        
-        <img src="../media/banner.png" class="banner">
-    </div>
-
-	<span>
+              <span>  
 		<div class="autors" id="authorName">
 		</div>
-	</span>
-	
+	      </span>
 
+ <span>
+		<div class="things">
+			<p>Գրքեր  <br> Շատ կարդացվող գրքեր <br> Չկարդացվող գրքեր </p>
+		</div>
+	</span>
 <form action="description_of_single_book.html" >
 
 	<input id="url_send" type="hidden" name="book" value="" /> 
@@ -27,20 +53,22 @@
 	<div class="bookimgcontainer">
 		
 
-			<p id="authorname">Հեղինակ:
-		</p>
+		<p id="authorname">Հեղինակ:</p>
 
 		<div class="firstreiting images " id="first" >
 			
 
-		</div>
-		
-
-		
+		</div>		
 		
 	</div>
+
 </form>
 
-
+	
+<div class="footer">
+ <p>&#169; Մենք, մեր թիմը </p>
+ <p>ՀՀ Լոռու մարզ, ք․ Ստեփանավան, փ․ Ս․ Սարգսյան</p>
+  
+</div>
 </body>
 </html>
