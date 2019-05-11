@@ -1,3 +1,9 @@
+@media screen and(max-width: 600px){
+	.container{
+		widht: 100%;
+	}
+}
+
 .lib {
 	float:left;
 	height: 50px;
@@ -6,25 +12,34 @@
 
 
 .search{
+	float: right;
        	margin: 7px;
 	width: 200px;
 	height: 35px;
+	padding-left: 5px;
 	background-color:#eaf9ee;
 	color: #13481E;
 	border: 1px solid #13481E;
 	border-radius:20px;
 }
 
-fa fa-search{
+.lupe{
+	border-radius:20px;
 	width: 35px;
 	height: 35px;
 	background-color:#eaf9ee;
 	color: #13481E;
-	border: 1px solid #13481E;
-	border-radius:20px;
+
 }
 
-
+.srch{
+	width: 160px;
+	height: 35px;
+	background-color:#eaf9ee;
+	color: #13481E;
+	border: 0px solid #13481E;
+	border-radius:20px;
+}
 .ul {
   list-style-type: none;
   margin: 0;
@@ -104,11 +119,12 @@ ul.breadcrumb li a:hover {
 
 .footer {
    padding: 5px 0px 5px 0px;
-  bottom: 0;
+   bottom: 0;
    width: 100%;
-   background-color:#eaf9ee;
-   color: #13481E;
+   background-color: #13481E;
+   color:  #eaf9ee;
    text-align: center;
+   margin-bottom: 0px;
 }
 
 
