@@ -10,31 +10,45 @@ function getCategory() {
 
 function drawPage() {
 	let categoryName = getCategory()
-	let parentDiv = document.getElementById("authorName")
-
-
-
-	let paragraf = document.createElement("p")
-	paragraf.innerHTML = book_and_author[categoryName]["tumanyan"]["authorname"]
-	paragraf.classList.add("autorsList")
-	paragraf.onclick = function () {
-		document.getElementById("authorname").innerHTML = book_and_author[categoryName]["tumanyan"]["authorname"]
-		let book = document.createElement("p")
-		book.innerHTML = book_and_author[categoryName]["tumanyan"]["bookname"]
-		book.classList.add("about1")
-		book.onclick = function () {
-			document.getElementById("url_send").value = JSON.stringify(book_and_author[categoryName]["tumanyan"])
-			document.forms[0].submit()
+	let parentDiv = document.getElementById("authorName");
+	
+	for(let i in book_and_author[categoryName]){
+		let paragraf = document.createElement("p");
+		paragraf.innerHTML += book_and_author[categoryName][i]["authorname"]	
+			paragraf.onclick = function(){
+			document.getElementById("first").innerHTML = "";
+			document.getElementById("first").appendChild(book)
+			let img = document.createElement("img")
+			let imgSrc = book_and_author[categoryName][i]["img"]
+			img.setAttribute("src", `${imgSrc}`)
+			document.getElementById("first").appendChild(img)
 
 		}
-		document.getElementById("first").appendChild(book)
+	
+		paragraf.classList.add("autorsList");
+		paragraf.onclick = function () {
+			document.getElementById("authorname").innerHTML = book_and_author[categoryName][i]["authorname"];
+			let book = document.createElement("p");
+			book.innerHTML = book_and_author[categoryName][i]["bookname"];
+			var att = document.createAttribute("class"); 
+			att.value = "about1"; 
+			book.setAttributeNode(att);
+			book.onclick = function () {
+				document.getElementById("url_send").value = JSON.stringify(book_and_author[categoryName][i])
+				document.forms[0].submit()
+
+			}
+			document.getElementById("first").innerHTML = "";
+			document.getElementById("first").appendChild(book)
 		let img = document.createElement("img")
-		let imgSrc = book_and_author[categoryName]["tumanyan"]["img"]
+		let imgSrc = book_and_author[categoryName][i]["img"]
 		img.setAttribute("src", `${imgSrc}`)
 		document.getElementById("first").appendChild(img)
-		paragraf.onclick = function () { }
-	}
+		
+	  }
 	parentDiv.appendChild(paragraf)
+
+	}
 
 }
 

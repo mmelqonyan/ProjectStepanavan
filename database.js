@@ -12,9 +12,10 @@
 			"authorname": "Հովհաննես Թումանյան",
 			"genre": "Հեքիաթ"
 		},
+
 		"axayan": {
 			"img": "../media/books.jpg",
-			"bookname": "Giqor",
+			"bookname": "Զանգի-Զրանգի",
 			"authorname": "Xazaros Axayan"
 		}
 
