@@ -11,10 +11,10 @@ signInBtn.onclick = () => {
         location.replace("chose_category.html");
         setActiveUser(response.user);
     } else if (response.code === RESPONSE_CODES.INCORRECT_LOGIN) {
-        setErrorMessage(loginInput)
+        setErrorMessage(loginInput,"Incorrect Login")
 
     } else if (response.code === RESPONSE_CODES.INCORRECT_PASSWORD) {
-        setErrorMessage(passwordInput)
+        setErrorMessage(passwordInput,"Incorrect Password")
     }
 }
 
