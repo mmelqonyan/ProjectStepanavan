@@ -10,13 +10,15 @@
 body{
 	background:#f4f9f6;
 }
-.about1{
-	height: auto;
-font-size: 50px;
-color: red;
+
+
+.search{
+    float: right;
 }
-
-
+.li{
+    border: 1px solid black;
+    border-radius: 25px;
+}
 .bookimgcontainer {
     
     margin:  auto;
@@ -29,9 +31,9 @@ color: red;
 
 #authorsTitle{
 	background-color: #13481E;
-        color:  #eaf9ee;
-   text-align: center;
-   margin-bottom: 0px;
+    color:  #eaf9ee;
+    text-align: center;
+    margin-bottom: 0px;
 	float: left;
 	width: 200px;
 	height:auto;
@@ -73,24 +75,6 @@ color: red;
     margin-top: 0;
     
 }
-@media only screen and (max-width: 600px) {
-
-   .bookimgcontainer {       
-        display: grid;
-        grid-template-columns: 1fr ;
-        grid-gap: 10px;
-        margin: auto;      
-    }
-
-    #authorname  {
-	float: right;
-       grid-column: 1 / 7;
-       height: auto;
-    }
-    .images{
-        height: 400px;
-    }   
-}
 
 .autors{
 	float: left;
@@ -122,4 +106,23 @@ color: red;
 	padding-left: 5px;
 	padding-right: 5px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0.3,0.5);
+}
+
+@media only screen and (max-width: 600px) {
+
+   .bookimgcontainer {       
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-gap: 10px;
+        margin: auto;      
+    }
+
+    #authorname  {
+       float: right;
+       grid-column: 1 / 7;
+       height: auto;
+    }
+    .images{
+        height: 400px;
+    }   
 }

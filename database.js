@@ -7,6 +7,7 @@
 	"armliter": {
 
 		"tumanyan": {
+
 			"img": "../media/prof.jpg",
 			"bookname": "Գիքորը",
 			"authorname": "Հովհաննես Թումանյան",
@@ -272,3 +273,156 @@
 	
     }
     
+/*
+
+
+var book_and_author =
+{
+"rusLitArm": {
+
+    "pushkin": {
+
+        "shatrvan":{
+
+             "img": "media/pushkin_shatrvan.jpg",
+             "genre":"Պոեմ",
+             "author": "Ալեքսանդր Սերգեյի Պուշկին",
+            "bookname": "Բախչիսարայի Շատրվանը"
+
+        },
+         "dubrovski":{
+             "img": "media/pushkin_dubrovski.jpg",
+             "genre":"Վեպ",
+             "author": "Ալեքսանդր Սերգեյի Պուշկին",
+            "bookname": "Դուբրովսկի"
+        },
+              "onegin":{
+             "img": "media/pushkin_onegin.jpg",
+             "genre":"Չափածո Վեպ",
+             "author": "Ալեքսանդր Սերգեյի Պուշկին",
+            "bookname": "Եվգենի Օնեգին"
+        },
+                "godunov":{
+             "img": "media/pushkin_godunov.jpg",
+             "genre":"Պիես",
+             "author": "Ալեքսանդր Սերգեյի Պուշկին",
+            "bookname": "Բորիս Գոդունով"
+                          },
+                "yntir":{
+             "img": "media/pushkin_yntir.jpg",
+             "genre":[ "Պոեմ", "Հեքիաթ", "Արձակ"],
+             "author": "Ալեքսանդր Սերգեյի Պուշկին",
+            "bookname": "Ընտիր Երկեր",
+                          },
+
+                    
+        },
+    "dostoevskiy": {
+    	
+                  "expayrner":{
+                          "img": "media/dostoevski_exbayrner.jpg",
+                "genre":"Վեպ",
+                "author": "Ֆեոդոր Միխայլովիչ Դոստոևսկի",
+               "bookname": "Կարամազով Եղբայրները"
+                               }
+
+
+                      }
+      "bondaryev": {
+                "yezerq": {
+                          "img": "media/bondaryev_ezerq.jpg",
+                "genre":"Վեպ",
+                "author": "Յուրի Վասիլևիչ Բոնդարև",
+               "bookname": "Եզերք"
+
+
+                           }
+
+
+                   }
+      "nikolay_gogol": {
+                      "yntir": {
+             "img": "media/gogol_yntir.jpg",
+             "genre":"Վեպ",
+             "author": "Նիկոլայ Վասիլևիչ Գոգոլ",
+            "bookname": "Ընտիր Երկեր",
+                                }
+                       }
+
+
+}
+
+function getCategory() {
+
+	let temp = location.search.substring(1).split("&")
+	let category = temp[0].split("=")[1];
+	return category;
+
+
+}
+
+
+function drawPage() {
+	
+	let parentDiv = document.getElementById("authorName");
+	let categoryName = getCategory();
+
+	for(let i in book_and_author[categoryName]){
+
+		let paragraf = document.createElement("p");
+		paragraf.setAttribute('onclick', 'changeAuthors()');
+
+		paragraf.innerHTML = book_and_author[categoryName][i]["authorname"];
+			
+		paragraf.classList.add("autorsList");
+		
+	    parentDiv.appendChild(paragraf)
+
+	}
+
+}
+
+function changeAuthors(){
+
+
+	let categoryName = getCategory();
+
+
+	for(let author in book_and_author[categoryName]){
+		for(let correctBook in book_and_author[categoryName][author]){
+			document.getElementById("authorname").innerHTML = book_and_author[categoryName][author]["authorname"];
+
+			let book = document.createElement("p");
+
+			book.innerHTML = book_and_author[categoryName][author]["bookname"];
+
+		}
+
+	}
+
+	
+	
+
+	
+	document.getElementById("first").innerHTML = "";
+	document.getElementById("first").appendChild(book);
+    let img = document.createElement("img");
+		
+	let imgSrc = book_and_author[categoryName][authorname]["img"];
+	img.setAttribute("src", `${imgSrc}`);
+	document.getElementById("first").appendChild(img);
+
+	book.onclick = function () {
+		document.getElementById("url_send").value = JSON.stringify(book_and_author[categoryName][i]);
+		document.forms[0].submit();
+
+	}	
+	  
+
+}
+
+
+
+
+
+*/
