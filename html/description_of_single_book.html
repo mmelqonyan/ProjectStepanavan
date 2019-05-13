@@ -13,26 +13,32 @@
 
 <body onload="processForm()">
 
-<div>
-	   <ul class="ul">
-		    <img src="../media/lib.jpg" class="lib">
-  		  <li class="li"><a href="chose_category.html">ՍՏԵՓԱՆԱՎԱՆԻ ԿԵՆՏՐՈՆԱԿԱՆ ԳՐԱԴԱՐԱՆ</a></li>
-	      <div class="search">	
-        <input type="text" placeholder="Որոնել.." name="search" class="srch" >
-        <button type="submit" class="lupe"> &#128269</button> </div>
+    <div>
+        <ul class="ul">
+            <img src="../media/lib.jpg" class="lib">
+            <li class="li"><a href="chose_category.html">ՍՏԵՓԱՆԱՎԱՆԻ ԿԵՆՏՐՈՆԱԿԱՆ ԳՐԱԴԱՐԱՆ</a></li>
 
-		    <button type="button" value="Sing out" id="sign_out_btn" class="button">Ելք</button>
-	      <div id="user_container">
-		    <p id="user_name"> </p> </div>
-	  </ul>
-</div>
 
-<ul class="breadcrumb">
-  <li><a href="chose_category.html">Բաժիններ</a></li>
-  <li><a href="chose_author.html">Հեղինակներ</a></li>
-  <li><a>Ընտրված գիրքը</a></li>
+            <div><input type="button" value="Sign out" id="sign_out_btn" class="button" value="Ելք" /></div>
+            <div>
+                <div class="search">
+                    <input type="text" placeholder="Որոնել.." name="search" class="srch">
+                    <input type="submit" class="lupe" value="&#128269" />
+                </div>
 
-</ul>    
+
+                <div id="user_container">
+                    <p id="user_name"> </p>
+                </div>
+        </ul>
+    </div>
+
+    <ul class="breadcrumb">
+        <li><a href="chose_category.html">Բաժիններ</a></li>
+        <li><a href="chose_author.html">Հեղինակներ</a></li>
+        <li><a>Ընտրված գիրքը</a></li>
+
+    </ul>
 
 
     <div class="grid-container">
@@ -73,24 +79,28 @@
                 </span>
             </div>
             <br>
-
+            <div class="description">
+                    <h4>Բովանդակություն</h4>
+                    Համբոն տղային՝ Գիքորին, տանում է քաղաք, որ աշխատի, «մարդ դառնա»՝ հույս ունենալով, որ որդին հնարավորինս կօգնի
+                    ընտանիքին։ Գիքորը սկզբում աշխատում է բազազ Արտեմի տանը, սակայն մի շարք անախորժություններից հետո նրան տանում են
+                    աշխատելու խանութում։ Օտար միջավայրում միայնակ մնացած գյուղացի տղան չի կարողանում անհրաժեշտ պատշաճությամբ կատարել
+                    իր վրա դրված պարտականությունները, ինչի պատճառով բազմիցս պատժվում է։ Նրան տանջում է նաև հայրենի գյուղի ու
+                    ընտանիքի կարոտը։
+                </div>
             <div>
-                <button type="button" class="reserve"> Ամրագրել </button>
+                <input type="button" class="reserve" value="Ամրագրել" />
             </div>
 
         </div>
 
 
     </div>
-    <div class="description">
-        <h4>Բովանդակություն</h4>
-        Համբոն տղային՝ Գիքորին, տանում է քաղաք, որ աշխատի, «մարդ դառնա»՝ հույս ունենալով, որ որդին հնարավորինս կօգնի ընտանիքին։ Գիքորը սկզբում աշխատում է բազազ Արտեմի տանը, սակայն մի շարք անախորժություններից հետո նրան տանում են աշխատելու խանութում։ Օտար միջավայրում միայնակ մնացած գյուղացի տղան չի կարողանում անհրաժեշտ պատշաճությամբ կատարել իր վրա դրված պարտականությունները, ինչի պատճառով բազմիցս պատժվում է։ Նրան տանջում է նաև հայրենի գյուղի ու ընտանիքի կարոտը։
-    </div>
+    
 </body>
 <div class="footer">
- <p>&#169; Մենք, մեր թիմը </p>
- <p>ՀՀ Լոռու մարզ, ք․ Ստեփանավան, փ․ Ս․ Սարգսյան</p>
-  
+    <p>&#169; Մենք, մեր թիմը </p>
+    <p>ՀՀ Լոռու մարզ, ք․ Ստեփանավան, փ․ Ս․ Սարգսյան</p>
+
 </div>
 
 </html>

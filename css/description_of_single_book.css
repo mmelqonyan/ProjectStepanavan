@@ -9,7 +9,7 @@
 
 body{
     background-image: url("../../media/bgimgfordescription.jpg")
-
+    
 }
 
 .banner{
@@ -22,7 +22,7 @@ body{
 
     height: 350px;
     width: 350px;
-    margin-left: 150%; 
+    margin-left: 35%; 
     margin-top: 50px;
 
 }
@@ -33,31 +33,32 @@ body{
 
 .information{
 
-padding-top: 70px;
+padding-top: 18px;
 
-    height: 250px;
+    height: auto;
     width: 400px;
-    margin-left: 250%;
-    margin-top: 50px;
+    margin-left: 130%;
+    font-size: 12px;
     text-align: center;
 }
 
 .grid-container{
     display: grid;
-    grid-template-columns: 200px 200px
+    grid-template-columns: 200px 200px;
+    padding-bottom:120px;
 }
 
 .reserve{
-    border-radius: 10px;
-    width: 70px;
+    border-radius: 5px;
+    width: auto;
     background-color: rgb(135, 233, 135);
+
 }
 
 .description{
     height: auto;
-    margin-left: 23%;
-    margin-right: 23%;
-    text-align: center;
+    margin-right: 5%;
+    text-align: left;
     margin-top: 20px;
 }
 .description h4{
