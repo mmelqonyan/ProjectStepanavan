@@ -21,12 +21,15 @@
 	   <ul class="ul">
 		    <img src="../media/lib.jpg" class="lib">
   		  <li class="li"><a href="chose_category.html">ՍՏԵՓԱՆԱՎԱՆԻ ԿԵՆՏՐՈՆԱԿԱՆ ԳՐԱԴԱՐԱՆ</a></li>
-	      <div class="search">	
-        <input type="text" placeholder="Որոնել.." name="search" class="srch" >
-        <button type="submit" class="lupe"> &#128269</button> </div>
+	      
 
 		    <button type="button" value="Sing out" id="sign_out_btn" class="button">Ելք</button>
-	      <div id="user_container">
+	      
+		  <div class="search">	
+        <input type="text" placeholder="Որոնել.." name="search" class="srch" >
+        <button type="submit" class="lupe"> &#128269</button> </div>
+		  
+		  <div id="user_container">
 		    <p id="user_name"> </p> </div>
 	  </ul>
 </div>
@@ -49,92 +52,97 @@
 
 			<div class="image">
 				<img src="../media/arm.jpg" alt="Armenian" class="category">
-
-				<div class="dropdown" onclick="category(this)" id="armliter">
+				<div class="imageText">
+						<p onclick="category(this)" id="armliter">Հայերեն</p>
+						<p onclick="category(this)" id="armliter">Ռուսերեն</p>	
+				</div>			
 					<span>
 						<h4>Հայ գրականություն</h4>
-					</span>
-				</div>
+					</span>				
 			</div>
 
+			
+			
+			
+			
 
-			<div class="image">
+			<div class="image">				
 				<img src="../media/books.jpg" alt="Russian" class="category">
-				<div class="dropdown">
+				<div class="imageText">
+						<p onclick="category(this)" id="rusLitRus">Ռուսերեն</p>
+						<p onclick="category(this)" id="rusLitArm">Հայերեն</p>										
+				</div>
 					<span>
 						<h4>Ռուս գրականություն</h4>
-					</span>
-					<div class="dropdown-content">
-						<p onclick="category(this)" id="rusLitRus">Ռուսերեն</p></a>
-						<p onclick="category(this)" id="rusLitArm">Հայերեն</p></a>
-					</div>
-				</div>
+					</span>				
 			</div>
 
+			
+			
 			<div class="image">
 				<img src="../media/girl.jpg" alt="Global" class="category">
-				<div class="dropdown">
+			
+				<div class="imageText">
+						<p onclick="category(this)" id="globLitEng">Անգլերեն</p>
+						<p onclick="category(this)" id="globLitFR">Ֆրանսերեն</p>
+						<p onclick="category(this)" id="globLitRus">Ռուսերեն</p>
+						<p onclick="category(this)" id="globLitArm">Հայերեն</p>
+				</div>
+				
 					<span>
 						<h4>Համաշխարհային գրականություն</h4>
 					</span>
-					<div class="dropdown-content">
-						<p onclick="category(this)" id="globLitEng">Անգլերեն</p></a>
-						<p onclick="category(this)" id="globLitFR">Ֆրանսերեն</p></a>
-						<p onclick="category(this)" id="globLitRus">Ռուսերեն</p></a>
-						<p onclick="category(this)" id="globLitArm">Հայերեն</p></a>
-					</div>
-				</div>
+					
 			</div>
 
 
 			<div class="image" class="dropup">
 				<img src="../media/colors.jpg" alt="babies" class="category">
-				<div class="dropup">
+				<div class="imageText">
+						<p onclick="category(this)" id="childbLitAr">Առակներ</p>
+						<p onclick="category(this)" id="childbLitBan">Բանաստեղծություններ</p>
+						<p onclick="category(this)" id="childbLitHeq">Հեքիաթներ</p>
+						<p onclick="category(this)" id="childbLitPatm">Պատմվածքներ</p>
+					</div>
+				
 					<span>
 						<h4>Մանկական գրականություն</h4>
 					</span>
-					<div class="dropup-content">
-						<p onclick="category(this)" id="childbLitAr">Առակներ</p></a>
-						<p onclick="category(this)" id="childbLitBan">Բանաստեղծություններ</p></a>
-						<p onclick="category(this)" id="childbLitHeq">Հեքիաթներ</p></a>
-						<p onclick="category(this)" id="childbLitPatm">Պատմվածքներ</p></a>
-					</div>
-				</div>
+					
 			</div>
 
 			<div class="image">
 				<img src="../media/prof.jpg" alt="Professional" class="category">
-				<div class="dropup">
+				<div class="imageText">
+						<p onclick="category(this)" id="profLitGeo">Աշխարհագրություն</p>
+						<p onclick="category(this)" id="profLitArt">Արվեստ</p>
+						<p onclick="category(this)" id="profLitCant">Գյուղատնտեսություն</p>
+						<p onclick="category(this)" id="profLitBio">Կենսաբանություն</p>
+						<p onclick="category(this)" id="profLitPhsi">Հոգեբանություն</p>
+						<p onclick="category(this)" id="profLitPed">Մանկավարժություն</p>
+						<p onclick="category(this)" id="profLitHis">Պատմություն</p>
+						<p onclick="category(this)" id="profLitTech">Տեխնիկա</p>
+						<p onclick="category(this)" id="profLitEcon">Տնտեսագիտություն</p>
+						<p onclick="category(this)" id="profLitPhil">Փիլիսոփայություն</p>
+						<p onclick="category(this)" id="profLitPhis">Ֆիզիկա</p>
+					</div>
 					<span>
 						<h4>Մասնագիտական գրականություն</h4>
 					</span>
-					<div class="dropup-content">
-						<p onclick="category(this)" id="profLitGeo">Աշխարհագրություն</p></a>
-						<p onclick="category(this)" id="profLitArt">Արվեստ</p></a>
-						<p onclick="category(this)" id="profLitCant">Գյուղատնտեսություն</p></a>
-						<p onclick="category(this)" id="profLitBio">Կենսաբանություն</p></a>
-						<p onclick="category(this)" id="profLitPhsi">Հոգեբանություն</p></a>
-						<p onclick="category(this)" id="profLitPed">Մանկավարժություն</p></a>
-						<p onclick="category(this)" id="profLitHis">Պատմություն</p></a>
-						<p onclick="category(this)" id="profLitTech">Տեխնիկա</p></a>
-						<p onclick="category(this)" id="profLitEcon">Տնտեսագիտություն</p></a>
-						<p onclick="category(this)" id="profLitPhil">Փիլիսոփայություն</p></a>
-						<p onclick="category(this)" id="profLitPhis">Ֆիզիկա</p></a>
-					</div>
-				</div>
+					
 			</div>
 
 			<div class="image">
 				<img src="../media/enciclop.jpg" alt="Encicloped" class="category">
-				<div class="dropup">
+					<div class="imageText">
+						<p onclick="category(this)" id="LitTranc">Բառարաններ</p>
+						<p onclick="category(this)" id="LitEnci">Հանրագիտարաններ</p>
+					</div>
 					<span>
 						<h4>Տեղեկատու գրականություն</h4>
 					</span>
-					<div class="dropup-content">
-						<p onclick="category(this)" id="LitTranc">Բառարաններ</p></a>
-						<p onclick="category(this)" id="LitEnci">Հանրագիտարաններ</p></a>
-					</div>
-				</div>
+					
+				
 			</div>
 		</div>
 	</form>
