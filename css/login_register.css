@@ -13,12 +13,18 @@
 
 /* ---------- GENERAL ---------- */
 
+img {
+  width: 100%;
+  height: auto;
+}
+
+
 body {
-	background-color: rgb(14, 143, 39);
+	background-color: rgb(15, 82, 28);
 	color:#606468;
 	font-family: 'Open Sans', Arial, sans-serif;
 	font-size: 14px;
-	line-height: 1.5em;
+	line-height:2em;
 }
 *{
 	box-sizing: border-box;
