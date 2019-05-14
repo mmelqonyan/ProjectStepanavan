@@ -15,31 +15,47 @@ function drawPage() {
 	for(let i in book_and_author[categoryName]){
 
 		let paragraf = document.createElement("p");
-		paragraf.innerHTML = book_and_author[categoryName][i]["authorname"];
-			
+		if(book_and_author[categoryName][i]["author"]){
+			paragraf.innerHTML = book_and_author[categoryName][i]["author"];
+		}
+		
+
 		paragraf.classList.add("autorsList");
 		paragraf.onclick = function () {
 			
-			document.getElementById("authorname").innerHTML = book_and_author[categoryName][i]["authorname"];
 			
-			
+			document.getElementsByClassName("bookimgcontainer")[0].innerHTML = "";
+			document.getElementsByClassName("bookimgcontainer")[0].innerHTML = "<p id='authorname'>Հեղինակ:</p>";
+			document.getElementById("authorname").innerHTML = book_and_author[categoryName][i]["author"];
+
+
+
 			let img = document.createElement("img");
-			let imgSrc = book_and_author[categoryName][i]["img"];
-			img.setAttribute("src", `${imgSrc}`);
-			let conteinDiv = document.createElement("div");
-			conteinDiv.classList.add("firstreiting","images");
-			
-			conteinDiv.innerHTML = book_and_author[categoryName][i]["bookname"];
+			for(let j in book_and_author[categoryName][i]){
 
-			conteinDiv.appendChild(img);
-			document.getElementsByClassName("bookimgcontainer")[0].appendChild(conteinDiv);
+				var conteinDiv = document.createElement("div");
+				conteinDiv.classList.add("firstreiting","images");
 
-		
-			conteinDiv.onclick = function () {
-				document.getElementById("url_send").value = JSON.stringify(book_and_author[categoryName][i]);
-				document.forms[0].submit();
+				if(book_and_author[categoryName][i][j]["img"]){
+					let imgSrc = "../"+ book_and_author[categoryName][i][j]["img"];
+					img.setAttribute("src", `${imgSrc}`);
+					conteinDiv.appendChild(img);
+					
+				}
+				
 
-			}
+				if(book_and_author[categoryName][i][j]["bookname"]){
+					conteinDiv.innerHTML += book_and_author[categoryName][i][j]["bookname"];
+					document.getElementsByClassName("bookimgcontainer")[0].appendChild(conteinDiv);
+				}
+				
+				
+				conteinDiv.onclick = function () {
+					document.getElementById("url_send").value = JSON.stringify(book_and_author[categoryName][i][j]);
+					document.forms[0].submit();
+
+				}
+			}	
 			
 		}
 		parentDiv.appendChild(paragraf);

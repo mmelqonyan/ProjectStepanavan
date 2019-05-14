@@ -13,17 +13,24 @@
 </head>
 
 <body onload="drawPage()">
+	<!-- <script>
+		window.history.back();
+	</script> -->
 	<div>
 	    <ul class="ul">
 			<img src="../media/lib.jpg" class="lib">
 	  		<li class="li"><a href="chose_category.html">ՍՏԵՓԱՆԱՎԱՆԻ ԿԵՆՏՐՈՆԱԿԱՆ ԳՐԱԴԱՐԱՆ</a></li>
 
+
+
+
+	  		<button type="button" value="Sing out" id="sign_out_btn" class="button">Ելք</button>
 		    <div class="search">	
 	    		<input type="text" placeholder="Որոնել.." name="search" class="srch" >
 	      		<button type="submit" class="lupe"> &#128269</button> 
 	      	</div>
 
-			<button type="button" value="Sing out" id="sign_out_btn" class="button">Ելք</button>
+			
 
 			<div id="user_container">
 			 
@@ -39,36 +46,37 @@
   
 
 </ul>    
-       
-        <span>  
-			<div class="autors images" id="authorName">
+    <div id="generalDiv">  
+		          
+		<div class="autors images" id="authorName"></div>
+			    
 
-			</div>
-	    </span>
+		    
+		<form action="description_of_single_book.html" >
 
- <span>
-		<div class="things">
-			<p>Գրքեր  <br> Շատ կարդացվող գրքեր <br> Չկարդացվող գրքեր </p>
-		</div>
-	</span>
-<form action="description_of_single_book.html" >
+			<input id="url_send" type="hidden" name="book" value="" /> 
+				
+				<div class="bookimgcontainer">
+					
 
-	<input id="url_send" type="hidden" name="book" value="" /> 
-		
-	<div class="bookimgcontainer">
-		
+					<p id="authorname">Հեղինակ:</p>
 
-		<p id="authorname">Հեղինակ:</p>
-
-		
+					
+				</div>		
+				
 			
 
-		</div>		
+		</form>
+
 		
+		<div class="things">
+					<p>Գրքեր  <br> Շատ կարդացվող գրքեր <br> Չկարդացվող գրքեր </p>
+		</div>
+		
+
+
+
 	</div>
-
-</form>
-
 	
 
 </body>
