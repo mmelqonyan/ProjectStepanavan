@@ -1,8 +1,12 @@
 {
   "rus": {
+
     "hay": {
+
       "pushkin": {
+
         "author": "Ալեքսանդր Սերգեյի Պուշկին",
+
         "shatrvan": {
           "img": "../media/pushkin_shatrvan.jpg",
           "genre": "Պոեմ",
@@ -67,7 +71,9 @@
       }
     }
   },
+  
   "mankakan": {
+
     "heqiatner": {
       "tumanyan": {
         "author": "Հովհաննես Թումանյան",

@@ -1,16 +1,10 @@
 
-
-
-
-
 function category(el){
 
+	document.getElementById("category").value = el.parentNode.id+"-"+ el.id;
 
-document.getElementById("category").value = el.id;
 
-
-	
-document.forms[0].submit()
+	document.forms[0].submit()
 
 
 
