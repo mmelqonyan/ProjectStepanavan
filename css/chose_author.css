@@ -10,12 +10,6 @@
 body{
 	background:#f4f9f6;
 }
-.about1{
-	height: auto;
-font-size: 50px;
-color: red;
-}
-
 
 .bookimgcontainer {
     
@@ -24,14 +18,14 @@ color: red;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 10px;
     padding: 10px;
-    background-color: #f4f9f6;
+    background-color: red;
 }
 
 #authorsTitle{
 	background-color: #13481E;
-        color:  #eaf9ee;
-   text-align: center;
-   margin-bottom: 0px;
+    color:  #eaf9ee;
+    text-align: center;
+    margin-bottom: 0px;
 	float: left;
 	width: 200px;
 	height:auto;
@@ -53,6 +47,13 @@ color: red;
     height: 180px;
     cursor:pointer;
 }
+
+#generalDiv{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr ;
+}
+
 .images > img{
 
     background-repeat: no-repeat;
@@ -73,29 +74,10 @@ color: red;
     margin-top: 0;
     
 }
-@media only screen and (max-width: 600px) {
-
-   .bookimgcontainer {       
-        display: grid;
-        grid-template-columns: 1fr ;
-        grid-gap: 10px;
-        margin: auto;      
-    }
-
-    #authorname  {
-	float: right;
-       grid-column: 1 / 7;
-       height: auto;
-    }
-    .images{
-        height: 400px;
-    }   
-}
 
 .autors{
-	float: left;
-	width: 200px;
-	height:auto;
+	
+	
 	padding-left: 5px;
 	padding-right: 5px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0.3,0.5);
@@ -115,11 +97,44 @@ color: red;
 }
 
 .things{
-	float: right;
-	width: 200px;
+	
 	height:auto;
 	color: #13481E;
 	padding-left: 5px;
 	padding-right: 5px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0.3,0.5);
+}
+.footer{
+    margin-top: 350px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #generalDiv{
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+
+
+   .bookimgcontainer {       
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-gap: 10px;
+        margin: auto;      
+    }
+
+    #authorname  {
+       float: right;
+       grid-column: 1 / 2;
+       height: auto;
+    }
+    .ul{
+        float: center;
+    }
+    .images{
+        height: 400px;
+    }   
+    .footer{
+        margin-top: 50px;
+    }
 }
