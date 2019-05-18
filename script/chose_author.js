@@ -9,11 +9,11 @@ function getCategory() {
 
 function drawPage() {
 
-	let categoryName = getCategory().split("-")[0];
-	let categoryChildName = getCategory().split("-")[1];
+	let [categoryName,categoryChildName] = getCategory().split("-");
 
 	let parentDiv = document.getElementById("authorName");
-	
+
+
 	for(let i in book_and_author[categoryName][categoryChildName]){
 
 		
@@ -22,37 +22,39 @@ function drawPage() {
 			paragraf.innerHTML = book_and_author[categoryName][categoryChildName][i]["author"];
 
 		}
-		
-
+		//console.log(book_and_author[categoryName][categoryChildName][i])
 		paragraf.classList.add("autorsList");
+
 		paragraf.onclick = function () {
 			
 			let authorTitle = document.createElement("p");
-			authorTitle.setAttribute("id", "authorname");
-			authorTitle.setAttribute("value", "Հեղինակ");
+			authorTitle.id = "authorname";
+			authorTitle.value = "Հեղինակ";
 			document.getElementsByClassName("bookimgcontainer")[0].innerHTML = "";
 			document.getElementsByClassName("bookimgcontainer")[0].appendChild(authorTitle);
 
+
 			if(book_and_author[categoryName][categoryChildName][i]["author"]){
-				document.getElementById("authorname").innerHTML = `${book_and_author[categoryName][categoryChildName]["categoria"]}`+"<br>"+book_and_author[categoryName][categoryChildName][i]["author"];
+				document.getElementById("authorname").innerHTML = book_and_author[categoryName][categoryChildName][i]["author"];
 
 			}
-			
-			let img = document.createElement("img");
+				
 			for(let j in book_and_author[categoryName][categoryChildName][i]){
-				console.log(book_and_author[categoryName][categoryChildName]["author"]);
+				
 				var conteinDiv = document.createElement("div");
-				conteinDiv.classList.add("firstreiting","images");
+				conteinDiv.classList.add("images");
 
 				if(book_and_author[categoryName][categoryChildName][i][j]["img"]){
-					let imgSrc = book_and_author[categoryName][categoryChildName][i][j]["img"];
-					img.setAttribute("src", `${imgSrc}`);
+					let img = document.createElement("img");
+					img.src = book_and_author[categoryName][categoryChildName][i][j]["img"];
 					conteinDiv.appendChild(img);
 					
 				}
 
 				if(book_and_author[categoryName][categoryChildName][i][j]["bookname"]){
-					conteinDiv.innerHTML += book_and_author[categoryName][categoryChildName][i][j]["bookname"];
+					let bookP = document.createElement("p");
+					bookP.appendChild(document.createTextNode(`${book_and_author[categoryName][categoryChildName][i][j]["bookname"]}`));
+					conteinDiv.appendChild(bookP);
 					document.getElementsByClassName("bookimgcontainer")[0].appendChild(conteinDiv);
 				}
 				

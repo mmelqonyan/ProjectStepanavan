@@ -11,7 +11,7 @@
     <script src="../script/description_of_single_book.js" defer></script>
 </head>
 
-<body onload="processForm()">
+<body onload="processForm()" >
 
     <div>
         <ul class="ul">
@@ -34,9 +34,9 @@
     </div>
 
     <ul class="breadcrumb">
-        <li><a href="chose_category.html">Բաժիններ</a></li>
-        <li><a href="chose_author.html">Հեղինակներ</a></li>
-        <li><a>Ընտրված գիրքը</a></li>
+        
+        <li onclick="HandleBackFunctionality()"><a >Հեղինակներ</a></li>
+       
 
     </ul>
 
@@ -57,9 +57,12 @@
             <br>
 
             <div>
-                <span>Հեղինակ:
-                    <span id="book_author">Someone</span>
-                </span>
+               
+
+                    <span>Հեղինակ:
+                        <span id="book_author">Someone</span>
+                    </span>
+        
             </div>
             <br>
 

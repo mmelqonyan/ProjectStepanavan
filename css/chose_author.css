@@ -15,7 +15,7 @@ body{
     
     margin:  auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 10px;
     padding: 10px;
     background-color:#e4f9ee;
@@ -35,7 +35,7 @@ body{
 
 #authorname{
     grid-row: 1 / 2 ;
-    grid-column: 1 / 8;
+    grid-column: 1 / 7;
     text-align: center;
     height: 90px;
     color: black;
@@ -43,35 +43,38 @@ body{
     font-size: 30px;
 
 }
-#authorName{
-    height: auto;
-}
-.images {
-    height: 180px;
-    cursor:pointer;
-}
-
 #generalDiv{
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 4fr 1fr ;
+    grid-gap: 10px;
+
+}
+
+#authorName{
+    height: auto;
+}
+.images {
+    height: auto;
+    cursor:pointer;
 }
 
 .images > img{
-
+    
     background-repeat: no-repeat;
     margin: 0; 
-    height: 79%;    
+    height: 140px;    
     width:100%;
 }
 .images > p{
+    width: 100%;
     font-size: 14px;
     margin:0;
-    height: 20%;    
+    height: auto;    
     text-align: center;
-    
     color: black;
-    border:1px solid #ffffb3;   
+    border:1px solid #ffffb3; 
+    word-wrap: break-word;  
 }
 .bookimgcontainer > p{
     margin-top: 0;
@@ -136,9 +139,7 @@ body{
         margin-top: 20px;
         margin-bottom: 20px;
     }
-    .images{
-        height: 400px;
-    }   
+      
     .footer{
         margin-top: 50px;
     }

@@ -1,4 +1,111 @@
 {
+  "texekatu": {
+
+    "hanragitaranner": {
+
+
+        "hanragitaran":{
+              "author": "Վիկտոր Համբարձումյան",
+
+              "hanragitaran1": {
+
+                "img": "../media/hanragitaran.jpg",
+                "genre": "Հանրագիտարան",
+                "authorname": "Վիկտոր Համբարձումյան",
+                "bookname": "Հայկական Սովետական Հանրագիտարան Հատոր 1֊ին Ա-ԱՐԳԻՆԱ "
+              },
+              "հanragitaran2": {
+                "img": "../media/hanragitaran.jpg",
+                "genre": "Հանրագիտարան",
+                "authorname": "Վիկտոր Համբարձումյան",
+                "bookname": "Հայկական Սովետական Հանրագիտարան Հատոր 2֊րդ ԱՐԳԻՇՏԻ-ԳԵՂԵՐՎԱՆ "
+              },
+              "hanragitaran3": {
+                "img": "../media/hanragitaran.jpg",
+                "genre": "Հանրագիտարան",
+                "authorname": "Վիկտոր Համբարձումյան",
+                "bookname": "Հայկական Սովետական Հանրագիտարան Հատոր 3֊րդ ԳԵՂԵՑԻԿԸ-ԶՈՒՐԱԲՅԱՆ "
+              },
+              "hanragitaran4": {
+                "img": "../media/hanragitaran.jpg",
+                "genre": "Հանրագիտարան",
+                "authorname": "Վիկտոր Համբարձումյան",
+                "bookname": "Հայկական Սովետական Հանրագիտարան Հատոր 4֊րդ Է-ԽԱՂԽԱՂ"
+              },
+              "hanragitaran5": {
+                "img": "../media/hanragitaran.jpg",
+                "genre": "Հանրագիտարան",
+                "authorname": "Վիկտոր Համբարձումյան",
+                "bookname": "Հայկական Սովետական Հանրագիտարան Հատոր 5֊րդ ԽԱՂՈՂ-ԿՈՒԼԻՍՆԵՐ"
+              },
+              "hanragitaran6": {
+                "img": "../media/hanragitaran.jpg",
+                "genre": "Հանրագիտարան",
+                "authorname": "Վիկտոր Համբարձումյան",
+                "bookname": "Հայկական Սովետական Հանրագիտարան Հատոր 6֊րդ ԿՈՒԼՁՈՐ-ՁՈՒԼՈՒԿ"
+              },
+              "hanragitaran7": {
+                "img": "../media/hanragitaran.jpg",
+                "genre": "Հանրագիտարան",
+                "authorname": "Վիկտոր Համբարձումյան",
+                "bookname": "Հայկական Սովետական Հանրագիտարան Հատոր 7֊րդ ՁՈՒԼՈՒՄ-ՄՈՆՈՊԽՈՆՔ"
+              },
+              "hanragitaran8": {
+                "img": "../media/hanragitaran.jpg",
+                "genre": "Հանրագիտարան",
+                "authorname": "Վիկտոր Համբարձումյան",
+                "bookname": "Հայկական Սովետական Հանրագիտարան Հատոր 8֊րդ ՄՈՆՈՊՈԼԻԱ-ՉԵՉԵՐԵԿ "
+              },
+              "hanragitaran9": {
+                "img": "../media/hanragitaran.jpg",
+                "genre": "Հանրագիտարան",
+                "authorname": "Վիկտոր Համբարձումյան",
+                "bookname": "Հայկական Սովետական Հանրագիտարան Հատոր 9֊րդ ՉԵՉՔԱՐ-ՌՍՏԱԿԵՍ "
+              },
+              "hanragitaran10": {
+                "img": "../media/hanragitaran.jpg",
+                "genre": "Հանրագիտարան",
+                "authorname": "Վիկտոր Համբարձումյան",
+                "bookname": "Հայկական Սովետական Հանրագիտարան Հատոր 10֊րդ ՌՍՏԱՄ-ՍՍՀՄ "
+              },
+              "hanragitaran11": {
+                "img": "../media/hanragitaran.jpg",
+                "genre": "Հանրագիտարան",
+                "authorname": "Վիկտոր Համբարձումյան",
+                "bookname": "Հայկական Սովետական Հանրագիտարան Հատոր 11֊րդ ՍՈՎԵՏԱԿԱՆ-ՏԻԵԶԵՐՔ"
+              },
+              "hanragitaran12": {
+                "img": "../media/hanragitaran.jpg",
+                "genre": "Հանրագիտարան",
+                "authorname": "Վիկտոր Համբարձումյան",
+                "bookname": "Հայկական Սովետական Հանրագիտարան Հատոր 12֊րդ ՏԻԵՊՈԼՈ-ՖՈՒՔՍԻՆ"
+              },
+              "hanragitaran_yndhanur": {
+                "img": "../media/hanragitaran.jpg",
+                "genre": "Հանրագիտարան",
+                "authorname": "Վիկտոր Համբարձումյան",
+                "bookname": "Հայկական Սովետական Հանրագիտարան Հատոր 12֊րդ ՍՈՎԵՏԱԿԱՆ ՀԱՅԱՍՏԱՆ "
+              }
+            }
+        },
+    "bararanner": {
+
+      "xudavshyan1": {
+
+        "img": "../media/xudavshyan_bararan.jpg",
+        "genre": "Բառարան",
+        "authorname": "Ալեքսանդր Խուդավշյան",
+        "bookname": "Բառարան Ա֊Կ"
+      },
+      "xudavshyan2": {
+        "img": "../media/xudavshyan_bararan.jpg",
+        "genre": "Բառարան",
+        "authorname": "Ալեքսանդր Խուդավշյան",
+        "bookname": "Բառարան Հ֊Ֆ"
+      }
+    }
+  },
+
   "rus": {
 
     "hay": {
@@ -6,15 +113,14 @@
       "pushkin": {
 
         "author": "Ալեքսանդր Սերգեյի Պուշկին",
-
         "shatrvan": {
-          "img": "../media/pushkin_shatrvan.jpg",
+          "img": "../media/arm.jpg",
           "genre": "Պոեմ",
           "authorname": "Ալեքսանդր Սերգեյի Պուշկին",
           "bookname": "Բախչիսարայի Շատրվանը"
         },
         "dubrovski": {
-          "img": "../media/pushkin_dubrovski.jpg",
+          "img": "../media/lib.jpg",
           "genre": "Վեպ",
           "authorname": "Ալեքսանդր Սերգեյի Պուշկին",
           "bookname": "Դուբրովսկի"
@@ -43,6 +149,7 @@
         }
       },
       "dostoevskiy": {
+
         "autor": "Ֆեոդոր Միխայլովիչ Դոստոևսկի",
         "expayrner": {
           "img": "../media/dostoevski_exbayrner.jpg",
@@ -71,12 +178,15 @@
       }
     }
   },
-  
+
   "mankakan": {
 
     "heqiatner": {
+
       "tumanyan": {
+
         "author": "Հովհաննես Թումանյան",
+
         "moxroty": {
           "img": "../media/tumanyan_moxroty.jpg",
           "genre": "Հեքիաթ",
@@ -159,15 +269,96 @@
           "authorname": "Joseph Conrad",
           "bookname": "Lord Jim"
         }
+      },
+      "carroll": {
+        "author": "Lewis Carroll",
+        "alice": {
+          "img": "../media/carroll_wonderland.jpg",
+          "genre": "Վեպ",
+          "authorname": "Lewis Carroll",
+          "bookname": "Alice in Wonderland"
+        }
+      },
+      "stevenson": {
+        "author": "Robert Stevenson",
+        "treasure": {
+          "img": "../media/treasure_stevenson.jpg",
+          "genre": "Վեպ",
+          "authorname": "Robert Stevenson",
+          "bookname": "Treasure Island"
+        }
       }
+    }
+  },
+  "armliter": {
+    "arm": {
+      "shiraz": {
+        "author": "Հովհաննես Շիրազ",
+        "siamanto": {
+          "img": "../media/shiraz_siramanto.jpg",
+          "genre": "Գեղարվեստական",
+          "authorname": "Հովհաննես Շիրազ",
+          "bookname": "Սիամանթո և Խջեզարե"
+        },
+        "yotnapatum": {
+          "img": "../media/shiraz_yotnapatum.jpg",
+          "genre": "Գեղարվեստական",
+          "authorname": "Հովհաննես Շիրազ",
+          "bookname": "Յոթնապատում"
+        },
+        "yerker": {
+          "img": "../media/shiraz_erker2.jpg",
+          "genre": "Պոեմներ",
+          "authorname": "Հովհաննես Շիրազ",
+          "bookname": "Երկեր֊Հատոր Երկրորդ"
+        },
+        "xaxaxutyun": {
+          "img": "../media/shiraz_xaxaxutyun.jpg",
+          "genre": "Պոեմներ",
+          "authorname": "Հովհաննես Շիրազ",
+          "bookname": "Խաղաղոիթյուն Ամենեցուն"
+        },
+        "yntrani": {
+          "img": "../media/shiraz_yntrani.jpg",
+          "genre": "Պոեմներ",
+          "authorname": "Հովհաննես Շիրազ",
+          "bookname": "Ընտրանի"
+        },
+        "danteakan": {
+          "img": "../media/shiraz_danteakany.jpg",
+          "genre": "Պոեմներ",
+          "authorname": "Հովհաննես Շիրազ",
+          "bookname": "Հայոց Դանթեականաը"
+        }
+      },
+      "teryan": {
+        "author": "Վահան Տերյան",
+        "erker": {
+          "img": "../media/teryan_erker.jpg",
+          "genre": "Բանաստեղծություններ",
+          "authorname": "Վահան Տերյան",
+          "bookname": "Երկեր"
+        },
+        "namakner": {
+          "img": "../media/teryan_namakner.jpg",
+          "genre": "Վեպ",
+          "authorname": "Վահան Տերյան",
+          "bookname": "Նամակներ"
+        },
+        "banastexcutyunner": {
+          "img": "../media/teryan_banastexc.jpg",
+          "genre": "Բնաստեղծություններ",
+          "authorname": "Վահան Տերյան",
+          "bookname": "Բանաստեղծություններ"
+        },
+        "banastexcutyunner1": {
+          "img": "../media/teryan_banastexc1.jpg",
+          "genre": "Բնաստեղծություններ",
+          "authorname": "Վահան Տերյան",
+          "bookname": "Բանաստեղծություններ"
+        }
+      },
+      "rus": {}
     }
   }
 }
-
-
-
-
-
-
-
-

@@ -11,7 +11,9 @@ body{
     background-image: url("../../media/bgimgfordescription.jpg")
     
 }
-
+.breadcrumb > li {
+    cursor: pointer;
+}
 .banner{
     display: grid;
     min-width: 100%;
