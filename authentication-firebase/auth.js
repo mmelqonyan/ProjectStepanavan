@@ -16,6 +16,7 @@
     const regTxtPassword = document.getElementById('regTxtPassword');
     const btnLogin = document.getElementById('btnLogin');
     const btnSignUp = document.getElementById('btnSignUp');
+    const errorMsg = document.getElementById('error_message');
     
 
     btnLogin.addEventListener('click', e => {
@@ -26,7 +27,7 @@
         const promise = auth.signInWithEmailAndPassword(email, pass);
         promise
         .then(e => location.replace("html/chose_category.html"))
-        .catch(e => console.log(e.message));
+        .catch(e => errorMsg.innerText = e.message);
 
 
     });
@@ -36,9 +37,10 @@
         const auth = firebase.auth();
 
         const promise = auth.createUserWithEmailAndPassword(email, pass);
+        errorMsg.innerText = "";
         promise
-            .then(e => showLoginScreen())
-            .catch(e => console.log(e.message));
+            .then(e =>  showLoginScreen())
+            .catch(e => errorMsg.innerText = e.message);
 
     });
 

@@ -18,6 +18,11 @@ img {
   height: auto;
 }
 
+.errorContainer{
+	text-align: center;
+	color: red;
+	font-style: italic;
+}
 
 body {
 	background-color:  #13481E;
