@@ -8,12 +8,13 @@
 	<link rel="stylesheet" href="../css/chose_category.css" class="category">
   	<link rel="stylesheet" href="../css/banner_footer.css" class="category">
 	
-	<script src="../script/login_and_register/constants.js" defer></script>
-	<script src="../script/login_and_register/helpers.js" defer></script>
-	<script src="../script/404 eror.js" defer></script>
 	<script src="../script/chose_category.js" defer></script>
 	<script src="../database.js" defer></script>
-  
+	<!--Firebase-->
+	<script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+    
+	<!---------------------------------------------------------------->
 </head>
 
 <body>
@@ -24,7 +25,7 @@
   		  <a href="chose_category.html" class="linkHeader">ՍՏԵՓԱՆԱՎԱՆԻ ԿԵՆՏՐՈՆԱԿԱՆ ԳՐԱԴԱՐԱՆ</a>
 	      
 
-		    <button type="button" value="Sing out" id="sign_out_btn" class="button">Ելք</button>
+		    <input type="button" value="Ելք" id="btnLogout" class="button"/>
 	      
 		  <div class="search">	
         <input type="text" placeholder="Որոնել.." name="search" class="srch" >
