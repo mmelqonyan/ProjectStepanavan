@@ -70,13 +70,9 @@ body{
     width: 100%;
     font-size: 14px;
     margin:0;
-<<<<<<< HEAD
     height: auto;    
     text-align: center;
-=======
-    height: 20%;    
-    text-align: center;    
->>>>>>> 0eac043d1792c0fa39c2f6c38f5027b1269c45b3
+
     color: black;
     border:1px solid #ffffb3; 
     word-wrap: break-word;  
