@@ -38,7 +38,7 @@ body{
     grid-column: 1 / 8;
     text-align: center;
     height: 90px;
-    color: black;
+    color: #13481E;
     padding-left: 10px;
     font-size: 30px;
 
@@ -68,8 +68,7 @@ body{
     font-size: 14px;
     margin:0;
     height: 20%;    
-    text-align: center;
-    
+    text-align: center;    
     color: black;
     border:1px solid #ffffb3;   
 }
@@ -78,15 +77,13 @@ body{
     
 }
 
-.autors{
-	
-	
+.autors{	
 	padding-left: 5px;
 	padding-right: 5px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0.3,0.5);
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0.3,0.5);
 }
 .autorsList{
-    border:1px solid;
+        border:1px solid;
 	font-size:18px;
 	color:  #13481E;
 	cursor: pointer;
