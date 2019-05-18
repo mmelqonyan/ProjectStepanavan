@@ -13,26 +13,25 @@
 
 <body onload="processForm()" >
 
-    <div>
-        <ul class="ul">
-            <img src="../media/lib.jpg" class="lib">
-            <li class="li"><a href="chose_category.html">ՍՏԵՓԱՆԱՎԱՆԻ ԿԵՆՏՐՈՆԱԿԱՆ ԳՐԱԴԱՐԱՆ</a></li>
+    <header>
+ <div>	 
+		    <img src="../media/lib.jpg" class="lib">
+  		  <a href="chose_category.html" class="linkHeader">ՍՏԵՓԱՆԱՎԱՆԻ ԿԵՆՏՐՈՆԱԿԱՆ ԳՐԱԴԱՐԱՆ</a>
+	      
 
+		    <button type="button" value="Sing out" id="sign_out_btn" class="button">Ելք</button>
+	      
+		  <div class="search">	
+        <input type="text" placeholder="Որոնել.." name="search" class="srch" >
+        <button type="submit" class="lupe"> &#128269</button> </div>
+		  
+		  <div id="user_container">
+		    <p id="user_name"> </p> </div>
+	
+</div>
+</header>
 
-            <div><input type="button" value="Sign out" id="sign_out_btn" class="button" value="Ելք" /></div>
-            <div>
-                <div class="search">
-                    <input type="text" placeholder="Որոնել.." name="search" class="srch">
-                    <input type="submit" class="lupe" value="&#128269" />
-                </div>
-
-
-                <div id="user_container">
-                    <p id="user_name"> </p>
-                </div>
-        </ul>
-    </div>
-
+<div class="titlePage">
     <ul class="breadcrumb">
         
         <li onclick="HandleBackFunctionality()"><a >Հեղինակներ</a></li>
@@ -115,12 +114,14 @@
 
 
     </div>
-    
-</body>
-<div class="footer">
-    <p>&#169; Մենք, մեր թիմը </p>
-    <p>ՀՀ Լոռու մարզ, ք․ Ստեփանավան, փ․ Ս․ Սարգսյան</p>
-
 </div>
+ <footer>
+<div>
+ <h5>&#169; Մենք, մեր թիմը </h5>
+ <h5>ՀՀ Լոռու մարզ, ք․ Ստեփանավան, փ․ Ս․ Սարգսյան</h5>
+  
+</div>
+</footer>   
+</body>
 
 </html>

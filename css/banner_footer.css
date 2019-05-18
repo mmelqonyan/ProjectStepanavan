@@ -4,12 +4,36 @@
 	}
 }
 
+header{
+  position: fixed;
+  top: 0;
+  display: block;
+  color:#13481E;
+  text-decoration: none;
+  width: 100%;
+
+  overflow: hidden;
+  background-color:#eaf9ee;
+  box-shadow: 0px 8px 16px 0px rgba(0,10,0,0.1);
+}
+
 .lib {
 	float:left;
 	height: 50px;
 }
 
+.linkHeader {
+  display: block;
+  color:#13481E;
+  padding: 14px 16px;
+  text-decoration: none;
+	  float: left;
+}
 
+.titlePage{
+margin-top: 50px;
+margin-bottom: 50px;
+}
 
 .search{
 	float: right;
@@ -39,31 +63,10 @@
 	border: 0px solid #13481E;
 	border-radius:20px;
 }
-.ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color:#eaf9ee;
-  box-shadow: 0px 8px 16px 0px rgba(0,10,0,0.1);
-}
 
-.li {
-  float: left;
-}
 
-.li a {
-  display: block;
-  color:#13481E;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
 
-.li a:hover {
 
-  border-radius: 5px;
-}
 
 ul.breadcrumb {
   padding: 10px 15px;
@@ -114,15 +117,14 @@ ul.breadcrumb li a:hover {
 }
 
 
-.footer {
-   padding: 5px 0px 5px 0px;
-   bottom: 0;
-   width: 100%;
+footer { 
+  display: block;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 5px 0px 5px 0px;   
    background-color: #13481E;
    color:  #eaf9ee;
    text-align: center;
-   margin-bottom: 0px;
 }
-
-
 
