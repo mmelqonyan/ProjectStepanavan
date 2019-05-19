@@ -10,7 +10,15 @@
 body{
 	background:#f4f9f6;
 }
+#header{
+  color:#13481E;
+  text-decoration: none;
+  width: 100%;
 
+  overflow: hidden;
+  background-color:#eaf9ee;
+  box-shadow: 0px 8px 16px 0px rgba(0,10,0,0.1);
+}
 .bookimgcontainer {
     
     margin:  auto;
@@ -18,7 +26,7 @@ body{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 10px;
     padding: 10px;
-    background-color:#e4f9ee;
+   
 }
 
 #authorsTitle{
@@ -44,6 +52,7 @@ body{
 
 }
 #generalDiv{
+    margin:0px;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 4fr 1fr ;
@@ -58,7 +67,12 @@ body{
     height: auto;
     cursor:pointer;
 }
-
+form{
+    background-image: url(../media/formBack.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  
+}
 .images > img{
     
     background-repeat: no-repeat;
@@ -68,7 +82,7 @@ body{
 }
 .images > p{
     width: 100%;
-    font-size: 14px;
+    font-size: 16px;
     margin:0;
     height: auto;    
     text-align: center;
@@ -84,22 +98,26 @@ body{
 }
 
 .autors{	
+    margin-top: 15px;
 	padding-left: 5px;
 	padding-right: 5px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0.3,0.5);
 }
 .autorsList{
-    border:1px solid;
-	font-size:18px;
+    
+	font-size:13px;
 	color:  #13481E;
 	cursor: pointer;
-	padding: 2px 2px 2px 2px;
+	padding: 5px ;
+   
+    background-color: #eaf9ea ;
 }
 
 .autorsList:hover{
-	background-color: #eaf9ee ;
+    font-size:15px;
+	background-color: #eaf9de ;
 	border-radius: 5px; 
-	color: #13481E;
+	color: #83484E;
 	cursor: pointer;
 }
 
@@ -109,9 +127,33 @@ body{
 	color: #13481E;
 	padding-left: 5px;
 	padding-right: 5px;
+    margin-top: 15px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0.3,0.5);
 }
-
+#moreReadfewRead{
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-gap: 5px;
+}
+#moreReadAndfewRead{
+   
+    grid-row: 1 / 2;
+    height: auto;
+    font-size:15px;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-align: center;
+}
+#moreReadAndfewReadimg{
+    width: 100%;
+    height: 100px;
+}
+#moreReadfewRead > div > p {
+     font-size:12px;
+}
+#moreReadfewRead > div {
+    cursor: pointer;
+}
 
 @media only screen and (max-width: 600px) {
 
@@ -134,8 +176,8 @@ body{
        height: auto;
     }
     #authorName{
-        margin-top: 20px;
-        margin-bottom: 20px;
+        grid-row: 1 / 2;
+        grid-column: 1 / 2; 
     }
       
 }

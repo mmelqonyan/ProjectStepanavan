@@ -14,23 +14,25 @@
 
 <body onload="drawPage()">
 	
-<header>
- <div>	 
+
+    <div id="header">	 
 		    <img src="../media/lib.jpg" class="lib">
-  		  <a href="chose_category.html" class="linkHeader">ՍՏԵՓԱՆԱՎԱՆԻ ԿԵՆՏՐՈՆԱԿԱՆ ԳՐԱԴԱՐԱՆ</a>
+  		    <a href="chose_category.html" class="linkHeader">ՍՏԵՓԱՆԱՎԱՆԻ ԿԵՆՏՐՈՆԱԿԱՆ ԳՐԱԴԱՐԱՆ</a>
 	      
 
 		    <button type="button" value="Sing out" id="sign_out_btn" class="button">Ելք</button>
 	      
-		  <div class="search">	
-        <input type="text" placeholder="Որոնել.." name="search" class="srch" >
-        <button type="submit" class="lupe"> &#128269</button> </div>
+		    <div class="search">	
+		        <input type="text" placeholder="Որոնել.." name="search" class="srch" >
+		        <button type="submit" class="lupe"> &#128269</button> 
+            </div>
 		  
-		  <div id="user_container">
-		    <p id="user_name"> </p> </div>
+		    <div id="user_container">
+		        <p id="user_name"> </p>
+		    </div>
 	
-</div>
-</header>
+    </div>
+
 	
   
     <div id="generalDiv" class="titlePage">  
@@ -57,18 +59,43 @@
 
 		
 		<div class="things">
-					<p>Գրքեր  <br> Շատ կարդացվող գրքեր <br> Չկարդացվող գրքեր </p>
+
+			<div id="moreReadfewRead">
+				<p id="moreReadAndfewRead">Շատ կարդացվող գրքեր</p>
+				<div><p>Nostromo</p>
+					<img id="moreReadAndfewReadimg" src="../media/prof.jpg">
+				</div>
+				<div><p>Սիամանթո և Խջեզարե</p>
+					<img id="moreReadAndfewReadimg" src="../media/lib.jpg">
+				</div>
+				<div><p>Սիամանթո և Խջեզարե</p>
+					<img id="moreReadAndfewReadimg" src="../media/prof.jpg">
+				</div>
+				
+			</div>
+
+			<div id="moreReadfewRead">
+				<p id="moreReadAndfewRead">Քիչ կարդացվող գրքեր</p>
+				<div>Treasure Island
+					<img id="moreReadAndfewReadimg" src="../media/lib.jpg">
+				</div>
+				<div><p>Nostromo</p>
+					<img id="moreReadAndfewReadimg" src="../media/prof.jpg">
+				</div>
+				
+			</div>
 		</div>
 		
 
 	</div>
 	
-<footer>
-	<div>
- 		<h5>&#169; Մենք, մեր թիմը </h5>
- 		<h5>ՀՀ Լոռու մարզ, ք․ Ստեփանավան, փ․ Ս․ Սարգսյան</h5> 
-	</div>
-</footer>
+	<footer>
+		<div>
+			 <h5>&#169; Մենք, մեր թիմը </h5>
+			 <h5>ՀՀ Լոռու մարզ, ք․ Ստեփանավան, փ․ Ս․ Սարգսյան</h5>
+		  
+		</div>
+	</footer>
 </body>
 
 </html>
