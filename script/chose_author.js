@@ -5,11 +5,10 @@ function getCategory() {
 	return category;
 
 }
-
-
+let [categoryName,categoryChildName] = getCategory().split("-");
 function drawPage() {
 
-	let [categoryName,categoryChildName] = getCategory().split("-");
+	
 
 	let parentDiv = document.getElementById("authorName");
 
@@ -22,10 +21,18 @@ function drawPage() {
 			paragraf.innerHTML = book_and_author[categoryName][categoryChildName][i]["author"];
 
 		}
-		//console.log(book_and_author[categoryName][categoryChildName][i])
+		
 		paragraf.classList.add("autorsList");
 
-		paragraf.onclick = function () {
+		paragraf.addEventListener('click' ,show(i));
+		if(paragraf.innerHTML != ""){
+			parentDiv.appendChild(paragraf);
+		}
+	}
+
+}
+
+function show(i) {
 			
 			let authorTitle = document.createElement("p");
 			authorTitle.id = "authorname";
@@ -68,14 +75,6 @@ function drawPage() {
 			}	
 			
 		}
-		if(paragraf.innerHTML != ""){
-			parentDiv.appendChild(paragraf);
-		}
-	}
-
-}
-
-
 
 
 
