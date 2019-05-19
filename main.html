@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/login_register.css" media="screen" type="text/css" />
+    <script src="script/login_and_register/constants.js"></script>
+    <script src="script/login_and_register/forms.js" defer></script>
+    <!--------------------------------------------------------------------------->
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+    <script src="authentication-firebase/auth.js" defer></script>
+
+</head>
+
+<body>
+    <div>
+        <img src="media/Goldberg.jpg" id="banner">
+    </div>
+
+    <div id="top">
+        <h1><span>Ստեփանավանի Կենտրոնական Գրադարանի Պաշտոնական Կայք </span></h1>
+    </div>
+
+    <div class="errorContainer">
+        <span id="error_message">
+
+        </span>
+    </div>
+
+    <div class="container">
+        <form action="javascript:void(0);" method="get">
+            <fieldset class="clearfix">
+                <p><span class="fontawesome-user"></span><input id="loginTxtEmail" type="text" placeholder="Էլ. հասցե">
+                </p>
+                <p><span class="fontawesome-lock"></span><input id="loginTxtPassword" type="password"
+                        placeholder="Գաղտնաբառ"></p>
+                <p><input id="btnLogin" type="submit" value="ՄՈՒՏՔ"></p>
+            </fieldset>
+        </form>
+        <p class="button" id="register_btn">Չունեք Հաշիվ? &nbsp;&nbsp;Գրանցվել<span
+                class="fontawesome-arrow-right"></span></p>
+    </div>
+
+    <div class="container">
+        <form action="javascript:void(0);" method="get">
+            <fieldset class="clearfix">
+                <p><span class="fontawesome-user"></span><input id="regTxtEmail" type="text" placeholder="Մուտքանուն">
+                </p>
+                <p><span class="fontawesome-lock"></span><input id="sign_up_name_input" type="text" placeholder="Անուն">
+                </p>
+                <p><span class="fontawesome-lock"></span><input id="regTxtPassword" type="password"
+                        placeholder="Գաղտնաբառ"></p>
+                <p><input id="btnSignUp" type="submit" value="Գրանցում"></p>
+            </fieldset>
+        </form>
+        <p class="button" id="login_btn">Հաշիվ ունեք? &nbsp;&nbsp;ՄՈՒՏՔ<span class="fontawesome-arrow-right"></span>
+        </p>
+    </div>
+    <div id="footer">
+
+
+    </div>
+
+
+
+</body>
+
+</html>

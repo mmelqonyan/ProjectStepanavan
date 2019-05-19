@@ -5,7 +5,7 @@
 }
 
 header{
-  
+  position: fixed;
   top: 0;
   display: block;
   color:#13481E;

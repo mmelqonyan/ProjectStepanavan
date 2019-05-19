@@ -10,6 +10,11 @@
 
 	<script defer src="../script/chose_author.js"></script>
 	<script src="../database.js" defer></script>
+	<!--Firebase-->
+	<script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+    
+	<!---------------------------------------------------------------->
 </head>
 
 <body onload="drawPage()">
@@ -20,7 +25,7 @@
   		    <a href="chose_category.html" class="linkHeader">ՍՏԵՓԱՆԱՎԱՆԻ ԿԵՆՏՐՈՆԱԿԱՆ ԳՐԱԴԱՐԱՆ</a>
 	      
 
-		    <button type="button" value="Sing out" id="sign_out_btn" class="button">Ելք</button>
+		    <button type="button" value="Sing out" id="btnLogout" class="button">Ելք</button>
 	      
 		    <div class="search">	
 		        <input type="text" placeholder="Որոնել.." name="search" class="srch" >
