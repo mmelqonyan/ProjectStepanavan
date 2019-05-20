@@ -6,7 +6,7 @@ function getCategory() {
 
 }
 
-function drawPage() {
+function drawPage(book_and_author) {
 
 	let [categoryName, categoryChildName] = getCategory().split("-");
 
@@ -107,8 +107,13 @@ function drawPage() {
 
 }());
 
+function start(){
+	let database = firebase.database().ref().child('book_and_author')
 
-
-
+	database.on('value', snap =>{ 
+	let book_and_author = snap.val()
+	drawPage(book_and_author)
+})
+}
 
 
