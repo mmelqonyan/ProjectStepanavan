@@ -63,35 +63,26 @@ body{
 #authorName{
     height: auto;
 }
-.images {
-    height: auto;
-    cursor:pointer;
-}
+
 form{
     background-image: url(../media/formBack.jpeg);
     background-repeat: no-repeat;
     background-size: contain;
   
 }
-.images > img{
-    
-    background-repeat: no-repeat;
-    margin: 0; 
-    height: 140px;    
+.images {
     width:100%;
-}
-.images > p{
-    width: 100%;
-    font-size: 16px;
-    margin:0;
-    height: auto;    
-    text-align: center;
+    height: 140px;
+    background-size: cover;
+    cursor:pointer;
+    margin: 0; 
     padding: 0px;
-    margin: 0px;
+    font-size: 16px;
+    text-align: center;
     color: black;
-    border:1px solid #ffffb3; 
-    word-wrap: break-word;  
+    word-wrap: break-word;
 }
+
 .bookimgcontainer > p{
     margin-top: 0;
     
@@ -104,21 +95,26 @@ form{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0.3,0.5);
 }
 .autorsList{
-    
+    word-wrap: break-word;
+    width: 100%;
 	font-size:13px;
-	color:  #13481E;
-	cursor: pointer;
 	padding: 5px ;
-   
-    background-color: #eaf9ea ;
+    margin-bottom: 3px;
+    color: #13481E;
+    text-align:center;
+    cursor: pointer;
+    border: 1px solid #eaf9ee;
+    background-color: #eaf9ee;
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0.1,0.3);
 }
 
 .autorsList:hover{
-    font-size:15px;
-	background-color: #eaf9de ;
-	border-radius: 5px; 
-	color: #83484E;
-	cursor: pointer;
+
+    color: black;
+    border: 1px solid #c5e5d0;
+    background-color: #c5e5d0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0.2,0.5);
 }
 
 .things{
@@ -145,7 +141,7 @@ form{
     text-align: center;
 }
 #moreReadAndfewReadimg{
-    width: 100%;
+    width: 50%;
     height: 100px;
 }
 #moreReadfewRead > div > p {

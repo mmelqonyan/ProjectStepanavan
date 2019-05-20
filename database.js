@@ -119,7 +119,7 @@
 
       "pushkin": {
 
-            "author": "Ալեքսանդր Սերգեյի Պուշկին",
+            "author": "Ա Ս Պուշկին",
             "shatrvan": {
               "img": "../media/arm.jpg",
               "genre": "Պոեմ",
@@ -158,7 +158,7 @@
 
       "dostoevskiy": {
 
-            "author": "Ֆեոդոր Միխայլովիչ Դոստոևսկի",
+            "author": "Ֆ Մ Դոստոևսկի",
             "expayrner": {
               "img": "../media/dostoevski_exbayrner.jpg",
               "genre": "Վեպ",
@@ -168,7 +168,7 @@
       },
 
       "bondaryev": {
-        "author": "Յուրի Վասիլևիչ Բոնդարև",
+        "author": "Յ Վ Բոնդարև",
         "yezerq": {
           "img": "../media/bondaryev_ezerq.jpg",
           "genre": "Վեպ",
@@ -178,7 +178,7 @@
       },
 
       "nikolay_gogol": {
-        "author": "Նիկոլայ Վասիլևիչ Գոգոլ",
+        "author": "Ն Վ Գոգոլ",
         "yntir": {
           "img": "../media/gogol_yntir.jpg",
           "genre": "Վեպ",
@@ -195,7 +195,7 @@
 
       "tumanyan": {
 
-        "author": "Հովհաննես Թումանյան",
+        "author": "Հ. Թումանյան",
 
         "moxroty": {
           "img": "../media/tumanyan_moxroty.jpg",
@@ -213,7 +213,7 @@
     },
     "arakner": {
       "aygekci": {
-        "author": "Վարդան Այգեկցի",
+        "author": "Վ. Այգեկցի",
         "arakner": {
           "img": "../media/aygekci_arakner.jpg",
           "genre": "Առակ",
@@ -246,7 +246,9 @@
       }
     },
     "banastexcutyunner": {
+
       "hayrapetyan": {
+
         "author": "Հայրապետ Հայրապետյան",
         "saryaki_tuny": {
           "img": "../media/hayrapetyan_saryaki_tuny.jpg",
@@ -273,7 +275,7 @@
 
                     "author": "Joseph Conrad",
                     "nostromo": {
-                      "img": "../media/conrad_nostromo.jpg",
+                      "img": "../media/girl.jpg",
                       "genre": "Նովելներ",
                       "authorname": "Joseph Conrad",
                       "bookname": "Nostromo"
