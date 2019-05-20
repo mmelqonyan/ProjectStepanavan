@@ -251,7 +251,7 @@
 
         "author": "Հայրապետ Հայրապետյան",
         "saryaki_tuny": {
-          "img": "../media/hayrapetyan_saryaki_tuny.jpg",
+          "img": "../media/lib.jpg",
           "genre": "Բանաստեղծություններ",
           "authorname": "Հայրապետ Հայրապետյան",
           "bookname": "Սարյակի Տունը"
@@ -275,7 +275,7 @@
 
                     "author": "Joseph Conrad",
                     "nostromo": {
-                      "img": "../media/girl.jpg",
+                      "img": "../media/prof.jpg",
                       "genre": "Նովելներ",
                       "authorname": "Joseph Conrad",
                       "bookname": "Nostromo"
