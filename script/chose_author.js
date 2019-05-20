@@ -6,7 +6,7 @@ function getCategory() {
 
 }
 
-function drawPage() {
+function drawPage(book_and_author) {
 
 	let [categoryName, categoryChildName] = getCategory().split("-");
 
@@ -18,10 +18,10 @@ function drawPage() {
 
 		if (book_and_author[categoryName][categoryChildName][i]["author"]) {
 			paragraf.type = "button";
-			paragraf.value = book_and_author[categoryName][categoryChildName][i]["author"];  
-			
+			paragraf.value = book_and_author[categoryName][categoryChildName][i]["author"];
+
 		}
-		
+
 		paragraf.className = "autorsList";
 
 		paragraf.onclick = function () {
@@ -33,7 +33,7 @@ function drawPage() {
 			document.getElementsByClassName("bookimgcontainer")[0].appendChild(authorTitle);
 
 
-			
+
 			for (let j in book_and_author[categoryName][categoryChildName][i]) {
 
 				var conteinDiv = document.createElement("div");
@@ -45,13 +45,13 @@ function drawPage() {
 				}
 
 				if (book_and_author[categoryName][categoryChildName][i][j]["img"]) {
-					
-					conteinDiv.style.backgroundImage = "url('"+book_and_author[categoryName][categoryChildName][i][j]['img']+"')";
+
+					conteinDiv.style.backgroundImage = "url('" + book_and_author[categoryName][categoryChildName][i][j]['img'] + "')";
 
 				}
 
 				if (book_and_author[categoryName][categoryChildName][i][j]["bookname"]) {
-					
+
 					conteinDiv.innerHTML = book_and_author[categoryName][categoryChildName][i][j]["bookname"];
 					document.getElementsByClassName("bookimgcontainer")[0].appendChild(conteinDiv);
 				}
@@ -64,21 +64,21 @@ function drawPage() {
 
 				}
 
-			}		
+			}
 
 		}
-		if(paragraf.value != ""){
-			
+		if (paragraf.value != "") {
+
 			parentDiv.appendChild(paragraf);
 
 		}
-		
+
 	}
 
 }
 
 function moreAndFaw(arg) {
-	var [i,j,k,l] = arg.id.split("-");
+	var [i, j, k, l] = arg.id.split("-");
 
 	document.getElementById("url_send").value = JSON.stringify(book_and_author[i][j][k][l]);
 	document.forms[0].submit();
@@ -107,8 +107,13 @@ function moreAndFaw(arg) {
 
 }());
 
+function start() {
+	let database = firebase.database().ref().child('book_and_author')
 
-
-
+	database.on('value', snap => {
+		let book_and_author = snap.val()
+		drawPage(book_and_author)
+	})
+}
 
 
