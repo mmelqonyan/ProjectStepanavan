@@ -1,6 +1,6 @@
 @media screen and(max-width: 600px){
 	.container{
-		widht: 100%;
+		width: 100%;
 	}
 }
 
@@ -84,7 +84,7 @@ ul.breadcrumb li+li:before {
 }
 ul.breadcrumb li a {
   font-size: 12px;
-  color: #13481E
+  color: #13481E;
   text-decoration: none;
 }
 ul.breadcrumb li a:hover {
