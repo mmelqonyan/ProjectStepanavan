@@ -77,13 +77,6 @@ function drawPage(book_and_author) {
 
 }
 
-function moreAndFaw(arg) {
-	var [i, j, k, l] = arg.id.split("-");
-
-	document.getElementById("url_send").value = JSON.stringify(book_and_author[i][j][k][l]);
-	document.forms[0].submit();
-}
-
 (function () {
 	const config = {
 		apiKey: "AIzaSyCEKO7yFxF7J2pRZya1oizSvFWrmOal5nk",
@@ -106,14 +99,21 @@ function moreAndFaw(arg) {
 	});
 
 }());
-
+var book_and_author;
 function start() {
 	let database = firebase.database().ref().child('book_and_author')
 
 	database.on('value', snap => {
-		let book_and_author = snap.val()
+		book_and_author = snap.val()
 		drawPage(book_and_author)
 	})
-}
 
+	
+}
+function moreAndFaw(arg) {
+		var [i, j, k, l] = arg.id.split("-");
+
+		document.getElementById("url_send").value = JSON.stringify(book_and_author[i][j][k][l]);
+		document.forms[0].submit();
+}
 
