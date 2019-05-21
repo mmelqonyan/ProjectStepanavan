@@ -1,5 +1,6 @@
 {
     "book_and_author": {
+        
         "texekatu": {
             "hanragitaranner": {
                 "hanragitaran": {
@@ -183,7 +184,9 @@
         "mankakan": {
             "heqiatner": {
                 "tumanyan": {
+
                     "author": "Հ.Թումանյան",
+                    
                     "moxroty": {
                         "img": "../media/tumanyan_moxroty.jpg",
                         "genre": "Հեքիաթ",

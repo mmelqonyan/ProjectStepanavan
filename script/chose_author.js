@@ -11,6 +11,7 @@ function drawPage(book_and_author) {
 	let [categoryName, categoryChildName] = getCategory().split("-");
 
 	let parentDiv = document.getElementById("authorName");
+	this.tmp = 0;
 
 	for (let i in book_and_author[categoryName][categoryChildName]) {
 
@@ -25,55 +26,22 @@ function drawPage(book_and_author) {
 		paragraf.className = "autorsList";
 
 		paragraf.onclick = function () {
+			clicedImgs(book_and_author[categoryName][categoryChildName][i]);
+		}    
 
-			let authorTitle = document.createElement("p");
-			authorTitle.id = "authorname";
-			authorTitle.value = "Հեղինակ";
-			document.getElementsByClassName("bookimgcontainer")[0].innerHTML = "";
-			document.getElementsByClassName("bookimgcontainer")[0].appendChild(authorTitle);
-
-
-
-			for (let j in book_and_author[categoryName][categoryChildName][i]) {
-
-				var conteinDiv = document.createElement("div");
-				conteinDiv.className = "images";
-
-				if (book_and_author[categoryName][categoryChildName][i]["author"]) {
-					document.getElementById("authorname").innerHTML = book_and_author[categoryName][categoryChildName][i][j]["authorname"];
-
-				}
-
-				if (book_and_author[categoryName][categoryChildName][i][j]["img"]) {
-
-					conteinDiv.style.backgroundImage = "url('" + book_and_author[categoryName][categoryChildName][i][j]['img'] + "')";
-
-				}
-
-				if (book_and_author[categoryName][categoryChildName][i][j]["bookname"]) {
-
-					conteinDiv.innerHTML = book_and_author[categoryName][categoryChildName][i][j]["bookname"];
-					document.getElementsByClassName("bookimgcontainer")[0].appendChild(conteinDiv);
-				}
-
-				conteinDiv.onclick = function () {
-					if (book_and_author[categoryName][categoryChildName][i][j]["img"]) {
-						document.getElementById("url_send").value = JSON.stringify(book_and_author[categoryName][categoryChildName][i][j]);
-					}
-					document.forms[0].submit();
-
-				}
-
-			}
-
-		}
 		if (paragraf.value != "") {
 
 			parentDiv.appendChild(paragraf);
 
 		}
+		
+		if(tmp == 0){
+		 	clicedImgs(book_and_author[categoryName][categoryChildName][i]);
+		 	this.tmp = 1;
+		}
 
 	}
+
 
 }
 
@@ -99,21 +67,68 @@ function drawPage(book_and_author) {
 	});
 
 }());
+
 var book_and_author;
+
 function start() {
 	let database = firebase.database().ref().child('book_and_author')
 
 	database.on('value', snap => {
-		book_and_author = snap.val()
-		drawPage(book_and_author)
+		book_and_author = snap.val();
+		drawPage(book_and_author);
 	})
 
 	
 }
 function moreAndFaw(arg) {
 		var [i, j, k, l] = arg.id.split("-");
-
 		document.getElementById("url_send").value = JSON.stringify(book_and_author[i][j][k][l]);
 		document.forms[0].submit();
 }
 
+
+function clicedImgs(arg) {
+
+	let authorTitle = document.createElement("p");
+	authorTitle.id = "authorname";
+	authorTitle.value = "Հեղինակ";
+	document.getElementsByClassName("bookimgcontainer")[0].innerHTML = "";
+	document.getElementsByClassName("bookimgcontainer")[0].appendChild(authorTitle);
+
+	for (let j in arg) {
+
+		var conteinDiv = document.createElement("div");
+		conteinDiv.className = "images";
+
+		if (arg[j]["authorname"]) {
+			document.getElementById("authorname").innerHTML = arg[j]["authorname"];
+
+		}
+
+		if (arg[j]["img"]) {
+
+			conteinDiv.style.backgroundImage = "url('" + arg[j]['img'] + "')";
+
+		}
+		conteinDiv.onclick = function () {
+			aa(arg[j]);
+			
+		}
+		if (arg[j]["bookname"]) {
+
+			conteinDiv.innerHTML = arg[j]["bookname"];
+			document.getElementsByClassName("bookimgcontainer")[0].appendChild(conteinDiv);
+		}
+		
+	}
+}
+
+function aa(arg) {
+
+	if (arg["img"]) {
+		
+		document.getElementById("url_send").value = JSON.stringify(arg);
+
+	}
+	document.forms[0].submit();
+}

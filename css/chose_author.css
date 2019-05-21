@@ -64,12 +64,6 @@ body{
     height: auto;
 }
 
-form{
-    background-image: url(../media/formBack.jpeg);
-    background-repeat: no-repeat;
-    background-size: contain;
-  
-}
 .images {
     width:100%;
     height: 140px;
@@ -130,6 +124,7 @@ form{
     display: grid;
     grid-template-columns: 1fr ;
     grid-gap: 5px;
+    text-align: center;
 }
 #moreReadAndfewRead{
    
@@ -141,7 +136,7 @@ form{
     text-align: center;
 }
 #moreReadAndfewReadimg{
-    width: 50%;
+    width: 100px;
     height: 100px;
 }
 #moreReadfewRead > div > p {

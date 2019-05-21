@@ -7,12 +7,10 @@ var book = JSON.parse(l);
 
 function processForm() {
 
-
-    document.getElementById('book_image').src = book["img"]
-    document.getElementById('book_name').innerHTML = book["bookname"]
-    document.getElementById('book_author').innerHTML = book["authorname"]
-    document.getElementById('book_genre').innerHTML = book["genre"]
-
+    document.getElementById('book_image').src = book["img"];
+    document.getElementById('book_name').innerHTML = book["bookname"];
+    document.getElementById('book_author').innerHTML = book["authorname"];
+    document.getElementById('book_genre').innerHTML = book["genre"];
 
 }
 
@@ -39,8 +37,6 @@ function HandleBackFunctionality()
     const btnLogout = document.getElementById('btnLogout');
 
     
-    
-
     btnLogout.addEventListener('click', e => {
         firebase.auth().signOut();
         location.replace("../main.html");
