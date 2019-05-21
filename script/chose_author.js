@@ -108,12 +108,23 @@ function start() {
 		drawPage(book_and_author)
 	})
 
-	
+
 }
 function moreAndFaw(arg) {
-		var [i, j, k, l] = arg.id.split("-");
+	var [i, j, k, l] = arg.id.split("-");
 
-		document.getElementById("url_send").value = JSON.stringify(book_and_author[i][j][k][l]);
-		document.forms[0].submit();
+	document.getElementById("url_send").value = JSON.stringify(book_and_author[i][j][k][l]);
+	document.forms[0].submit();
 }
 
+function getImage(el) {
+	const images = firebase.storage().ref().child('media');
+	const image = images.child(`${el}`);
+
+	image.getDownloadURL().then((url) => {
+		console.log(url)// STEX KDNES QO NKAR DNELU PAHY
+	});
+}
+
+
+ 
