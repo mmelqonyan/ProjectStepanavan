@@ -11,7 +11,7 @@ function drawPage(book_and_author) {
 	let [categoryName, categoryChildName] = getCategory().split("-");
 
 	let parentDiv = document.getElementById("authorName");
-	this.tmp = 0;
+	this.tmp = 1;
 
 	for (let i in book_and_author[categoryName][categoryChildName]) {
 
@@ -35,13 +35,12 @@ function drawPage(book_and_author) {
 
 		}
 		
-		if(tmp == 0){
+		if(tmp){
 		 	clicedImgs(book_and_author[categoryName][categoryChildName][i]);
-		 	this.tmp = 1;
+		 	this.tmp = 0;
 		}
 
 	}
-
 
 }
 
@@ -78,14 +77,13 @@ function start() {
 		drawPage(book_and_author);
 	})
 
-	
 }
 function moreAndFaw(arg) {
+
 		var [i, j, k, l] = arg.id.split("-");
 		document.getElementById("url_send").value = JSON.stringify(book_and_author[i][j][k][l]);
 		document.forms[0].submit();
 }
-
 
 function clicedImgs(arg) {
 
@@ -97,7 +95,7 @@ function clicedImgs(arg) {
 
 	for (let j in arg) {
 
-		var conteinDiv = document.createElement("div");
+		let conteinDiv = document.createElement("div");
 		conteinDiv.className = "images";
 
 		if (arg[j]["authorname"]) {
@@ -107,28 +105,42 @@ function clicedImgs(arg) {
 
 		if (arg[j]["img"]) {
 
-			conteinDiv.style.backgroundImage = "url('" + arg[j]['img'] + "')";
+			const images = firebase.storage().ref().child('media');
+			const image = images.child(`${arg[j]["img"]}`);
 
-		}
-		conteinDiv.onclick = function () {
-			aa(arg[j]);
+			image.getDownloadURL().then((url) => {
+					
+				conteinDiv.style.backgroundImage = "url('" + url + "')";
+
+				arg[j]['img'] = url
+			});
 			
 		}
 		if (arg[j]["bookname"]) {
 
 			conteinDiv.innerHTML = arg[j]["bookname"];
+			
+		
+			conteinDiv.onclick = function () {
+				sendGor(arg[j]);
+				
+			}
 			document.getElementsByClassName("bookimgcontainer")[0].appendChild(conteinDiv);
 		}
 		
 	}
 }
 
-function aa(arg) {
+function sendGor(arg) {
 
-	if (arg["img"]) {
-		
-		document.getElementById("url_send").value = JSON.stringify(arg);
 
-	}
+	document.getElementById("url_send").value = JSON.stringify(arg);
+
 	document.forms[0].submit();
 }
+
+	
+
+
+
+ 
