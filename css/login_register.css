@@ -30,6 +30,7 @@ body {
 	font-family: 'Open Sans', Arial, sans-serif;
 	font-size: 14px;
 	line-height:2em;
+	margin-bottom: 80px;
 }
 *{
 	box-sizing: border-box;
@@ -80,8 +81,8 @@ p {
 	color: #606468;
 	display: block;
 	float: left;
-	height: 50px;
-	line-height: 50px;
+	height: 40px;
+	line-height: 40px;
 	text-align: center;
 	width: 50px;
 }
@@ -92,7 +93,7 @@ p {
 }
 
 .container form input {
-	height: 50px;
+	height: 40px;
 	outline:none;
 }
 
@@ -154,13 +155,14 @@ p {
 	padding-bottom: 0px;
 }
 footer { 
-	display: block;
-	position: fixed;
-	bottom: 0;
-	width: 100%;
-	padding: 5px 0px 5px 0px;   
-	background-color: #13481E;
-	color:  #eaf9ee;
-	text-align: center;
-	z-index: 2;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 5px 0px 5px 0px;   
+    background-color:#13481E;
+    color:  #eaf9ee;
+    text-align: center;
+    z-index: 2;
+    border-top: 1px solid lightgreen;
 }
