@@ -9,10 +9,8 @@ function getCategory() {
 
 function drawPage(book_and_author) {
 
-	let [categoryName, categoryChildName,tor] = getCategory().split("-");
-	if(!!tor){
-		clicedImgs(book_and_author[categoryName][categoryChildName][tor]);
-	}
+	let [categoryName, categoryChildName] = getCategory().split("-");
+	
 	
 	let parentDiv = document.getElementById("authorName");
 	this.tmp = 1;
@@ -117,7 +115,11 @@ function clicedImgs(arg) {
 					
 				conteinDiv.style.backgroundImage = "url('" + url + "')";
 
-				arg[j]['img'] = url
+				arg[j]['src'] = url
+			}).catch(function(error) {
+				  conteinDiv.style.color = "red";
+				  conteinDiv.innerHTML += "<br><br>IMAGE does not EXIST";
+				  console.log(error.message)
 			});
 			
 		}
@@ -125,7 +127,6 @@ function clicedImgs(arg) {
 
 			conteinDiv.innerHTML = arg[j]["bookname"];
 			
-		
 			conteinDiv.onclick = function () {
 				sendGor(arg[j]);
 				
