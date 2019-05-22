@@ -2,20 +2,24 @@ function getCategory() {
 
 	let temp = location.search.substring(1).split("&");
 	let category = temp[0].split("=")[1];
+
 	return category;
 
 }
 
 function drawPage(book_and_author) {
 
-	let [categoryName, categoryChildName] = getCategory().split("-");
-
+	let [categoryName, categoryChildName,tor] = getCategory().split("-");
+	if(!!tor){
+		clicedImgs(book_and_author[categoryName][categoryChildName][tor]);
+	}
+	
 	let parentDiv = document.getElementById("authorName");
 	this.tmp = 1;
 
 	for (let i in book_and_author[categoryName][categoryChildName]) {
-
-		var paragraf = document.createElement("input");
+		
+		let paragraf = document.createElement("input");
 
 		if (book_and_author[categoryName][categoryChildName][i]["author"]) {
 			paragraf.type = "button";
@@ -27,6 +31,7 @@ function drawPage(book_and_author) {
 
 		paragraf.onclick = function () {
 			clicedImgs(book_and_author[categoryName][categoryChildName][i]);
+		
 		}    
 
 		if (paragraf.value != "") {
@@ -97,7 +102,7 @@ function clicedImgs(arg) {
 
 		let conteinDiv = document.createElement("div");
 		conteinDiv.className = "images";
-
+		
 		if (arg[j]["authorname"]) {
 			document.getElementById("authorname").innerHTML = arg[j]["authorname"];
 
@@ -129,6 +134,7 @@ function clicedImgs(arg) {
 		}
 		
 	}
+	return;
 }
 
 function sendGor(arg) {
