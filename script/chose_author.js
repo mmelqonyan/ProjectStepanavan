@@ -114,12 +114,12 @@ function clicedImgs(arg) {
 			image.getDownloadURL().then((url) => {
 					
 				conteinDiv.style.backgroundImage = "url('" + url + "')";
+				arg[j]['src'] = url;
 
-				arg[j]['src'] = url
 			}).catch(function(error) {
-				  conteinDiv.style.color = "red";
+				  conteinDiv.style.border = "1px solid";
 				  conteinDiv.innerHTML += "<br><br>IMAGE does not EXIST";
-				  console.log(error.message)
+				  console.log(error.message);
 			});
 			
 		}
@@ -135,7 +135,7 @@ function clicedImgs(arg) {
 		}
 		
 	}
-	return;
+	
 }
 
 function sendGor(arg) {
