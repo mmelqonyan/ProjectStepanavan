@@ -11,7 +11,10 @@
     <title>Գրադարան</title>
     <link rel="stylesheet" href="../css/description_of_single_book.css">
     <link rel="stylesheet" href="../css/banner_footer.css" class="category">
+    <link rel="stylesheet" type="text/css" href="../css/search_bar.css">
+    <script defer src="../script/chose_author.js"></script>
     <script src="../script/description_of_single_book.js" defer></script>
+    
     <!--Firebase-->
 	<script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
@@ -30,9 +33,11 @@
 		    <button type="button" value="Sing out" id="btnLogout" class="button">Ելք</button>
 	      
 		  <div class="search">	
-        <input type="text" placeholder="Որոնել.." name="search" class="srch" >
-        <button type="submit" class="lupe"> &#128269</button> </div>
-		  
+        <div class="autocomplete" style="width:300px;">
+           
+            <input type="text" placeholder="Գրքի անուն․․․․" class="srch" id="myInput3" autocomplete="off">
+            <input type="button" value ="&#128269" class="lupe" id="lupe3" >
+        </div>
 		  <div id="user_container">
 		    <p id="user_name"> </p> </div>
 	

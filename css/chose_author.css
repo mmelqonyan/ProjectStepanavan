@@ -3,6 +3,7 @@
     padding: 0px;
 }
 
+
 .head {
     position: relative;
 	background-color:red;
@@ -10,14 +11,11 @@
 body{
 	background:#f4f9f6;
 }
-#header{
+#heade1{
   color:#13481E;
-  text-decoration: none;
   width: 100%;
-
-  overflow: hidden;
   background-color:#eaf9ee;
-  box-shadow: 0px 8px 16px 0px rgba(0,10,0,0.1);
+  box-shadow: 0px 8px 16px 0px rgba(0,10,0,0.3);
 }
 .bookimgcontainer {
     
@@ -26,7 +24,7 @@ body{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 10px;
     padding: 10px;
-   
+    box-shadow: 0px -8px -6px 0px rgba(0,0,0.3,0.5);
 }
 
 #authorsTitle{
@@ -78,12 +76,13 @@ body{
     opacity: 0.6;
     word-wrap: break-word;
     overflow-wrap: break-word;
-
+    
 }
-
+.images:hover {
+    box-shadow: 0px 8px 12px 0px rgba(0,0,0.1,0.3);
+}    
 .bookimgcontainer > p{
     margin-top: 0;
-    
 }
 
 .autors{	

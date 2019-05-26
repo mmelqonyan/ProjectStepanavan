@@ -10,7 +10,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../css/chose_category.css" class="category">
   	<link rel="stylesheet" href="../css/banner_footer.css" class="category">
-	
+  	<link rel="stylesheet" type="text/css" href="../css/search_bar.css">
+	<script defer src="../script/chose_author.js"></script>
 	<script src="../script/chose_category.js" defer></script>
 	<script src="../database.js" defer></script>
 	<!--Firebase-->
@@ -31,8 +32,11 @@
 		    <input type="button" value="Ելք" id="btnLogout" class="button"/>
 	      
 		  <div class="search">	
-        <input type="text" placeholder="Որոնել.." name="search" class="srch" >
-        <button type="submit" class="lupe"> &#128269</button> </div>
+       <div class="autocomplete" style="width:300px;">
+				   
+			<input type="text" placeholder="Գրքի անուն․․․․" class="srch" id="myInput1" autocomplete="off">
+			<input type="button" value ="&#128269" class="lupe" id="lupe1" >
+		</div>
 		  
 		  <div id="user_container">
 		    <p id="user_name"> </p> </div>
@@ -146,6 +150,7 @@
 			</div>
 		</div>
 	</form>
+	
 </div>
 
 <footer>

@@ -27,7 +27,7 @@ function drawPage(book_and_author) {
 
 		paragraf.className = "autorsList";
 
-		paragraf.onclick = function () {
+		paragraf.onclick =  ()=>{
 			clicedImgs(book_and_author[categoryName][categoryChildName][i]);
 		
 		}    
@@ -71,14 +71,15 @@ function drawPage(book_and_author) {
 }());
 
 var book_and_author;
+let database = firebase.database().ref().child('book_and_author');
 
 function start() {
-	let database = firebase.database().ref().child('book_and_author')
+	
 
 	database.on('value', snap => {
 		book_and_author = snap.val();
 		drawPage(book_and_author);
-	})
+	});
 
 }
 function moreAndFaw(arg) {
@@ -135,19 +136,156 @@ function clicedImgs(arg) {
 		}
 		
 	}
-	
+	return;
 }
 
 function sendGor(arg) {
-
-
+	
 	document.getElementById("url_send").value = JSON.stringify(arg);
 
 	document.forms[0].submit();
 }
 
+	var bookArray=[];
+
+	database.on('value', snap => {
+
+		let book_and_author = snap.val();
+
+		for(let i in book_and_author){
+
+			for(let j in book_and_author[i]){
+				
+				for(let l in book_and_author[i][j]){
 	
+					
+					for(let k in book_and_author[i][j][l]){
 
+						if(book_and_author[i][j][l][k]["bookname"]){
+							const images = firebase.storage().ref().child('media');
+							const image = images.child(`${book_and_author[i][j][l][k]["img"]}`);
 
+							image.getDownloadURL().then((url) => {	
+											
+								book_and_author[i][j][l][k]['src'] = url;
+													
+							}).catch(function(error) {
+								console.log(error.message);
+							});
+							
+							bookArray.push(book_and_author[i][j][l][k]);
+							
+		                }
+					}	
+				}
+			}
+		}
+		
+	})
 
+/// Search Function ////////////////////////////////////////////////////////////////
+function autocomplete(inp, argItem) {
  
+    var currentFocus;
+  
+    inp.addEventListener("input", function(e) {
+        var a, b, i, val = this.value;
+      
+        closeAllLists();
+        if (!val) { return false;}
+        currentFocus = -1;
+      
+        a = document.createElement("DIV");
+        a.setAttribute("id", this.id + "autocomplete-list");
+        a.setAttribute("class", "autocomplete-items");
+    	
+        this.parentNode.appendChild(a);
+        for(let i = 0; i < argItem.length; i++){
+
+	        if (argItem[i]["bookname"].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+	         	//console.log(argItem[i])
+	            b = document.createElement("DIV");
+	            
+	            b.innerHTML = "<strong>" + argItem[i]["bookname"].substr(0, val.length) + "</strong>";
+	            b.innerHTML += argItem[i]["bookname"].substr(val.length);
+	           
+	            b.innerHTML += "<p style='display:none' >"+argItem[i]["bookname"] + "</p>";
+	           
+	            b.addEventListener("click", function(e) {
+	             	//alert(argItem[i]["bookname"])
+		            inp.value = this.getElementsByTagName("p")[0].innerHTML;
+		            document.getElementById('lupe2').onclick = function() {
+
+						sendGor(argItem[i]);
+						
+		            }
+		            closeAllLists();
+	            });
+	            
+	            a.appendChild(b);
+	        }
+        }    
+    });
+ 
+    inp.addEventListener("keydown", function(e) {
+        var x = document.getElementById(this.id + "autocomplete-list");
+        if (x) x = x.getElementsByTagName("div");
+	        if (e.keyCode == 40) {
+	        
+	            currentFocus++;
+	       
+	            addActive(x);
+	        } else if (e.keyCode == 38) {
+	       
+	            currentFocus--;
+	       
+	            addActive(x);
+	        } else if (e.keyCode == 13) {
+	        
+	            e.preventDefault();
+	        if (currentFocus > -1) {
+	          
+	            if (x) x[currentFocus].click();
+	        }
+        }
+    });
+	function addActive(x) {
+	   
+	    if (!x) return false;
+	    
+	    removeActive(x);
+	    if (currentFocus >= x.length) currentFocus = 0;
+	    if (currentFocus < 0) currentFocus = (x.length - 1);
+	    
+	    x[currentFocus].classList.add("autocomplete-active");
+	}
+	function removeActive(x) {
+	    
+	    for (var i = 0; i < x.length; i++) {
+	        x[i].classList.remove("autocomplete-active");
+	    }
+	}
+	function closeAllLists(elmnt) {
+	   
+	    var x = document.getElementsByClassName("autocomplete-items");
+	    for (var i = 0; i < x.length; i++) {
+	        if (elmnt != x[i] && elmnt != inp) {
+	            x[i].parentNode.removeChild(x[i]);
+	        }
+	    }
+	}
+	 
+	document.addEventListener("click", function (e) {
+	    closeAllLists(e.target);
+	});
+}
+//console.log(bookArray)
+
+let bookArray2 = bookArray3 = bookArray;
+//autocomplete(document.getElementById("myInput1"), bookArray);
+
+autocomplete(document.getElementById("myInput2"), bookArray2);
+
+//autocomplete(document.getElementById("myInput3"), bookArray3);
+
+//////////////////////////////////////////////////////////////////////////////////
