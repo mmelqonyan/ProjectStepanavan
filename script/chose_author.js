@@ -216,6 +216,9 @@ function autocomplete(inp, argItem) {
         a.setAttribute("class", "autocomplete-items");
     	
         this.parentNode.appendChild(a);
+
+        let filename = filenamef();
+        
         for(let i = 0; i < argItem.length; i++){
 
 	        if (argItem[i]["bookname"].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
@@ -233,7 +236,7 @@ function autocomplete(inp, argItem) {
 
 		            
 					
-					let filename = filenamef();
+					
 					
 					
 					if (filename == "chose_category.html") {
