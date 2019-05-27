@@ -27,7 +27,7 @@ function drawPage(book_and_author) {
 
 		paragraf.className = "autorsList";
 
-		paragraf.onclick =  ()=>{
+		paragraf.onclick = () => {
 			clicedImgs(book_and_author[categoryName][categoryChildName][i]);
 		
 		}    
@@ -147,7 +147,8 @@ function sendGor(arg) {
 }
 
 	var bookArray=[];
-
+(function() {
+	
 	database.on('value', snap => {
 
 		let book_and_author = snap.val();
@@ -158,7 +159,6 @@ function sendGor(arg) {
 				
 				for(let l in book_and_author[i][j]){
 	
-					
 					for(let k in book_and_author[i][j][l]){
 
 						if(book_and_author[i][j][l][k]["bookname"]){
@@ -170,7 +170,7 @@ function sendGor(arg) {
 								book_and_author[i][j][l][k]['src'] = url;
 													
 							}).catch(function(error) {
-								console.log(error.message);
+								console.log("Image non exist //error.message");
 							});
 							
 							bookArray.push(book_and_author[i][j][l][k]);
@@ -182,6 +182,22 @@ function sendGor(arg) {
 		}
 		
 	})
+})();
+function filenamef (){
+
+	let url = window.location.pathname;
+	let filename = url.substring(url.lastIndexOf('/')+1);
+	let Gorpage = url.split("?")[0];
+	let filenameG = Gorpage.substring(Gorpage.lastIndexOf('/')+1);
+
+	if(filename == 'chose_category.html'){
+		return filename;
+	}else if (filenameG == 'description_of_single_book.html'){
+		return filenameG;
+	} else {
+		return null;
+	}
+}
 
 /// Search Function ////////////////////////////////////////////////////////////////
 function autocomplete(inp, argItem) {
@@ -203,7 +219,7 @@ function autocomplete(inp, argItem) {
         for(let i = 0; i < argItem.length; i++){
 
 	        if (argItem[i]["bookname"].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
-	         	//console.log(argItem[i])
+	         	
 	            b = document.createElement("DIV");
 	            
 	            b.innerHTML = "<strong>" + argItem[i]["bookname"].substr(0, val.length) + "</strong>";
@@ -212,13 +228,40 @@ function autocomplete(inp, argItem) {
 	            b.innerHTML += "<p style='display:none' >"+argItem[i]["bookname"] + "</p>";
 	           
 	            b.addEventListener("click", function(e) {
-	             	//alert(argItem[i]["bookname"])
+	             	
 		            inp.value = this.getElementsByTagName("p")[0].innerHTML;
-		            document.getElementById('lupe2').onclick = function() {
 
-						sendGor(argItem[i]);
+		            
+					
+					let filename = filenamef();
+					
+					
+					if (filename == "chose_category.html") {
 						
-		            }
+		            	document.getElementById('lupe1').onclick = function() {
+
+						    document.getElementById("url_send2").value = JSON.stringify(argItem[i]);
+
+							document.forms[1].submit();	
+		                }
+		             }
+		             else if (filename == "description_of_single_book.html") {
+						
+		            	document.getElementById('lupe3').onclick = function() {
+
+						    document.getElementById("url_send3").value = JSON.stringify(argItem[i]);
+
+							document.forms[0].submit();	
+		                }
+		             }
+		             else {
+		             	document.getElementById('lupe2').onclick = function() {
+
+						    sendGor(argItem[i]);	
+		                }
+		             }
+
+		           
 		            closeAllLists();
 	            });
 	            
@@ -279,13 +322,17 @@ function autocomplete(inp, argItem) {
 	    closeAllLists(e.target);
 	});
 }
-//console.log(bookArray)
 
-let bookArray2 = bookArray3 = bookArray;
-//autocomplete(document.getElementById("myInput1"), bookArray);
+let filename = filenamef();
 
-autocomplete(document.getElementById("myInput2"), bookArray2);
-
-//autocomplete(document.getElementById("myInput3"), bookArray3);
+if (filename == "chose_category.html") {
+	autocomplete(document.getElementById("myInput1"), bookArray);
+}
+else if (filename == "description_of_single_book.html"){
+	autocomplete(document.getElementById("myInput3"), bookArray);
+}
+else{
+	autocomplete(document.getElementById("myInput2"), bookArray);
+}
 
 //////////////////////////////////////////////////////////////////////////////////
