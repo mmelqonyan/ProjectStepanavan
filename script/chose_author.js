@@ -141,7 +141,7 @@ function clicedImgs(arg) {
 
 function sendGor(arg) {
 	
-	document.getElementById("url_send").value = JSON.stringify(arg);
+	document.getElementById("url_send2").value = JSON.stringify(arg);
 
 	document.forms[0].submit();
 }
@@ -182,25 +182,12 @@ function sendGor(arg) {
 		}
 		
 	})
+	
 })();
-function filenamef (){
 
-	let url = window.location.pathname;
-	let filename = url.substring(url.lastIndexOf('/')+1);
-	let Gorpage = url.split("?")[0];
-	let filenameG = Gorpage.substring(Gorpage.lastIndexOf('/')+1);
-
-	if(filename == 'chose_category.html'){
-		return filename;
-	}else if (filenameG == 'description_of_single_book.html'){
-		return filenameG;
-	} else {
-		return null;
-	}
-}
 
 /// Search Function ////////////////////////////////////////////////////////////////
-function autocomplete(inp, argItem) {
+function autocomplete(inp, argItem,index) {
  
     var currentFocus;
   
@@ -217,8 +204,8 @@ function autocomplete(inp, argItem) {
     	
         this.parentNode.appendChild(a);
 
-        let filename = filenamef();
         
+
         for(let i = 0; i < argItem.length; i++){
 
 	        if (argItem[i]["bookname"].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
@@ -234,37 +221,12 @@ function autocomplete(inp, argItem) {
 	             	
 		            inp.value = this.getElementsByTagName("p")[0].innerHTML;
 
-		            
-					
-					
-					
-					
-					if (filename == "chose_category.html") {
-						
-		            	document.getElementById('lupe1').onclick = function() {
-
-						    document.getElementById("url_send2").value = JSON.stringify(argItem[i]);
-
-							document.forms[1].submit();	
+		             	document.getElementById('lupe'+index).onclick = function() {
+		             		document.getElementById("url_send"+index).value = JSON.stringify(argItem[i]);
+						   	document.forms[0].submit();
 		                }
-		             }
-		             else if (filename == "description_of_single_book.html") {
-						
-		            	document.getElementById('lupe3').onclick = function() {
+		             
 
-						    document.getElementById("url_send3").value = JSON.stringify(argItem[i]);
-
-							document.forms[0].submit();	
-		                }
-		             }
-		             else {
-		             	document.getElementById('lupe2').onclick = function() {
-
-						    sendGor(argItem[i]);	
-		                }
-		             }
-
-		           
 		            closeAllLists();
 	            });
 	            
@@ -326,16 +288,36 @@ function autocomplete(inp, argItem) {
 	});
 }
 
+function filenamef (){
+
+	let url = window.location.pathname;
+	let filename = url.substring(url.lastIndexOf('/')+1);
+	let Gorpage = url.split("?")[0];
+	let filenameG = Gorpage.substring(Gorpage.lastIndexOf('/')+1);
+
+	if(filename == 'chose_category.html'){
+		return filename;
+	}else if (filenameG == 'description_of_single_book.html'){
+		return filenameG;
+	} else {
+		return null;
+	}
+}
+
 let filename = filenamef();
 
+// localStorage.removeItem('book');
+// localStorage.setItem("book",bookArray);
+
+
 if (filename == "chose_category.html") {
-	autocomplete(document.getElementById("myInput1"), bookArray);
+	autocomplete(document.getElementById("myInput1"), bookArray,1);
 }
 else if (filename == "description_of_single_book.html"){
-	autocomplete(document.getElementById("myInput3"), bookArray);
+	autocomplete(document.getElementById("myInput3"), bookArray,3);
 }
 else{
-	autocomplete(document.getElementById("myInput2"), bookArray);
+	autocomplete(document.getElementById("myInput2"), bookArray,2);
 }
 
-//////////////////////////////////////////////////////////////////////////////////
+/////search function end /////////////////////////////////////////////////////////
