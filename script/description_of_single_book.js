@@ -5,8 +5,7 @@ l = decodeURIComponent(temp[1]);
 l = l.replace(/\+/g, " ");
 
 var book = JSON.parse(l);
-var x = localStorage.getItem("bookArray");
-alert(x);
+
 
 function processForm() {
 

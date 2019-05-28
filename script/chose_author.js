@@ -70,24 +70,6 @@ function drawPage(book_and_author) {
 
 }());
 
-var book_and_author;
-let database = firebase.database().ref().child('book_and_author');
-
-function start() {
-	
-
-	database.on('value', snap => {
-		book_and_author = snap.val();
-		drawPage(book_and_author);
-	});
-
-}
-function moreAndFaw(arg) {
-
-		var [i, j, k, l] = arg.id.split("-");
-		document.getElementById("url_send").value = JSON.stringify(book_and_author[i][j][k][l]);
-		document.forms[0].submit();
-}
 
 function clicedImgs(arg) {
 
@@ -146,12 +128,15 @@ function sendGor(arg) {
 	document.forms[0].submit();
 }
 
-	var bookArray=[];
-(function() {
-	
+let database = firebase.database().ref().child('book_and_author');
+
+
+let bookArray = [];
+var book_and_author;
+
 	database.on('value', snap => {
 
-		let book_and_author = snap.val();
+		book_and_author = snap.val();
 
 		for(let i in book_and_author){
 
@@ -183,8 +168,20 @@ function sendGor(arg) {
 		
 	})
 	
-})();
 
+console.log(book_and_author);
+function moreAndFaw(arg) {
+
+		var [i, j, k, l] = arg.id.split("-");
+		document.getElementById("url_send2").value = JSON.stringify(book_and_author[i][j][k][l]);
+		document.forms[0].submit();
+}
+
+function start() {
+	
+		drawPage(book_and_author);
+
+}
 
 /// Search Function ////////////////////////////////////////////////////////////////
 function autocomplete(inp, argItem,index) {
@@ -299,25 +296,30 @@ function filenamef (){
 		return filename;
 	}else if (filenameG == 'description_of_single_book.html'){
 		return filenameG;
-	} else {
-		return null;
-	}
+	}else if (filenameG == 'chose_author.html'){
+		return filenameG;
+	} 
 }
 
 let filename = filenamef();
 
 // localStorage.removeItem('book');
 // localStorage.setItem("book",bookArray);
+// var x = localStorage.getItem("bookArray");
+// alert(x);
 
 
-if (filename == "chose_category.html") {
-	autocomplete(document.getElementById("myInput1"), bookArray,1);
-}
-else if (filename == "description_of_single_book.html"){
-	autocomplete(document.getElementById("myInput3"), bookArray,3);
-}
-else{
-	autocomplete(document.getElementById("myInput2"), bookArray,2);
+switch (filename) {
+    case 'chose_category.html':
+    	autocomplete(document.getElementById("myInput1"), bookArray,1);
+    	break;
+    case 'description_of_single_book.html':
+    	autocomplete(document.getElementById("myInput3"), bookArray,3);
+    	break;
+    case 'chose_author.html':
+    	autocomplete(document.getElementById("myInput2"), bookArray,2);
+    break;
+  
 }
 
 /////search function end /////////////////////////////////////////////////////////
