@@ -11,7 +11,6 @@ function drawPage(book_and_author) {
 
 	let [categoryName, categoryChildName] = getCategory().split("-");
 	
-	
 	let parentDiv = document.getElementById("authorName");
 	this.tmp = 1;
 
@@ -29,13 +28,10 @@ function drawPage(book_and_author) {
 
 		paragraf.onclick = () => {
 			clicedImgs(book_and_author[categoryName][categoryChildName][i]);
-		
 		}    
 
 		if (paragraf.value != "") {
-
 			parentDiv.appendChild(paragraf);
-
 		}
 		
 		if(tmp){
@@ -62,7 +58,6 @@ function drawPage(book_and_author) {
 
 	const btnLogout = document.getElementById('btnLogout');
 
-
 	btnLogout.addEventListener('click', e => {
 		firebase.auth().signOut();
 		location.replace("../main.html");
@@ -70,6 +65,24 @@ function drawPage(book_and_author) {
 
 }());
 
+var book_and_author;
+let database = firebase.database().ref().child('book_and_author');
+
+function start() {
+	
+
+	database.on('value', snap => {
+		book_and_author = snap.val();
+		drawPage(book_and_author);
+	});
+
+}
+function moreAndFaw(arg) {
+
+		var [i, j, k, l] = arg.id.split("-");
+		document.getElementById("url_send").value = JSON.stringify(book_and_author[i][j][k][l]);
+		document.forms[0].submit();
+}
 
 function clicedImgs(arg) {
 
@@ -124,19 +137,15 @@ function clicedImgs(arg) {
 function sendGor(arg) {
 	
 	document.getElementById("url_send2").value = JSON.stringify(arg);
-
 	document.forms[0].submit();
 }
 
-let database = firebase.database().ref().child('book_and_author');
-
-
-let bookArray = [];
-var book_and_author;
-
+	var bookArray=[];
+(function() {
+	
 	database.on('value', snap => {
 
-		book_and_author = snap.val();
+		let book_and_author = snap.val();
 
 		for(let i in book_and_author){
 
@@ -168,20 +177,8 @@ var book_and_author;
 		
 	})
 	
+})();
 
-console.log(book_and_author);
-function moreAndFaw(arg) {
-
-		var [i, j, k, l] = arg.id.split("-");
-		document.getElementById("url_send2").value = JSON.stringify(book_and_author[i][j][k][l]);
-		document.forms[0].submit();
-}
-
-function start() {
-	
-		drawPage(book_and_author);
-
-}
 
 /// Search Function ////////////////////////////////////////////////////////////////
 function autocomplete(inp, argItem,index) {
@@ -194,37 +191,30 @@ function autocomplete(inp, argItem,index) {
         closeAllLists();
         if (!val) { return false;}
         currentFocus = -1;
-      
         a = document.createElement("DIV");
         a.setAttribute("id", this.id + "autocomplete-list");
         a.setAttribute("class", "autocomplete-items");
-    	
         this.parentNode.appendChild(a);
-
-        
 
         for(let i = 0; i < argItem.length; i++){
 
 	        if (argItem[i]["bookname"].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
 	         	
-	            b = document.createElement("DIV");
-	            
+	            b = document.createElement("DIV"); 
 	            b.innerHTML = "<strong>" + argItem[i]["bookname"].substr(0, val.length) + "</strong>";
-	            b.innerHTML += argItem[i]["bookname"].substr(val.length);
-	           
-	            b.innerHTML += "<p style='display:none' >"+argItem[i]["bookname"] + "</p>";
-	           
+	            b.innerHTML += argItem[i]["bookname"].substr(val.length);   
+	            b.innerHTML += "<p style='display:none' >"+argItem[i]["bookname"] + "</p>";	           
 	            b.addEventListener("click", function(e) {
 	             	
-		            inp.value = this.getElementsByTagName("p")[0].innerHTML;
+		        inp.value = this.getElementsByTagName("p")[0].innerHTML;
 
-		             	document.getElementById('lupe'+index).onclick = function() {
-		             		document.getElementById("url_send"+index).value = JSON.stringify(argItem[i]);
-						   	document.forms[0].submit();
-		                }
+		        document.getElementById('lupe'+index).onclick = function() {
+		            document.getElementById("url_send"+index).value = JSON.stringify(argItem[i]);
+					document.forms[0].submit();
+		        }
 		             
 
-		            closeAllLists();
+		        closeAllLists();
 	            });
 	            
 	            a.appendChild(b);
@@ -298,7 +288,7 @@ function filenamef (){
 		return filenameG;
 	}else if (filenameG == 'chose_author.html'){
 		return filenameG;
-	} 
+	}
 }
 
 let filename = filenamef();
@@ -313,12 +303,12 @@ switch (filename) {
     case 'chose_category.html':
     	autocomplete(document.getElementById("myInput1"), bookArray,1);
     	break;
+    case 'chose_author.html':
+    	autocomplete(document.getElementById("myInput2"), bookArray,2);
+    	break;
     case 'description_of_single_book.html':
     	autocomplete(document.getElementById("myInput3"), bookArray,3);
     	break;
-    case 'chose_author.html':
-    	autocomplete(document.getElementById("myInput2"), bookArray,2);
-    break;
   
 }
 

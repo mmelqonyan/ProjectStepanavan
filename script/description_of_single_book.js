@@ -1,11 +1,8 @@
 var my = location.search.substring(1).split("&");
 var temp = my[0].split("=");
-
 l = decodeURIComponent(temp[1]);
 l = l.replace(/\+/g, " ");
-
 var book = JSON.parse(l);
-
 
 function processForm() {
 
@@ -40,9 +37,6 @@ function HandleBackFunctionality() {
         firebase.auth().signOut();
         location.replace("../main.html");
     });
-
-
-    
 
 }());
 
