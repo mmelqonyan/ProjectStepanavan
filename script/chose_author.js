@@ -206,16 +206,16 @@ function autocomplete(inp, argItem,index) {
 	            b.innerHTML += "<p style='display:none' >"+argItem[i]["bookname"] + "</p>";	           
 	            b.addEventListener("click", function(e) {
 	             	
-		        inp.value = this.getElementsByTagName("p")[0].innerHTML;
+			        inp.value = this.getElementsByTagName("p")[0].innerHTML;
 
-		        document.getElementById('lupe'+index).onclick = function() {
-		            document.getElementById("url_send"+index).value = JSON.stringify(argItem[i]);
-					document.forms[0].submit();
-		        }
-		             
+			        document.getElementById('lupe'+index).onclick = function() {
+			            document.getElementById("url_send"+index).value = JSON.stringify(argItem[i]);
+						document.forms[0].submit();
+			        }
+			             
 
-		        closeAllLists();
-	            });
+			        closeAllLists();
+		            });
 	            
 	            a.appendChild(b);
 	        }

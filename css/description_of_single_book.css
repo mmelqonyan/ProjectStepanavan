@@ -79,13 +79,13 @@ margin-left: 600px;
 
 }
 
-.description{
+#description{
     height: auto;
     margin-right: 5%;
     text-align: left;
     margin-top: 20px;
 }
-.description h4{
+#description h4{
     margin-top: 10px;
 }
 
