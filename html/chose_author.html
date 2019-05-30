@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="../css/banner_footer.css" class="category">
 	<link rel="stylesheet" type="text/css" href="../css/chose_author.css">
 	<link rel="stylesheet" type="text/css" href="../css/search_bar.css">
-
+	<link rel="stylesheet" type="text/css" href="../css/banner_footer.css">
 	<!-- <script  src="../authentication-firebase/auth.js"></script> -->
 	<script defer src="../script/chose_author.js"></script>
 	<!--Firebase-->
@@ -21,7 +21,6 @@
 	<script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
 
-    <!-- <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase-database.js"></script> -->
     
 	<!---------------------------------------------------------------->
 </head>
@@ -34,12 +33,12 @@
   		    <a href="chose_category.html" class="linkHeader">ՍՏԵՓԱՆԱՎԱՆԻ ԿԵՆՏՐՈՆԱԿԱՆ ԳՐԱԴԱՐԱՆ</a>
 	      
 
-		    <button type="button" value="Sing out" id="btnLogout" class="button">Ելք</button>
+		    <input type="button" value="Ելք" id="btnLogout" class="button"/>
 	      
 		    <div class="search">	
 
 		    		
-				  <div class="autocomplete" id="autocomplete2" style="width:300px;">
+				  <div class="autocomplete"  style="width:100%;">
 				   
 				    <input type="text" placeholder="Գրքի անուն․․․․" class="srch" id="myInput2" autocomplete="off">
 				    <input type="button" value ="&#128269" class="lupe" id="lupe2" >
@@ -57,7 +56,6 @@
     </div>
 
 	
-  
     <div id="generalDiv" class="titlePage">  
 		          
 		<div class="autors" id="authorName"></div>
