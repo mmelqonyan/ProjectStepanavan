@@ -1,10 +1,7 @@
 {
     "book_and_author": {
-
         "texekatu": {
-
             "hanragitaranner": {
-
                 "hanragitaran": {
                     "author": "Վ. Համբարձումյան",
                     "hanragitaran1": {
@@ -208,21 +205,13 @@
                 },
                 "pushkin": {
                     "author": "Александр Пушкин",
-<<<<<<< HEAD
-                    "img": "pushkin_proza.jpg",
-                    "genre": "Արձակ",
-                    "authorname": "А. Пушкин",
-                    "bookname": "Пушкин Том Третий, Проза",
-                    "description": "В настоящее трехтомное издание сочинений А.С.Пушкина входят художественные произведения поэта за исключением произведений, приписываемых А.С.Пушкину и написанных им совместно с другими авторами, а также черновых набросков и планов, представляющих интерес только для узкого круга специалистов."
-=======
-                    "push":{
+                    "proza": {
                         "img": "pushkin_proza.jpg",
                         "genre": "Արձակ",
                         "authorname": "А. Пушкин",
                         "bookname": "Пушкин Том Третий, Проза",
-                        "description": ""
+                        "description": "В настоящее трехтомное издание сочинений А.С.Пушкина входят художественные произведения поэта за исключением произведений, приписываемых А.С.Пушкину и написанных им совместно с другими авторами, а также черновых набросков и планов, представляющих интерес только для узкого круга специалистов."
                     }
->>>>>>> 7283f37ba7770de02ee7641484742f6a1846d3fc
                 }
             }
         },
@@ -499,9 +488,7 @@
                 }
             },
             "tntesagitutyun": {
-
                 "haylbrounr": {
-
                     "author": "Ռոբերտ Հայլբրոունր",
                     "tntes": {
                         "img": "tarou_tntes.jpg",
@@ -537,9 +524,9 @@
                 }
             },
             "ashxaragrutyun": {
-                "grig":{
+                "grig": {
                     "author": "Գրիգոր Ավագյան",
-                    "grigor":{
+                    "grigor": {
                         "img": "avagyan_ashxaragr.jpg",
                         "genre": "Մասնագիտական",
                         "authorname": "Գրիգոր Երեմի Ավագյան",
@@ -549,9 +536,9 @@
                 }
             },
             "arvest": {
-                "hay":{
+                "hay": {
                     "author": "Հայկ Հակոբյան",
-                    "hajk":{
+                    "hajk": {
                         "img": "hakobyan_arcax.jpg",
                         "genre": "Մասնագիտական",
                         "authorname": "Հ․ Հակոբյան",
@@ -561,9 +548,9 @@
                 }
             },
             "kensabanutyun": {
-                "luch":{
+                "luch": {
                     "author": "Նիկոլայ Լուչնիկ ",
-                    "nikol":{
+                    "nikol": {
                         "img": "luchnik_nman.jpg",
                         "genre": "Մասնագիտական",
                         "authorname": "Ն․ Լուչնիկ",
@@ -573,9 +560,9 @@
                 }
             },
             "hogebanutyun": {
-                "naz":{
+                "naz": {
                     "author": "Ա․ Նազչաջյան",
-                    "nal":{
+                    "nal": {
                         "img": "nazchajyan_adaptacia.jpg",
                         "genre": "Մասնագիտական",
                         "authorname": "Ա․ Նազչաջյան",
@@ -583,12 +570,11 @@
                         "description": ""
                     }
                 }
-
             },
             "mankavarjutyun": {
-                "shav":{
+                "shav": {
                     "author": "Արշավիր Շավարշյան",
-                    "arsh":{
+                    "arsh": {
                         "img": "shavarshyan_mankavarjner.jpg",
                         "genre": "Մասնագիտական",
                         "authorname": "Ա․ Շավարշյան",
@@ -598,9 +584,9 @@
                 }
             },
             "gyuxatntesutyun": {
-                "gal":{
+                "gal": {
                     "author": "Վ. Գալուստյան",
-                    "galust":{
+                    "galust": {
                         "img": "galustyan_gyuxatntesakan.jpg",
                         "genre": "Մասնագիտական",
                         "authorname": "Վ. Գալուստյանն",
