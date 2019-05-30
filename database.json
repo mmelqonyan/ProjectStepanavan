@@ -196,7 +196,7 @@
                 "esenin": {
                     "author": "Сергей Есенин",
                     "stix": {
-                        "img": "gogol_yntir.jpg",
+                        "img": "esenin_poemi.jpg",
                         "genre": "Բանաստեղծություն",
                         "authorname": "С․ Есенин",
                         "bookname": "Стихотворения поэмы",
@@ -205,7 +205,7 @@
                 },
                 "pushkin": {
                     "author": "Александр Пушкин",
-                    "img": "gogol_yntir.jpg",
+                    "img": "pushkin_proza.jpg",
                     "genre": "Արձակ",
                     "authorname": "А. Пушкин",
                     "bookname": "Пушкин Том Третий, Проза",
@@ -335,7 +335,7 @@
                 "гenri": {
                     "author": "Уи́льям Си́дни По́ртер",
                     "rasskazi": {
-                        "img": "treasure_stevenson.jpg",
+                        "img": "genri_razkazi.jpg",
                         "genre": "Պատմվածքներ",
                         "authorname": "О. Генри",
                         "bookname": "Рассказы",
@@ -347,7 +347,7 @@
                 "alex": {
                     "author": "Ալեքսանդր Ստեպանովիչ Գրին",
                     "vazoxy": {
-                        "img": "treasure_stevenson.jpg",
+                        "img": "grin_ashxar.jpg",
                         "genre": "Վեպ",
                         "authorname": "Ա․ Գրին",
                         "bookname": "Շողշողուն աշխարհ, Ալիքների վրայով վազողը",
@@ -359,7 +359,7 @@
                 "pierre": {
                     "author": "Saint Pierre",
                     "accuse": {
-                        "img": "treasure_stevenson.jpg",
+                        "img": "accusee_pierre.jpg",
                         "genre": "Վեպ",
                         "authorname": "Saint Pierre",
                         "bookname": "Accusee",
@@ -450,7 +450,7 @@
             "rus": {
                 "raffi": {
                     "autorname": "Акоп Мелик-Акопян",
-                    "img": "teryan_banastexc1.jpg",
+                    "img": "raffi_samvel.jpg",
                     "genre": "Վեպ",
                     "authorname": "Раффи",
                     "bookname": "Самвел",
@@ -463,7 +463,7 @@
                 "Bezimenski": {
                     "author": "Լ․ Բեզիմենսկի",
                     "bacahaytum": {
-                        "img": "bezimenski.jpg",
+                        "img": "bezimenski_bacahaytum.jpg",
                         "genre": "Մասնագիտական",
                         "authorname": "Լ․ Բեզիմենսկի",
                         "bookname": "3-րդ ռայխի առեղծվածների բացահայտումը 1941 1945 թթ",
@@ -487,7 +487,7 @@
                 "haylbrounr": {
                     "author": "Ռոբերտ Հայլբրոունր",
                     "tntes": {
-                        "img": "bezimenski.jpg",
+                        "img": "tarou_tntes.jpg",
                         "genre": "Մասնագիտական",
                         "authorname": "Ռոբերտ Հայլբրոունր",
                         "bookname": "Տնտեսագիտություն բոլորի համար",
@@ -499,7 +499,7 @@
                 "iovchuki": {
                     "author": "Մ․ Տ․ Իովչուկի",
                     "pilisop": {
-                        "img": "iovchuki.jpg",
+                        "img": "asmus_aknark.jpg",
                         "genre": "Մասնագիտական",
                         "authorname": "Մ․ Տ․ Իովչուկի",
                         "bookname": "Փիլիսոփայության պատմության համառոտ ակնարկ",
@@ -511,7 +511,7 @@
                 "evgrafova": {
                     "author": "Ն․Ն․ Եվգրաֆովա, Վ.Լ․ Կագան",
                     "fiz": {
-                        "img": "evgrafova.jpg",
+                        "img": "kagan_fizika.jpg",
                         "genre": "Մասնագիտական",
                         "authorname": "Ն․Ն․ Եվգրաֆովա, Վ.Լ․ Կագան",
                         "bookname": "Ֆիզիկայի դասընթաց",
@@ -521,7 +521,7 @@
             },
             "ashxaragrutyun": {
                 "author": "Գրիգոր Ավագյան ",
-                "img": "grigor_avagyanjpg",
+                "img": "avagyan_ashxaragr.jpg",
                 "genre": "Մասնագիտական",
                 "authorname": "Գրիգոր Երեմի Ավագյան",
                 "bookname": "Աշխարագրություն",
@@ -529,7 +529,7 @@
             },
             "arvest": {
                 "author": "Հայկ Հակոբյան",
-                "img": "teryan_banastexc1.jpg",
+                "img": "hakobyan_arcax.jpg",
                 "genre": "Մասնագիտական",
                 "authorname": "Հ․ Հակոբյան",
                 "bookname": "Արցախի միջնադարյան արվեստը",
@@ -537,7 +537,7 @@
             },
             "kensabanutyun": {
                 "author": "Նիկոլայ Լուչնիկ ",
-                "img": "teryan_banastexc1.jpg",
+                "img": "luchnik_nman.jpg",
                 "genre": "Մասնագիտական",
                 "authorname": "Ն․ Լուչնիկ",
                 "bookname": "Ինչու եմ նման հայրիկիս",
@@ -545,7 +545,7 @@
             },
             "hogebanutyun": {
                 "author": "Ա․ Նազչաջյան",
-                "img": "teryan_banastexc1.jpg",
+                "img": "nazchajyan_adaptacia.jpg",
                 "genre": "Մասնագիտական",
                 "authorname": "Ա․ Նազչաջյան",
                 "bookname": "Անձ․ խմբային սոցիալականացում և հոգեբանական ադապտացիա",
@@ -553,7 +553,7 @@
             },
             "mankavarjutyun": {
                 "author": "Արշավիր Շավարշյան",
-                "img": "teryan_banastexc1.jpg",
+                "img": "shavarshyan_mankavarjner.jpg",
                 "genre": "Մասնագիտական",
                 "authorname": "Ա․ Շավարշյան",
                 "bookname": "Հայ մանկավաժներ",
@@ -561,7 +561,7 @@
             },
             "gyuxatntesutyun": {
                 "author": "Վ. Գալուստյան",
-                "img": "teryan_banastexc1.jpg",
+                "img": "galustyan_gyuxatntesakan.jpg",
                 "genre": "Մասնագիտական",
                 "authorname": "Վ. Գալուստյանն",
                 "bookname": "Գյուղատնտեսական արտադրության մեքենայացման հիմունքները",
