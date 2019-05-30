@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
-<link rel="icon" 
-      type="image/jpg" 
-      href="../media/arm.jpg">
+	<link rel="icon" type="image/jpg" href="../media/arm.jpg">
 	<title>Գրադարան</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,18 +13,25 @@
 	<link rel="stylesheet" type="text/css" href="../css/chose_author.css">
 	<link rel="stylesheet" type="text/css" href="../css/search_bar.css">
 	<link rel="stylesheet" type="text/css" href="../css/banner_footer.css">
-	<!-- <script  src="../authentication-firebase/auth.js"></script> -->
-	<script defer src="../script/chose_author.js"></script>
-	<!--Firebase-->
+	<!--Firebase SDK-->
 
 	<script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.5.3/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.5.3/firebase-storage.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.5.3/firebase-auth.js"></script>
 
-    
-	<!---------------------------------------------------------------->
+
+
+	<!--Firebase initialize-->
+	<script src="../script/init.js" defer></script>
+
+	<!--main scripts-->
+	<script defer src="../script/chose_author.js"></script>
+
 </head>
 
 <body onload="start()">
+<<<<<<< HEAD
 	
 	<div id="dddd">
     
@@ -58,25 +64,59 @@
 	
     <div id="generalDiv" class="titlePage">  
 		          
+=======
+
+	<header>
+
+		<img src="../media/lib.jpg" class="lib">
+		<a href="chose_category.html" class="linkHeader">ՍՏԵՓԱՆԱՎԱՆԻ ԿԵՆՏՐՈՆԱԿԱՆ ԳՐԱԴԱՐԱՆ</a>
+
+
+		<input type="button" value="Ելք" id="btnLogout" class="button" />
+
+		<div class="search">
+
+
+			<div class="autocomplete" style="width:100%;">
+
+				<input type="text" placeholder="Գրքի անուն․․․․" class="srch" id="myInput2" autocomplete="off">
+				<input type="button" value="&#128269" class="lupe" id="lupe2">
+			</div>
+
+
+		</div>
+		<div id="searchResults" class="form-popup"></div>
+
+
+		<div id="user_container">
+			<p id="user_name"> </p>
+		</div>
+
+
+	</header>
+
+	<div id="generalDiv" class="titlePage">
+
+>>>>>>> 7283f37ba7770de02ee7641484742f6a1846d3fc
 		<div class="autors" id="authorName"></div>
-			    
 
-		    
-		<form action="description_of_single_book.html" >
 
-			<input id="url_send2" type="hidden" name="book" value="" /> 
-				
-				<div class="bookimgcontainer">
-					
 
-					<p id="authorname">Հեղինակ:</p>
+		<form action="description_of_single_book.html">
 
-					
-				</div>		
-				
+			<input id="url_send2" type="hidden" name="book" value="" />
+
+			<div class="bookimgcontainer">
+
+
+				<p id="authorname">Հեղինակ:</p>
+
+
+			</div>
+
 		</form>
 
-		
+
 		<div class="things">
 
 			<div id="moreReadfewRead">
@@ -94,7 +134,7 @@
 					<p>Nostromo</p>
 					<img id="moreReadAndfewReadimg" src="../media/prof.jpg">
 				</div>
-				
+
 			</div>
 
 			<div id="moreReadfewRead">
@@ -110,18 +150,18 @@
 					<img id="moreReadAndfewReadimg" src="../media/prof.jpg">
 				</div>
 
-				
+
 			</div>
 		</div>
-		
+
 
 	</div>
-	
+
 	<footer>
 		<div>
-			 <h5>&#169; Մենք, մեր թիմը </h5>
-			 <h5>ՀՀ Լոռու մարզ, ք․ Ստեփանավան, փ․ Ս․ Սարգսյան</h5>
-		  
+			<h5>&#169; Մենք, մեր թիմը </h5>
+			<h5>ՀՀ Լոռու մարզ, ք․ Ստեփանավան, փ․ Ս․ Սարգսյան</h5>
+
 		</div>
 	</footer>
 </body>

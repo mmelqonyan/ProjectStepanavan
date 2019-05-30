@@ -410,14 +410,14 @@
                         "genre": "Պոեմներ",
                         "authorname": "Հովհաննես Շիրազ",
                         "bookname": "Ընտրանի",
-                        "description": ""
+                        "description": "Բանաստեղծություններ և պոեմներ (ընտրանի), Երևան, 2012, 196 էջ:"
                     },
                     "danteakan": {
                         "img": "shiraz_danteakany.jpg",
                         "genre": "Պոեմներ",
                         "authorname": "Հովհաննես Շիրազ",
                         "bookname": "Հայոց Դանթեականաը",
-                        "description": ""
+                        "description": "Եղել են առանձին աշխատանքներ, որպիսին է նաև սույն ատենախոսությունը` նվիրված «Հայոց դանթեականը» պոեմի բառապաշարի քննությանը:"
                     }
                 },
                 "teryan": {
@@ -427,28 +427,28 @@
                         "genre": "Բանաստեղծություններ",
                         "authorname": "Վահան Տերյան",
                         "bookname": "Երկեր",
-                        "description": ""
+                        "description": "Երկերի մատենագիտություն:"
                     },
                     "namakner": {
                         "img": "teryan_namakner.jpg",
                         "genre": "Վեպ",
                         "authorname": "Վահան Տերյան",
                         "bookname": "Նամակներ",
-                        "description": ""
+                        "description": "Ձեր նամակն ստացա հենց նոր և,ինչպես տեսնում եք,պատասխանում եմ անմիջապես,որովհետև այս անգամ հայտնել եք Ձեր հասցեն:"
                     },
                     "banastexcutyunner": {
                         "img": "teryan_banastexc.jpg",
                         "genre": "Բնաստեղծություններ",
                         "authorname": "Վահան Տերյան",
                         "bookname": "Բանաստեղծություններ",
-                        "description": ""
+                        "description": "Բանաստեղծություններ"
                     },
                     "banastexcutyunner1": {
                         "img": "teryan_banastexc1.jpg",
                         "genre": "Բնաստեղծություններ",
                         "authorname": "Վահան Տերյան",
                         "bookname": "Բանաստեղծություններ",
-                        "description": ""
+                        "description": "Բանաստեղծություններ"
                     }
                 }
             },
@@ -460,7 +460,7 @@
                         "genre": "Վեպ",
                         "authorname": "Раффи",
                         "bookname": "Самвел",
-                        "description": ""
+                        "description": "Действие романа разворачивается в IV веке, когда армянский царь Аршак II (арм. Արշակ Երկրորդ, Արշակ II) попадает в плен к персидскому шаху Шапуру."
                     }
                 }
             }

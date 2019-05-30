@@ -12,16 +12,19 @@
     <link rel="stylesheet" href="../css/description_of_single_book.css">
     <link rel="stylesheet" href="../css/banner_footer.css" class="category">
     <link rel="stylesheet" type="text/css" href="../css/search_bar.css">
-    <!-- <script defer src="../authentication-firebase/auth.js"></script> -->
-    <script defer src="../script/chose_author.js"></script>
-    <script src="../script/description_of_single_book.js" defer></script>
-    
-    <!--Firebase-->
+           
+    <!--Firebase SDK-->
 	<script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
-    
-	<!---------------------------------------------------------------->
-</head>
+    <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase-auth.js"></script>
+
+    <!--Firebase initialize-->
+    <script src="../script/init.js" defer></script>
+
+    <!--main scripts-->
+    <script defer src="../script/chose_author.js"></script>
+    <script src="../script/description_of_single_book.js" defer></script></head>
 
 <body onload="processForm()" >
 <form action="description_of_single_book.html" >
