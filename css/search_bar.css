@@ -1,0 +1,45 @@
+.lupe{
+  cursor: pointer;
+}
+.autocomplete {
+  position: relative;
+  display: inline-block;
+}
+#autocomplete-list{
+    overflow:scroll;
+}
+
+.autocomplete-items {
+
+  position: absolute;
+  
+  border-bottom: none;
+  border-top: none;
+  z-index: 1;
+  height: 300px;
+  top: 100%;
+  left: 0;
+  right: 0;
+ 
+  overflow-y: scroll;
+   
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff; 
+  border-bottom: 1px solid #d4d4d4; 
+
+}
+
+
+.autocomplete-items div:hover {
+  background-color: #e9e9e9; 
+}
+
+
+.autocomplete-active {
+  background-color: DodgerBlue !important; 
+  color: #ffffff; 
+}

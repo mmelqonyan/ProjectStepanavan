@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+<link rel="icon" 
+      type="image/jpg" 
+      href="../media/arm.jpg">
 	<title>Գրադարան</title>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" href="../css/banner_footer.css" class="category">
 	<link rel="stylesheet" type="text/css" href="../css/chose_author.css">
-
+	<link rel="stylesheet" type="text/css" href="../css/search_bar.css">
 	<script defer src="../script/chose_author.js"></script>
 	<!--Firebase-->
 	<script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+
+    <!-- <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase-database.js"></script> -->
     
 	<!---------------------------------------------------------------->
 </head>
@@ -19,7 +26,7 @@
 <body onload="start()">
 	
 
-    <div id="header">	 
+    <div id="header1">	 
 		    <img src="../media/lib.jpg" class="lib">
   		    <a href="chose_category.html" class="linkHeader">ՍՏԵՓԱՆԱՎԱՆԻ ԿԵՆՏՐՈՆԱԿԱՆ ԳՐԱԴԱՐԱՆ</a>
 	      
@@ -27,14 +34,23 @@
 		    <button type="button" value="Sing out" id="btnLogout" class="button">Ելք</button>
 	      
 		    <div class="search">	
-		        <input type="text" placeholder="Որոնել.." name="search" class="srch" >
-		        <button type="submit" class="lupe"> &#128269</button> 
+
+		    		
+				  <div class="autocomplete" id="autocomplete2" style="width:300px;">
+				   
+				    <input type="text" placeholder="Գրքի անուն․․․․" class="srch" id="myInput2" autocomplete="off">
+				    <input type="button" value ="&#128269" class="lupe" id="lupe2" >
+				  </div>
+				  
+			
             </div>
-		  
+            <div id="searchResults" class="form-popup"></div>
+		   
+
 		    <div id="user_container">
 		        <p id="user_name"> </p>
 		    </div>
-	
+			 
     </div>
 
 	
@@ -47,7 +63,7 @@
 		    
 		<form action="description_of_single_book.html" >
 
-			<input id="url_send" type="hidden" name="book" value="" /> 
+			<input id="url_send2" type="hidden" name="book" value="" /> 
 				
 				<div class="bookimgcontainer">
 					

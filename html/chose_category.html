@@ -2,12 +2,16 @@
 <html>
 
 <head>
+	<link rel="icon" 
+      type="image/jpg" 
+      href="../media/arm.jpg">
 	<title>Գրադարան</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../css/chose_category.css" class="category">
   	<link rel="stylesheet" href="../css/banner_footer.css" class="category">
-	
+  	<link rel="stylesheet" type="text/css" href="../css/search_bar.css">
+	<script defer src="../script/chose_author.js"></script>
 	<script src="../script/chose_category.js" defer></script>
 	<script src="../database.js" defer></script>
 	<!--Firebase-->
@@ -28,8 +32,11 @@
 		    <input type="button" value="Ելք" id="btnLogout" class="button"/>
 	      
 		  <div class="search">	
-        <input type="text" placeholder="Որոնել.." name="search" class="srch" >
-        <button type="submit" class="lupe"> &#128269</button> </div>
+       <div class="autocomplete" style="width:300px;">
+				   
+			<input type="text" placeholder="Գրքի անուն․․․․" class="srch" id="myInput1" autocomplete="off">
+			<input type="button" value ="&#128269" class="lupe" id="lupe1" >
+		</div>
 		  
 		  <div id="user_container">
 		    <p id="user_name"> </p> </div>
@@ -40,7 +47,11 @@
 <div class="titlePage">
 	<h2>Բարի գալուստ գրադարան</h2>
 	<h3> Գտեք Ձեր գիրքը համապատասխան բաժնում</h3>
+	<form action="description_of_single_book.html" >
 
+			<input id="url_send1" type="hidden" name="book" value="" /> 			
+				
+	</form>
 
 
 	<form action="chose_author.html">
@@ -54,7 +65,7 @@
 						<p onclick="category(this)" id="arm">Հայերեն</p>
 						<p onclick="category(this)" id="rus">Ռուսերեն</p>	
 				</div>	
-			<img src="../media/arm.jpg" alt="Armenian" class="category">		
+			<img src="../media/hay_grakanutyun.jpg" alt="Armenian" class="category">		
 					<div>
 						<h4>Հայ գրականություն</h4>
 					</div>				
@@ -67,7 +78,7 @@
 						<p onclick="category(this)" id="rus">Ռուսերեն</p>
 						<p onclick="category(this)" id="hay">Հայերեն</p>										
 				</div>
-	<img src="../media/books.jpg" alt="Russian" class="category">
+	<img src="../media/rus_grakanutyun.jpg" alt="Russian" class="category">
 					<div>
 						<h4 >Ռուս գրականություն</h4>
 					</div>				
@@ -84,7 +95,7 @@
 						<p onclick="category(this)" id="globLitRus">Ռուսերեն</p>
 						<p onclick="category(this)" id="globLitArm">Հայերեն</p>
 				</div>
-				<img src="../media/girl.jpg" alt="Global" class="category">
+				<img src="../media/inter_literature.jpg" alt="Global" class="category">
 					<div>
 						<h4>Համաշխարհային գրականություն</h4>
 					</div>
@@ -100,7 +111,7 @@
 						<p onclick="category(this)" id="heqiatner">Հեքիաթներ</p>
 						<p onclick="category(this)" id="patmvacqner">Պատմվածքներ</p>
 					</div>
-				<img src="../media/colors.jpg" alt="babies" class="category">
+				<img src="../media/kids.png" alt="babies" class="category">
 					<div>
 						<h4>Մանկական գրականություն</h4>
 					</div>
@@ -122,7 +133,7 @@
 						<p onclick="category(this)" id="profLitPhil">Փիլիսոփայություն</p>
 						<p onclick="category(this)" id="profLitPhis">Ֆիզիկա</p>
 					</div>
-	<img src="../media/prof.jpg" alt="Professional" class="category">
+	<img src="../media/profesional.jpg" alt="Professional" class="category">
 					<div>
 						<h4>Մասնագիտական գրականություն</h4>
 					</div>
@@ -135,7 +146,7 @@
 						<p onclick="category(this)" id="bararanner">Բառարաններ</p>
 						<p onclick="category(this)" id="hanragitaranner">Հանրագիտարաններ</p>
 					</div>
-					<img src="../media/enciclop.jpg" alt="Encicloped" class="category">
+					<img src="../media/slovari.jpg" alt="Encicloped" class="category">
 					<div>
 						<h4>Տեղեկատու գրականություն</h4>
 					</div>
@@ -143,6 +154,7 @@
 			</div>
 		</div>
 	</form>
+	
 </div>
 
 <footer>
