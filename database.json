@@ -1,7 +1,10 @@
 {
     "book_and_author": {
+
         "texekatu": {
+
             "hanragitaranner": {
+
                 "hanragitaran": {
                     "author": "Վ. Համբարձումյան",
                     "hanragitaran1": {
@@ -205,11 +208,13 @@
                 },
                 "pushkin": {
                     "author": "Александр Пушкин",
-                    "img": "pushkin_proza.jpg",
-                    "genre": "Արձակ",
-                    "authorname": "А. Пушкин",
-                    "bookname": "Пушкин Том Третий, Проза",
-                    "description": ""
+                    "push":{
+                        "img": "pushkin_proza.jpg",
+                        "genre": "Արձակ",
+                        "authorname": "А. Пушкин",
+                        "bookname": "Пушкин Том Третий, Проза",
+                        "description": ""
+                    }
                 }
             }
         },
@@ -449,12 +454,14 @@
             },
             "rus": {
                 "raffi": {
-                    "autorname": "Акоп Мелик-Акопян",
-                    "img": "raffi_samvel.jpg",
-                    "genre": "Վեպ",
-                    "authorname": "Раффи",
-                    "bookname": "Самвел",
-                    "description": ""
+                    "author": "Акоп Мелик-Акопян",
+                    "raff": {
+                        "img": "raffi_samvel.jpg",
+                        "genre": "Վեպ",
+                        "authorname": "Раффи",
+                        "bookname": "Самвел",
+                        "description": ""
+                    }
                 }
             }
         },
@@ -484,7 +491,9 @@
                 }
             },
             "tntesagitutyun": {
+
                 "haylbrounr": {
+
                     "author": "Ռոբերտ Հայլբրոունր",
                     "tntes": {
                         "img": "tarou_tntes.jpg",
@@ -520,52 +529,77 @@
                 }
             },
             "ashxaragrutyun": {
-                "author": "Գրիգոր Ավագյան ",
-                "img": "avagyan_ashxaragr.jpg",
-                "genre": "Մասնագիտական",
-                "authorname": "Գրիգոր Երեմի Ավագյան",
-                "bookname": "Աշխարագրություն",
-                "description": ""
+                "grig":{
+                    "author": "Գրիգոր Ավագյան",
+                    "grigor":{
+                        "img": "avagyan_ashxaragr.jpg",
+                        "genre": "Մասնագիտական",
+                        "authorname": "Գրիգոր Երեմի Ավագյան",
+                        "bookname": "Աշխարագրություն",
+                        "description": ""
+                    }
+                }
             },
             "arvest": {
-                "author": "Հայկ Հակոբյան",
-                "img": "hakobyan_arcax.jpg",
-                "genre": "Մասնագիտական",
-                "authorname": "Հ․ Հակոբյան",
-                "bookname": "Արցախի միջնադարյան արվեստը",
-                "description": ""
+                "hay":{
+                    "author": "Հայկ Հակոբյան",
+                    "hajk":{
+                        "img": "hakobyan_arcax.jpg",
+                        "genre": "Մասնագիտական",
+                        "authorname": "Հ․ Հակոբյան",
+                        "bookname": "Արցախի միջնադարյան արվեստը",
+                        "description": ""
+                    }
+                }
             },
             "kensabanutyun": {
-                "author": "Նիկոլայ Լուչնիկ ",
-                "img": "luchnik_nman.jpg",
-                "genre": "Մասնագիտական",
-                "authorname": "Ն․ Լուչնիկ",
-                "bookname": "Ինչու եմ նման հայրիկիս",
-                "description": ""
+                "luch":{
+                    "author": "Նիկոլայ Լուչնիկ ",
+                    "nikol":{
+                        "img": "luchnik_nman.jpg",
+                        "genre": "Մասնագիտական",
+                        "authorname": "Ն․ Լուչնիկ",
+                        "bookname": "Ինչու եմ նման հայրիկիս",
+                        "description": ""
+                    }
+                }
             },
             "hogebanutyun": {
-                "author": "Ա․ Նազչաջյան",
-                "img": "nazchajyan_adaptacia.jpg",
-                "genre": "Մասնագիտական",
-                "authorname": "Ա․ Նազչաջյան",
-                "bookname": "Անձ․ խմբային սոցիալականացում և հոգեբանական ադապտացիա",
-                "description": ""
+                "naz":{
+                    "author": "Ա․ Նազչաջյան",
+                    "nal":{
+                        "img": "nazchajyan_adaptacia.jpg",
+                        "genre": "Մասնագիտական",
+                        "authorname": "Ա․ Նազչաջյան",
+                        "bookname": "Անձ․ խմբային սոցիալականացում և հոգեբանական ադապտացիա",
+                        "description": ""
+                    }
+                }
+
             },
             "mankavarjutyun": {
-                "author": "Արշավիր Շավարշյան",
-                "img": "shavarshyan_mankavarjner.jpg",
-                "genre": "Մասնագիտական",
-                "authorname": "Ա․ Շավարշյան",
-                "bookname": "Հայ մանկավաժներ",
-                "description": ""
+                "shav":{
+                    "author": "Արշավիր Շավարշյան",
+                    "arsh":{
+                        "img": "shavarshyan_mankavarjner.jpg",
+                        "genre": "Մասնագիտական",
+                        "authorname": "Ա․ Շավարշյան",
+                        "bookname": "Հայ մանկավաժներ",
+                        "description": ""
+                    }
+                }
             },
             "gyuxatntesutyun": {
-                "author": "Վ. Գալուստյան",
-                "img": "galustyan_gyuxatntesakan.jpg",
-                "genre": "Մասնագիտական",
-                "authorname": "Վ. Գալուստյանն",
-                "bookname": "Գյուղատնտեսական արտադրության մեքենայացման հիմունքները",
-                "description": ""
+                "gal":{
+                    "author": "Վ. Գալուստյան",
+                    "galust":{
+                        "img": "galustyan_gyuxatntesakan.jpg",
+                        "genre": "Մասնագիտական",
+                        "authorname": "Վ. Գալուստյանն",
+                        "bookname": "Գյուղատնտեսական արտադրության մեքենայացման հիմունքները",
+                        "description": ""
+                    }
+                }
             }
         }
     }
