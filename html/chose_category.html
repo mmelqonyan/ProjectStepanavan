@@ -2,127 +2,133 @@
 <html>
 
 <head>
-	<link rel="icon" 
-      type="image/jpg" 
-      href="../media/arm.jpg">
+	<link rel="icon" type="image/jpg" href="../media/arm.jpg">
 	<title>Գրադարան</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../css/chose_category.css" class="category">
-  	<link rel="stylesheet" href="../css/banner_footer.css" class="category">
-  	<link rel="stylesheet" type="text/css" href="../css/search_bar.css">
-  	<!-- <script src="../authentication-firebase/auth.js"></script> -->
+	<link rel="stylesheet" href="../css/banner_footer.css" class="category">
+	<link rel="stylesheet" type="text/css" href="../css/search_bar.css">
+	<!--Firebase SDK-->
+	<script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.5.3/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.5.3/firebase-storage.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.5.3/firebase-auth.js"></script>
+
+	
+	<!--Firebase initialize-->
+	<script src="../script/init.js" defer></script>
+	
+<!--main scripts-->
 	<script defer src="../script/chose_author.js"></script>
 	<script src="../script/chose_category.js" defer></script>
-	<script src="../database.js" defer></script>
-	<!--Firebase-->
-	<script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
-    
-	<!---------------------------------------------------------------->
+
+
+
 </head>
 
 <body>
 
-<header>
- <div>	 
-		    <img src="../media/lib.jpg" class="lib">
-  		  <a href="chose_category.html" class="linkHeader">ՍՏԵՓԱՆԱՎԱՆԻ ԿԵՆՏՐՈՆԱԿԱՆ ԳՐԱԴԱՐԱՆ</a>
-	      
-
-		    <input type="button" value="Ելք" id="btnLogout" class="button"/>
-	      
-		  <div class="search">	
-       <div class="autocomplete"  style="width:100%;">
-				   
-			<input type="text" placeholder="Գրքի անուն․․․․" class="srch" id="myInput1" autocomplete="off">
-			<input type="button" value ="&#128269" class="lupe" id="lupe1" >
-		</div>
-		  
-		  <div id="user_container">
-		    <p id="user_name"> </p> </div>
-	
-</div>
-</header>
-
-<div class="titlePage">
-	<h2>Բարի գալուստ գրադարան</h2>
-	<h3> Գտեք Ձեր գիրքը համապատասխան բաժնում</h3>
-	<form action="description_of_single_book.html" >
-
-			<input id="url_send1" type="hidden" name="book" value="" /> 			
-				
-	</form>
+	<header>
+		<div>
+			<img src="../media/lib.jpg" class="lib">
+			<a href="chose_category.html" class="linkHeader">ՍՏԵՓԱՆԱՎԱՆԻ ԿԵՆՏՐՈՆԱԿԱՆ ԳՐԱԴԱՐԱՆ</a>
 
 
-	<form action="chose_author.html">
+			<input type="button" value="Ելք" id="btnLogout" class="button" />
 
-		<input id="category" type="hidden" name="category" value="">
-		<div class="container">
+			<div class="search">
+				<div class="autocomplete" style="width:100%;">
 
-			<div class="image">
-				
-				<div class="imageText" id="armliter">
+					<input type="text" placeholder="Գրքի անուն․․․․" class="srch" id="myInput1" autocomplete="off">
+					<input type="button" value="&#128269" class="lupe" id="lupe1">
+				</div>
+
+				<div id="user_container">
+					<p id="user_name"> </p>
+				</div>
+
+			</div>
+	</header>
+
+	<div class="titlePage">
+		<h2>Բարի գալուստ գրադարան</h2>
+		<h3> Գտեք Ձեր գիրքը համապատասխան բաժնում</h3>
+		<form action="description_of_single_book.html">
+
+			<input id="url_send1" type="hidden" name="book" value="" />
+
+		</form>
+
+
+		<form action="chose_author.html">
+
+			<input id="category" type="hidden" name="category" value="">
+			<div class="container">
+
+				<div class="image">
+
+					<div class="imageText" id="armliter">
 						<p onclick="category(this)" id="arm">Հայերեն</p>
-						<p onclick="category(this)" id="rus">Ռուսերեն</p>	
-				</div>	
-			<img src="../media/hay_grakanutyun.jpg" alt="Armenian" class="category">		
+						<p onclick="category(this)" id="rus">Ռուսերեն</p>
+					</div>
+					<img src="../media/hay_grakanutyun.jpg" alt="Armenian" class="category">
 					<div>
 						<h4>Հայ գրականություն</h4>
-					</div>				
-			</div>
-
-
-			<div class="image">				
-				
-				<div class="imageText" id="rus">
-						<p onclick="category(this)" id="rus">Ռուսերեն</p>
-						<p onclick="category(this)" id="hay">Հայերեն</p>										
+					</div>
 				</div>
-	<img src="../media/rus_grakanutyun.jpg" alt="Russian" class="category">
-					<div>
-						<h4 >Ռուս գրականություն</h4>
-					</div>				
-			</div>
 
-			
-			
-			<div class="image">
-				
-			
-				<div class="imageText" id="international">
+
+				<div class="image">
+
+					<div class="imageText" id="rus">
+						<p onclick="category(this)" id="rus">Ռուսերեն</p>
+						<p onclick="category(this)" id="hay">Հայերեն</p>
+					</div>
+					<img src="../media/rus_grakanutyun.jpg" alt="Russian" class="category">
+					<div>
+						<h4>Ռուս գրականություն</h4>
+					</div>
+				</div>
+
+
+
+				<div class="image">
+
+
+					<div class="imageText" id="international">
 						<p onclick="category(this)" id="english">Անգլերեն</p>
 						<p onclick="category(this)" id="fr">Ֆրանսերեն</p>
 						<p onclick="category(this)" id="rus">Ռուսերեն</p>
 						<p onclick="category(this)" id="hay">Հայերեն</p>
-				</div>
-				<img src="../media/inter_literature.jpg" alt="Global" class="category">
+					</div>
+					<img src="../media/inter_literature.jpg" alt="Global" class="category">
 					<div>
 						<h4>Համաշխարհային գրականություն</h4>
 					</div>
-					
-			</div>
+
+				</div>
 
 
-			<div class="image" class="dropup">
-				
-				<div class="imageText" id="mankakan">
+				<div class="image" class="dropup">
+
+					<div class="imageText" id="mankakan">
 						<p onclick="category(this)" id="arakner">Առակներ</p>
 						<p onclick="category(this)" id="banastexcutyunner">Բանաստեղծություններ</p>
 						<p onclick="category(this)" id="heqiatner">Հեքիաթներ</p>
 						<p onclick="category(this)" id="patmvacqner">Պատմվածքներ</p>
 					</div>
-				<img src="../media/kids.png" alt="babies" class="category">
+					<img src="../media/kids.png" alt="babies" class="category">
 					<div>
 						<h4>Մանկական գրականություն</h4>
 					</div>
-					
-			</div>
 
-			<div class="image" >
-				
-				<div class="imageText" id="masnagitakan">
-					
+				</div>
+
+				<div class="image">
+
+					<div class="imageText" id="masnagitakan">
+
 						<p onclick="category(this)" id="ashxaragrutyun">Աշխարհագրություն</p>
 						<p onclick="category(this)" id="arvest">Արվեստ</p>
 						<p onclick="category(this)" id="gyuxatntesutyun">Գյուղատնտեսություն</p>
@@ -135,15 +141,15 @@
 						<p onclick="category(this)" id="pilisopayutyun">Փիլիսոփայություն</p>
 						<p onclick="category(this)" id="fizika">Ֆիզիկա</p>
 					</div>
-	<img src="../media/profesional.jpg" alt="Professional" class="category">
+					<img src="../media/profesional.jpg" alt="Professional" class="category">
 					<div>
 						<h4>Մասնագիտական գրականություն</h4>
 					</div>
-					
-			</div>
 
-			<div class="image">
-				
+				</div>
+
+				<div class="image">
+
 					<div class="imageText" id="texekatu">
 						<p onclick="category(this)" id="bararanner">Բառարաններ</p>
 						<p onclick="category(this)" id="hanragitaranner">Հանրագիտարաններ</p>
@@ -152,20 +158,20 @@
 					<div>
 						<h4>Տեղեկատու գրականություն</h4>
 					</div>
-					
-			</div>
-		</div>
-	</form>
-	
-</div>
 
-<footer>
-<div>
- <h5>&#169; Մենք, մեր թիմը </h5>
- <h5>ՀՀ Լոռու մարզ, ք․ Ստեփանավան, փ․ Ս․ Սարգսյան</h5>
-  
-</div>
-</footer>
+				</div>
+			</div>
+		</form>
+
+	</div>
+
+	<footer>
+		<div>
+			<h5>&#169; Մենք, մեր թիմը </h5>
+			<h5>ՀՀ Լոռու մարզ, ք․ Ստեփանավան, փ․ Ս․ Սարգսյան</h5>
+
+		</div>
+	</footer>
 </body>
 
 </html>
