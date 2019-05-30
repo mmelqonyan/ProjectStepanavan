@@ -12,7 +12,7 @@
 .autocomplete-items {
 
   position: absolute;
-  
+  width: 300px;
   border-bottom: none;
   border-top: none;
   z-index: 1;

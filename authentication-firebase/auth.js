@@ -1,4 +1,3 @@
-
 (function () {
     const config = {
         apiKey: "AIzaSyCEKO7yFxF7J2pRZya1oizSvFWrmOal5nk",
@@ -71,6 +70,3 @@ history.pushState(null, null, 'main.html');
 window.addEventListener('popstate', function () {
     history.pushState(null, null, 'main.html');
 });
-
-
-
