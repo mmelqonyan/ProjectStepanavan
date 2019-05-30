@@ -1,7 +1,10 @@
 {
     "book_and_author": {
+
         "texekatu": {
+
             "hanragitaranner": {
+
                 "hanragitaran": {
                     "author": "Վ. Համբարձումյան",
                     "hanragitaran1": {
@@ -205,11 +208,21 @@
                 },
                 "pushkin": {
                     "author": "Александр Пушкин",
+<<<<<<< HEAD
                     "img": "pushkin_proza.jpg",
                     "genre": "Արձակ",
                     "authorname": "А. Пушкин",
                     "bookname": "Пушкин Том Третий, Проза",
                     "description": "В настоящее трехтомное издание сочинений А.С.Пушкина входят художественные произведения поэта за исключением произведений, приписываемых А.С.Пушкину и написанных им совместно с другими авторами, а также черновых набросков и планов, представляющих интерес только для узкого круга специалистов."
+=======
+                    "push":{
+                        "img": "pushkin_proza.jpg",
+                        "genre": "Արձակ",
+                        "authorname": "А. Пушкин",
+                        "bookname": "Пушкин Том Третий, Проза",
+                        "description": ""
+                    }
+>>>>>>> 7283f37ba7770de02ee7641484742f6a1846d3fc
                 }
             }
         },
@@ -405,14 +418,14 @@
                         "genre": "Պոեմներ",
                         "authorname": "Հովհաննես Շիրազ",
                         "bookname": "Ընտրանի",
-                        "description": ""
+                        "description": "Բանաստեղծություններ և պոեմներ (ընտրանի), Երևան, 2012, 196 էջ:"
                     },
                     "danteakan": {
                         "img": "shiraz_danteakany.jpg",
                         "genre": "Պոեմներ",
                         "authorname": "Հովհաննես Շիրազ",
                         "bookname": "Հայոց Դանթեականաը",
-                        "description": ""
+                        "description": "Եղել են առանձին աշխատանքներ, որպիսին է նաև սույն ատենախոսությունը` նվիրված «Հայոց դանթեականը» պոեմի բառապաշարի քննությանը:"
                     }
                 },
                 "teryan": {
@@ -422,39 +435,41 @@
                         "genre": "Բանաստեղծություններ",
                         "authorname": "Վահան Տերյան",
                         "bookname": "Երկեր",
-                        "description": ""
+                        "description": "Երկերի մատենագիտություն:"
                     },
                     "namakner": {
                         "img": "teryan_namakner.jpg",
                         "genre": "Վեպ",
                         "authorname": "Վահան Տերյան",
                         "bookname": "Նամակներ",
-                        "description": ""
+                        "description": "Ձեր նամակն ստացա հենց նոր և,ինչպես տեսնում եք,պատասխանում եմ անմիջապես,որովհետև այս անգամ հայտնել եք Ձեր հասցեն:"
                     },
                     "banastexcutyunner": {
                         "img": "teryan_banastexc.jpg",
                         "genre": "Բնաստեղծություններ",
                         "authorname": "Վահան Տերյան",
                         "bookname": "Բանաստեղծություններ",
-                        "description": ""
+                        "description": "Բանաստեղծություններ"
                     },
                     "banastexcutyunner1": {
                         "img": "teryan_banastexc1.jpg",
                         "genre": "Բնաստեղծություններ",
                         "authorname": "Վահան Տերյան",
                         "bookname": "Բանաստեղծություններ",
-                        "description": ""
+                        "description": "Բանաստեղծություններ"
                     }
                 }
             },
             "rus": {
                 "raffi": {
-                    "autorname": "Акоп Мелик-Акопян",
-                    "img": "raffi_samvel.jpg",
-                    "genre": "Վեպ",
-                    "authorname": "Раффи",
-                    "bookname": "Самвел",
-                    "description": ""
+                    "author": "Акоп Мелик-Акопян",
+                    "raff": {
+                        "img": "raffi_samvel.jpg",
+                        "genre": "Վեպ",
+                        "authorname": "Раффи",
+                        "bookname": "Самвел",
+                        "description": "Действие романа разворачивается в IV веке, когда армянский царь Аршак II (арм. Արշակ Երկրորդ, Արշակ II) попадает в плен к персидскому шаху Шапуру."
+                    }
                 }
             }
         },
@@ -484,7 +499,9 @@
                 }
             },
             "tntesagitutyun": {
+
                 "haylbrounr": {
+
                     "author": "Ռոբերտ Հայլբրոունր",
                     "tntes": {
                         "img": "tarou_tntes.jpg",
@@ -520,52 +537,77 @@
                 }
             },
             "ashxaragrutyun": {
-                "author": "Գրիգոր Ավագյան ",
-                "img": "avagyan_ashxaragr.jpg",
-                "genre": "Մասնագիտական",
-                "authorname": "Գրիգոր Երեմի Ավագյան",
-                "bookname": "Աշխարագրություն",
-                "description": ""
+                "grig":{
+                    "author": "Գրիգոր Ավագյան",
+                    "grigor":{
+                        "img": "avagyan_ashxaragr.jpg",
+                        "genre": "Մասնագիտական",
+                        "authorname": "Գրիգոր Երեմի Ավագյան",
+                        "bookname": "Աշխարագրություն",
+                        "description": ""
+                    }
+                }
             },
             "arvest": {
-                "author": "Հայկ Հակոբյան",
-                "img": "hakobyan_arcax.jpg",
-                "genre": "Մասնագիտական",
-                "authorname": "Հ․ Հակոբյան",
-                "bookname": "Արցախի միջնադարյան արվեստը",
-                "description": ""
+                "hay":{
+                    "author": "Հայկ Հակոբյան",
+                    "hajk":{
+                        "img": "hakobyan_arcax.jpg",
+                        "genre": "Մասնագիտական",
+                        "authorname": "Հ․ Հակոբյան",
+                        "bookname": "Արցախի միջնադարյան արվեստը",
+                        "description": ""
+                    }
+                }
             },
             "kensabanutyun": {
-                "author": "Նիկոլայ Լուչնիկ ",
-                "img": "luchnik_nman.jpg",
-                "genre": "Մասնագիտական",
-                "authorname": "Ն․ Լուչնիկ",
-                "bookname": "Ինչու եմ նման հայրիկիս",
-                "description": ""
+                "luch":{
+                    "author": "Նիկոլայ Լուչնիկ ",
+                    "nikol":{
+                        "img": "luchnik_nman.jpg",
+                        "genre": "Մասնագիտական",
+                        "authorname": "Ն․ Լուչնիկ",
+                        "bookname": "Ինչու եմ նման հայրիկիս",
+                        "description": ""
+                    }
+                }
             },
             "hogebanutyun": {
-                "author": "Ա․ Նազչաջյան",
-                "img": "nazchajyan_adaptacia.jpg",
-                "genre": "Մասնագիտական",
-                "authorname": "Ա․ Նազչաջյան",
-                "bookname": "Անձ․ խմբային սոցիալականացում և հոգեբանական ադապտացիա",
-                "description": ""
+                "naz":{
+                    "author": "Ա․ Նազչաջյան",
+                    "nal":{
+                        "img": "nazchajyan_adaptacia.jpg",
+                        "genre": "Մասնագիտական",
+                        "authorname": "Ա․ Նազչաջյան",
+                        "bookname": "Անձ․ խմբային սոցիալականացում և հոգեբանական ադապտացիա",
+                        "description": ""
+                    }
+                }
+
             },
             "mankavarjutyun": {
-                "author": "Արշավիր Շավարշյան",
-                "img": "shavarshyan_mankavarjner.jpg",
-                "genre": "Մասնագիտական",
-                "authorname": "Ա․ Շավարշյան",
-                "bookname": "Հայ մանկավաժներ",
-                "description": ""
+                "shav":{
+                    "author": "Արշավիր Շավարշյան",
+                    "arsh":{
+                        "img": "shavarshyan_mankavarjner.jpg",
+                        "genre": "Մասնագիտական",
+                        "authorname": "Ա․ Շավարշյան",
+                        "bookname": "Հայ մանկավաժներ",
+                        "description": ""
+                    }
+                }
             },
             "gyuxatntesutyun": {
-                "author": "Վ. Գալուստյան",
-                "img": "galustyan_gyuxatntesakan.jpg",
-                "genre": "Մասնագիտական",
-                "authorname": "Վ. Գալուստյանն",
-                "bookname": "Գյուղատնտեսական արտադրության մեքենայացման հիմունքները",
-                "description": ""
+                "gal":{
+                    "author": "Վ. Գալուստյան",
+                    "galust":{
+                        "img": "galustyan_gyuxatntesakan.jpg",
+                        "genre": "Մասնագիտական",
+                        "authorname": "Վ. Գալուստյանն",
+                        "bookname": "Գյուղատնտեսական արտադրության մեքենայացման հիմունքները",
+                        "description": ""
+                    }
+                }
             }
         }
     }
