@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0px;
     padding: 0px;
 }
@@ -11,18 +11,8 @@
 body{
 	background:#f4f9f6;
 }
-#header1{
-  color:#13481E;
-  width: 100%;
-  background-color:#eaf9ee;
 
-  top: 0;
-  display: block;
-  
-box-shadow: 0px 8px 16px 0px rgba(0,10,0,0.1);
- 
 
-}
 .bookimgcontainer {
     
     margin:  auto;
@@ -34,6 +24,7 @@ box-shadow: 0px 8px 16px 0px rgba(0,10,0,0.1);
 }
 
 #authorsTitle{
+
 	background-color: #13481E;
     color:  #eaf9ee;
     text-align: center;
@@ -44,7 +35,19 @@ box-shadow: 0px 8px 16px 0px rgba(0,10,0,0.1);
 	padding-left: 5px;
 	padding-right: 5px;
 }
+#dddd{
 
+    top: 0;
+    display: block;
+    color:#13481E;
+    background-color: red;
+    width: 100%;
+    background-color: green;
+    z-index: 2;
+    background-color:#eaf9ee;
+    box-shadow: 0px 8px 16px 0px rgba(10,10,0,0.1);
+    
+}
 #authorname{
     grid-row: 1 / 2 ;
     grid-column: 1 / 7;
@@ -63,10 +66,6 @@ box-shadow: 0px 8px 16px 0px rgba(0,10,0,0.1);
     grid-gap: 10px;
     overflow-y:scroll;
 
-}
-
-#authorName{
-    height: auto;
 }
 
 .images {
@@ -92,18 +91,15 @@ box-shadow: 0px 8px 16px 0px rgba(0,10,0,0.1);
 }
 
 .autors{	
-    
+
+    height: auto;
     margin-top: 15px;
 	padding-left: 5px;
 	padding-right: 5px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0.3,0.5);
     
 }
-.autors > input {
-    word-wrap: break-word;
-    word-break: break-all;
-   overflow-wrap: break-word;
-}
+
 .autorsList{
     word-wrap: break-word;
     width: 100%;

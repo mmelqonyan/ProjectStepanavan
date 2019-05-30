@@ -6,7 +6,11 @@ var book = JSON.parse(l);
 
 function processForm() {
 
-    document.getElementById("description").innerHTML = book['description'];
+    if (book['description'] == "") {
+        document.getElementById("description").innerHTML = "Գրքի վերաբերյալ նկարագրությունը բացակայում է!!!";
+    }else{
+        document.getElementById("description").innerHTML = book['description'];
+    }
     document.getElementById('book_image').src = book["src"];
     document.getElementById('book_name').innerHTML = book["bookname"];
     document.getElementById('book_author').innerHTML = book["authorname"];

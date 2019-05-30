@@ -15,13 +15,14 @@
   width: 285px;
   border-bottom: none;
   border-top: none;
+  border:0px;
   z-index: 1;
   height: 300px;
   top: 100%;
   left: 0;
   right: 0;
- 
   overflow-y: scroll;
+  overflow: hidden;
    
 }
 
