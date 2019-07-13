@@ -3,11 +3,9 @@
     padding: 0px;
 }
 
+ html { overflow:  hidden; }
 
-
-.head {
-    position: relative;
-}
+.head {  position: relative; }
 
 body{
     background-image: url("../../media/bgimgfordescription.jpg")
@@ -70,7 +68,7 @@ padding-top: 30px;
     margin-top: 10px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width:0px) and (max-width: 600px) {
 
     .book-review{
         grid-column: 2 / 7;
@@ -153,7 +151,7 @@ padding-top: 30px;
 }
 
 .right_banner{
-	height: 500px;
+	height: 400px;
 	width: 200px;
 	position: right;
 	margin-left: 10%;
