@@ -51,14 +51,14 @@ body {
 }
 #authorname{
     
-    grid-row: 1 / 1 ;
+    grid-row: 1 / 1  ;
     grid-column: 1 / 7;
     text-align: center;
     height: 90px;
     color: #13481E;
     padding-left: 10px;
     font-size: 30px;
-    margin-top: 70px;
+    margin-top: 20px;
 
 }
 #generalDiv{
