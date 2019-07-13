@@ -8,6 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Գրադարան</title>
     <link rel="stylesheet" href="../css/description_of_single_book.css">
     <link rel="stylesheet" href="../css/banner_footer.css" class="category">
@@ -56,17 +57,12 @@
 </header>
 
 <div class="titlePage">
-    <ul class="breadcrumb">
-        
-        <li onclick="HandleBackFunctionality()"><a >Հեղինակներ</a></li>
-       
-
-    </ul>
-
+    
 
     <div class="grid-container">
+        <div class="autors" id="authorName"></div>
         <div class="book-review">
-            <img id="book_image" src='../media/book_review.jpg' alt="Image Not Fount" />
+            <img id="book_image" src='../media/book_review.jpg' alt="Image Not Fount" width="300" height="400"/>
 
         </div>
         <div class="information">
@@ -99,8 +95,8 @@
 
 
             <div>
-                <span>Այս գրքից կա : 
-                    <span id="book_count"></span>&nbsp հատ
+                <span>Կարգավիճակ: 
+                    <span></span>
                 </span>
             </div>
             <br>
@@ -121,12 +117,12 @@
 
 
 
-        <div class="right_banner">
-            <div class="h4"><h4>Հանրահայտ գրքեր</h2></div>
+    <div class="right_banner"  id="scroll">
+            <div class="h5"><h5>Հանրահայտ <br> գրքեր</h5></div>
 
  		<div class="row">
   		<div class="column">
-    		<img src="../media/arm.jpg" alt="fine1" class="colImg">
+    		<img src="../media/arm.jpg" alt="fine1" class="colImg" >
 				<div class="content">
    				<p>Գրքի անուն</p>
   			</div>
