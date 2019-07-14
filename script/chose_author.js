@@ -61,7 +61,7 @@ function start() {
 	
 
 	database.on('value', snap => {
-		book_and_author = snap.val();
+		book_and_author =  snap.val();
 		drawPage(book_and_author);
 	});
 
@@ -145,18 +145,19 @@ var bookArray=[];
 					for(let k in book_and_author[i][j][l]){
 
 						if(book_and_author[i][j][l][k]["authorname"]){
+
 							const images = firebase.storage().ref().child('media');
 							const image = images.child(`${book_and_author[i][j][l][k]["img"]}`);
 
 							image.getDownloadURL().then((url) => {	
 											
 								book_and_author[i][j][l][k]['src'] = url;
-													
+								bookArray.push(book_and_author[i][j][l][k]);					
 							}).catch(function(error) {
 								console.log("Image not exist //error.message");
 							});
 							
-							bookArray.push(book_and_author[i][j][l][k]);
+							
 							
 		                }
 					}	
