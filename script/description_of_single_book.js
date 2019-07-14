@@ -19,9 +19,6 @@ function processForm() {
 
 }
 
-function HandleBackFunctionality() {
-    window.history.back(-1);
-}
 
 (function () {
     
