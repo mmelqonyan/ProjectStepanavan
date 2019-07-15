@@ -176,22 +176,21 @@ body {
         grid-template-columns: 1fr ;
         height: 400px;
         grid-gap: 10px;
-        margin: auto;      
-    }
+        margin: auto; 
 
+    }
+    
     #authorname  {
        float: right;
        grid-column: 1 / 2;
        height: auto;
     }
-    #authorName{
-        height: 400px;
+    .autors{
+        height: auto;
         grid-row: 1 / 2;
         grid-column: 1 / 2; 
     }
-    .images{
-         margin: auto;
-    }
+    
     .things{
         height: 400px;
     }

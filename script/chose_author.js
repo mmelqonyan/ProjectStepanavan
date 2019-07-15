@@ -1,8 +1,6 @@
 function getCategory() {
 
-	let temp = location.search.substring(1).split("&");
-	let category = temp[0].split("=")[1];
-
+	var category = localStorage.getItem("category");
 	return category;
 
 }
@@ -10,7 +8,6 @@ function getCategory() {
 function drawPage(book_and_author) {
 
 	let [categoryName, categoryChildName] = getCategory().split("-");
-	
 	let parentDiv = document.getElementById("authorName");
 	this.tmp = 1;
 
@@ -23,15 +20,17 @@ function drawPage(book_and_author) {
 			paragraf.value = book_and_author[categoryName][categoryChildName][i]["author"];
 
 		}
-
+		
 		paragraf.className = "autorsList";
-
+		
 		paragraf.onclick = () => {
 			clicedImgs(book_and_author[categoryName][categoryChildName][i]);
+
 		}    
 
 		if (paragraf.value != "") {
 			parentDiv.appendChild(paragraf);
+
 		}
 		
 		if(tmp){
@@ -40,7 +39,7 @@ function drawPage(book_and_author) {
 		}
 
 	}
-
+	
 }
 
 (function () {
@@ -59,12 +58,16 @@ let database = firebase.database().ref().child('book_and_author');
 
 function start() {
 	
-
-	database.on('value', snap => {
-		book_and_author =  snap.val();
-		drawPage(book_and_author);
-	});
-
+		var book_and_author = JSON.parse(localStorage.getItem("book_and_author"));
+		var clicedImg = localStorage.getItem("clicedImg");
+		if (!!clicedImg) {
+			drawPage(book_and_author)
+			clicedImgs(JSON.parse(clicedImg));
+			localStorage.removeItem('clicedImg');
+		}else{
+			drawPage(book_and_author);
+		}
+		
 }
 function moreAndFaw(arg) {
 
@@ -129,7 +132,7 @@ function sendGor(arg) {
 	document.forms[0].submit();
 }
 
-var bookArray=[];
+var bookArray = [];
 (function() {
 	
 	database.on('value', snap => {
@@ -152,12 +155,12 @@ var bookArray=[];
 							image.getDownloadURL().then((url) => {	
 											
 								book_and_author[i][j][l][k]['src'] = url;
-								bookArray.push(book_and_author[i][j][l][k]);					
+													
 							}).catch(function(error) {
 								console.log("Image not exist //error.message");
 							});
 							
-							
+							bookArray.push(book_and_author[i][j][l][k]);
 							
 		                }
 					}	
@@ -166,9 +169,7 @@ var bookArray=[];
 		}
 		
 	})
-	
 })();
-
 
 /// Search Function ////////////////////////////////////////////////////////////////
 function autocomplete(inp, argItem,index) {
@@ -203,7 +204,6 @@ function autocomplete(inp, argItem,index) {
 					document.forms[0].submit();
 		        }
 		             
-
 		        closeAllLists();
 	            });
 	            

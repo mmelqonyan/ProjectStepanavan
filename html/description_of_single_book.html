@@ -12,6 +12,7 @@
     <title>Գրադարան</title>
     <link rel="stylesheet" href="../css/description_of_single_book.css">
     <link rel="stylesheet" href="../css/banner_footer.css" class="category">
+    <link rel="stylesheet" href="../css/chose_author.css">
     <link rel="stylesheet" type="text/css" href="../css/search_bar.css">
            
     <!--Firebase SDK-->
@@ -28,7 +29,7 @@
     <script src="../script/description_of_single_book.js" defer></script></head>
 
 <body onload="processForm()" >
-<form action="description_of_single_book.html" >
+<form action="description_of_single_book.html" id="sendback" >
 
       <input id="url_send3" type="hidden" name="book" value="" /> 
         
@@ -60,7 +61,7 @@
     
 
     <div class="grid-container">
-        <div class="autors" id="authorName"></div>
+        <div class="autors" id="authorName"> </div>
         <div class="book-review">
             <img id="book_image" src='../media/book_review.jpg' alt="Image Not Fount" width="300" height="400"/>
 

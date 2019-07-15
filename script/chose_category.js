@@ -1,11 +1,17 @@
 function category(el){
 
-    document.getElementById("category").value = el.parentNode.id+"-"+ el.id;
+	localStorage.setItem("category", (el.parentNode.id+"-"+ el.id));
+    
     document.forms[1].submit()
 
 
 
 }
+
+database.on('value', snap => {
+		book_and_author = snap.val();
+		localStorage.setItem("book_and_author",JSON.stringify(book_and_author));
+});
 
 (function () {
     
