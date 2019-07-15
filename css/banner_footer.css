@@ -64,10 +64,6 @@ margin-bottom: 50px;
 	border-radius:20px;
 }
 
-
-
-
-
 ul.breadcrumb {
   padding: 10px 15px;
   list-style: none;
@@ -107,15 +103,22 @@ ul.breadcrumb li a:hover {
 	color:#13481E;
 }
 
-#user_container {
-	float:right;
-	color:white;
-}
-#user_name{
-	margin-right: 10px;
+.user_description_place {
+
+	float: right;
 	margin-top: 7px;
-	color:white;
+	margin-right: 7px;
+	width: 120px;
+	height: 35px;
+	background-color:rgb(55, 95, 55);
+  	color:#eaf9ee;
+	border: 1px solid #13481E;
+	border-radius:20px;
+	text-align: center;
+	line-height: 35px;
 }
+
+
 
 footer { 
     display: block;
