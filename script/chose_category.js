@@ -1,3 +1,8 @@
+
+window.onload = () => {
+    document.getElementById("user_name").innerHTML = "Welcome " + localStorage.getItem("active_user");
+}
+
 function category(el){
 
     document.getElementById("category").value = el.parentNode.id+"-"+ el.id;
