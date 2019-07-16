@@ -7,9 +7,7 @@ function category(el){
 
 	localStorage.setItem("category", (el.parentNode.id+"-"+ el.id));
     
-    document.forms[1].submit()
-
-
+    document.forms[1].submit();
 
 }
 
@@ -19,7 +17,6 @@ database.on('value', snap => {
 });
 
 (function () {
-    
     
     const btnLogout = document.getElementById('btnLogout');
     btnLogout.addEventListener('click', e => {
