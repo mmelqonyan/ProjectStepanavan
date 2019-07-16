@@ -1,6 +1,6 @@
 
 window.onload = () => {
-    document.getElementById("user_name").innerHTML = "Welcome " + localStorage.getItem("active_user");
+    document.getElementById("user_name").innerHTML =localStorage.getItem("active_user")[0].toLocaleUpperCase();
 }
 
 function category(el){
