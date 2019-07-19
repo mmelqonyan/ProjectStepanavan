@@ -166,7 +166,8 @@ var bookArray = [];
 				}
 			}
 		}
-		getKeyByValue(book_and_author)
+		console.log(bookArray)
+		getKeyByValue(book_and_author);
 	})
 })();
 
