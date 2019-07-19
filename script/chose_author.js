@@ -139,35 +139,34 @@ var bookArray = [];
 
 		let book_and_author = snap.val();
 
-		for(let i in book_and_author){
-
-			for(let j in book_and_author[i]){
-				
-				for(let l in book_and_author[i][j]){
+		async function getKeyByValue(object) {
 	
-					for(let k in book_and_author[i][j][l]){
+			for( i in object){
+				if (typeof object[i] == 'object') {
+					
+					getKeyByValue(object[i]);
 
-						if(book_and_author[i][j][l][k]["authorname"]){
+				}else{
 
-							const images = firebase.storage().ref().child('media');
-							const image = images.child(`${book_and_author[i][j][l][k]["img"]}`);
+					if(i == "authorname"){
+						const images = firebase.storage().ref().child('media');
+						const image = images.child(`${object["img"]}`);
 
-							image.getDownloadURL().then((url) => {	
+						await image.getDownloadURL().then((url) => {	
 											
-								book_and_author[i][j][l][k]['src'] = url;
-													
-							}).catch(function(error) {
-								console.log("Image not exist //error.message");
-							});
+							object['src'] = url;
+							bookArray.push(object);					
+						}).catch(function(error) {
+							console.log("Image not exist //error.message");
+						});
 							
-							bookArray.push(book_and_author[i][j][l][k]);
 							
-		                }
-					}	
+					}
+				
 				}
 			}
 		}
-		
+		getKeyByValue(book_and_author)
 	})
 })();
 
