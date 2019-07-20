@@ -101,8 +101,8 @@ function writeBookData() {
     let bookDescription = document.getElementById('bookDescription').value;
     let bookImg = document.getElementById('browse').files.item(0).name;
 
-    firebase.database().ref('book_and_author').child(category).child(subCategory).update({
-        [authorEnInput]: {
+    firebase.database().ref('book_and_author').child(category).child(subCategory).child(authorEnInput).update({
+        
             author: authorHyInput,
             [bookEnInput]: {
                 authorname: authorHyInput,
@@ -112,6 +112,6 @@ function writeBookData() {
                 genre: bookGenre,
                 img: bookImg
             }
-        }
+        
     });
 }
