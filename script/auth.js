@@ -18,9 +18,15 @@
 
         auth.signInWithEmailAndPassword(email, pass)
             .then(e => {
-                localStorage.setItem("check", true);
-                localStorage.setItem("active_user", e.user.displayName);
-                location.replace("html/chose_category.html");
+                if (e.user.displayName == 'Admin') {
+                    location.replace("html/admin.html")
+                }
+                else {
+                    localStorage.setItem("check", true);
+                    localStorage.setItem("active_user", e.user.displayName);
+                    location.replace("html/chose_category.html");
+                }
+
 
             }
             )
@@ -59,7 +65,7 @@ let showErrorMsg = (showMessage) => {
     };
     for (let message in errorMessages) {
         if (showMessage == message)
-        errorMsg.innerText = errorMessages[message];
+            errorMsg.innerText = errorMessages[message];
     }
 };
 

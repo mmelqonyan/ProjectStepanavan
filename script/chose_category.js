@@ -24,3 +24,5 @@ database.on('value', snap => {
         location.replace("../main.html");
     });
 }());
+
+

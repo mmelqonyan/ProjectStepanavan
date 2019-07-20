@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin page</title>
+    <link rel="stylesheet" href="../css/admin.css">
+
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase-auth.js"></script>
+    <!--Firebase initialize-->
+    <script src="../script/init.js" defer></script>
+
+    <script defer src="../script/admin.js"></script>
+</head>
+
+<body onload="load()">
+    Admin page
+    <div>
+        <select id="cat" onchange="selectCategory()">
+            <option class="selected"> Ընտրել Կատեգորիա</option>
+            <option value="armliter">Հայ գրականաություն</option>
+            <option value="rus">Ռուս գրականություն</option>
+            <option value="international">Միջազգային գրականաություն</option>
+            <option value="masnagitakan">Մասնագիտական</option>
+            <option value="mankakan">Մանկական</option>
+            <option value="texekatu">Տեղեկատու</option>
+        </select><br><br>
+
+        <select id="subCatArmRus" onchange="this.disabled = true" hidden>
+            <option class="selected"> Ընտրել Ենթակտեգորիա</option>
+            <option value="arm">Հայ թարգմ.</option>
+            <option value="rus">Ռուս թարգմ. </option>
+        </select>
+
+        <select id="subCatInternational" onchange="this.disabled = true" hidden>
+            <option class="selected"> Ընտրել Ենթակտեգորիա</option>
+            <option value="arm">Հայերեն </option>
+            <option value="rus">Ռուսերեն </option>
+            <option value="english"> Անգլերեն</option>
+            <option value="fr">Ֆրանսերեն </option>
+        </select>
+
+        <select id="subCatMasnagitakan" onchange="this.disabled = true" hidden>
+            <option class="selected"> Ընտրել Ենթակտեգորիա</option>
+            <option value="arvest">Արվեստ </option>
+            <option value="ashxaragrutyun">Աշխարհագրություն </option>
+            <option value="fizika"> Ֆիզիկա</option>
+            <option value="gyuxatntesutyun">Գյուղատնտեսություն </option>
+            <option value="hogebanutyun">Հոգեբանություն </option>
+            <option value="kensabanutyun">Կենսաբանություն </option>
+            <option value="mankavarjutyun"> Մանկավարժություն</option>
+            <option value="patmutyun">Պատմություն </option>
+            <option value="pilisopayutyun">Փիլիսոփայություն </option>
+            <option value="texnika">Տեխնիկա </option>
+            <option value="tntesagitutyun"> Տնտեսագիտություն</option>
+        </select>
+
+        <select id="subCatMankakan" onchange="this.disabled = true" hidden>
+            <option class="selected"> Ընտրել Ենթակտեգորիա</option>
+            <option value="arakner">Առակներ </option>
+            <option value="banastexcutyunner">Բանաստեղծություններ </option>
+            <option value="heqiatner"> Հեքիաթներ</option>
+            <option value="patmvacqner">Պատմվածքներ </option>
+        </select>
+
+        <select id="subCatTexekatu" onchange="this.disabled = true" hidden>
+            <option class="selected"> Ընտրել Ենթակտեգորիա</option>
+            <option value="bararanner">Բառարաններ </option>
+            <option value="hanragitaranner">Հանրագիտարաններ </option>
+        </select><br><br><br>
+
+        <div><input type="text" id="authorEn" placeholder="Հեղինակ  (անգլերեն)"> Օրինակ՝ shiraz</div><br>
+        <div><input type="text" id="authorHy" placeholder="Հեղինակ  (Հայերեն)"> Օրինակ՝ Հ. Շիրազ </div><br>
+        <div><input type="text" id="bookEn" placeholder="Գիրք (Անգլերեն)"> Օրինակ՝ danteakan</div><br>
+        <div><input type="text" id="bookHy" placeholder="Գիրք (Հայերեն)"> Օրինակ՝ Դանթեականը</div><br>
+        <div><input type="text" id="count" placeholder="Գրքի քանակ"> Օրինակ՝ 6</div><br>
+        <div><input type="text" id="genre" placeholder="Գրքի ժանրը"> Օրինակ՝ Պոեմ</div><br>
+
+        <div>
+            <textarea placeholder="Գրքի նկարագրությունը" id="bookDescription"></textarea>
+        </div><br>
+
+        <div>
+            Գրքի նկարը <input type="file" accept="image/*" id="browse">
+            '</div><br>
+
+        <div>
+            <progress value="0" max="100" id="uploader">0%</progress>
+            <span id="status">0 %</span>
+        </div><br>
+        <div>
+            <input type="button" name="" value="Ներբեռնել" id="done" onclick="writeBookData()">
+        </div>
+
+
+    </div>
+
+
+
+</body>
+
+</html>
