@@ -139,9 +139,9 @@ var bookArray = [];
 
 		let book_and_author = snap.val();
 
-		async function getKeyByValue(object) {
+		function getKeyByValue(object) {
 	
-			for( i in object){
+			for(let i in object){
 				if (typeof object[i] == 'object') {
 					
 					getKeyByValue(object[i]);
@@ -152,7 +152,7 @@ var bookArray = [];
 						const images = firebase.storage().ref().child('media');
 						const image = images.child(`${object["img"]}`);
 
-						await image.getDownloadURL().then((url) => {	
+						image.getDownloadURL().then((url) => {	
 											
 							object['src'] = url;
 							bookArray.push(object);					
