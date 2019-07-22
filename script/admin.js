@@ -114,4 +114,6 @@ function writeBookData() {
             }
         
     });
+    alert('Success!');
+    location.reload();
 }
