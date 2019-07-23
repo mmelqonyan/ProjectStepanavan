@@ -21,6 +21,8 @@ function processForm() {
 (function () {
 
         let book_and_author = JSON.parse(localStorage.getItem("book_and_author"));
+        document.getElementById("userName").innerHTML =localStorage.getItem("active_user")[0].toLocaleUpperCase();
+
         drawPage(book_and_author);
 })();
 

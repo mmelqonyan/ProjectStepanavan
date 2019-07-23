@@ -1,3 +1,6 @@
+
+
+
 function getCategory() {
 
 	var category = localStorage.getItem("category");
@@ -5,7 +8,10 @@ function getCategory() {
 
 }
 
-function drawPage(book_and_author) {
+function drawPage(book_and_author) {t images = firebase.storage().ref().child('media');
+const image = images.child(`${arg[j]["img"]}`);
+
+image.getDownloadURL().then((url) =
 
 	let [categoryName, categoryChildName] = getCategory().split("-");
 	let parentDiv = document.getElementById("authorName");
@@ -39,17 +45,17 @@ function drawPage(book_and_author) {
 		}
 
 	}
-	
+
 }
 
 (function () {
      
     var btnLogout = document.getElementById('btnLogout');
-
     btnLogout.addEventListener('click', e => {
         firebase.auth().signOut();
         location.replace("../main.html");
     });
+	document.getElementById("userName").innerHTML =localStorage.getItem("active_user")[0].toLocaleUpperCase();
 
 }());
 
@@ -283,10 +289,7 @@ function filenamef (){
 
 let filename = filenamef();
 
-// localStorage.removeItem('book');
- //localStorage.setItem("book", JSON.stringify(bookArray));
-// var x = localStorage.getItem("bookArray");
-// alert(x);
+
 
 
 switch (filename) {

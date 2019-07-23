@@ -1,13 +1,13 @@
 
 window.onload = () => {
-    document.getElementById("user_name").innerHTML =localStorage.getItem("active_user")[0].toLocaleUpperCase();
+    document.getElementById("userName").innerHTML =localStorage.getItem("active_user")[0].toLocaleUpperCase();
 }
 
 function category(el){
 
 	localStorage.setItem("category", (el.parentNode.id+"-"+ el.id));
-    
-    document.forms[1].submit();
+
+        document.forms[1].submit();
 
 }
 
