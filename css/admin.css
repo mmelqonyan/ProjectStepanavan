@@ -1,11 +1,53 @@
+body{
+	background:#f4f9f6;
+	color: #13481E;
+}
+
+.center{
+margin-left: 35%;
+
+}
 textarea{
     height: 100px;
     width: 300px;
     resize: none;
 }
-progress[value]::-webkit-progress-value::before {
-    content: '80%';
-    position: absolute;
-    right: 0;
-    top: -125%;
+
+.selected{
+border: 1px solid #eaf9ee;
+}
+
+option {
+	margin-bottom: 3px;
+	color: #13481E;
+	text-align:center;
+	cursor: pointer;
+	border: 1px solid #eaf9ee;
+	background-color: #eaf9ee;
+	border-radius: 20px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0.1,0.3);
+}
+
+option:hover {
+
+	color: black;
+	cursor: pointer;
+	border: 1px solid #c5e5d0;
+	background-color: #c5e5d0;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0.2,0.5);
+}
+
+input {
+color: #13481E;
+}
+
+select {
+	
+	color: #13481E;
+	text-align:center;
+	cursor: pointer;
+	border: 1px solid #eaf9ee;
+	background-color: #eaf9ee;
+	border-radius: 10px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0.1,0.3);
 }
