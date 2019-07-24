@@ -8,10 +8,8 @@ function getCategory() {
 
 }
 
-function drawPage(book_and_author) {t images = firebase.storage().ref().child('media');
-const image = images.child(`${arg[j]["img"]}`);
-
-image.getDownloadURL().then((url) =
+function drawPage(book_and_author) {
+	
 
 	let [categoryName, categoryChildName] = getCategory().split("-");
 	let parentDiv = document.getElementById("authorName");

@@ -1,5 +1,5 @@
 body{
-	background:#f4f9f6;
+	background:#eaf9ee;
 	color: #13481E;
 }
 
@@ -14,7 +14,7 @@ textarea{
 }
 
 .selected{
-border: 1px solid #eaf9ee;
+border: 1px solid #c5e5d0;
 }
 
 option {
@@ -22,7 +22,7 @@ option {
 	color: #13481E;
 	text-align:center;
 	cursor: pointer;
-	border: 1px solid #eaf9ee;
+	border: 1px solid #c5e5d0;
 	background-color: #eaf9ee;
 	border-radius: 20px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0.1,0.3);
@@ -46,8 +46,22 @@ select {
 	color: #13481E;
 	text-align:center;
 	cursor: pointer;
-	border: 1px solid #eaf9ee;
-	background-color: #eaf9ee;
+	border: 1px solid #c5e5d0;
+	background-color: #c5e5d0;
 	border-radius: 10px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0.1,0.3);
 }
+
+#done
+{
+	color: #13481E;
+	text-align:center;
+	cursor: pointer;
+	border: 1px solid #c5e5d0;
+	background-color: #c5e5d0;
+	border-radius: 10px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0.1,0.3);
+
+}
+
+
